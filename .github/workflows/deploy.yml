@@ -44,4 +44,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages  # Branche de déploiement
-          folder: dist/jeu  # Remplace par le nom du dossier de build
+          folder: dist/jeu/browser  # Remplace par le nom du dossier de build
