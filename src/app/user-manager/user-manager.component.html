@@ -1,0 +1,66 @@
+<div class="center">
+    <div class="padding">
+      <h4 class="font-size-20">Inscriptions des joueurs</h4>
+      <p>Inscrivez les joueurs pour permettre une répartition des tâches à accomplir pour rendre votre site inclusif après le jeu.</p>
+    </div>
+    @for (user of service.getUsers(); track $index){
+      <div class="rounded-container margin-top-bot">
+        @if (is_editing_user && user == user_to_edit){
+          <form [formGroup]="editUserForm">
+            <p-floatlabel variant="on">
+              <input class="input margin-3" pInputText formControlName="name" placeholder="Nom du participant">
+            </p-floatlabel>
+            <p-floatlabel variant="on">
+              <input class="input margin-3" pInputText formControlName="email" placeholder="Adresse email du participant">
+            </p-floatlabel>
+          </form>
+          <div class="spacer"></div>
+          <div class="align_right">
+            <p-button icon="pi pi-check-circle" class="margin-3" variant="outlined" severity="success" (click)="saveEditUser(user)"/>
+            <p-button icon="pi pi-trash" class="margin-3" variant="outlined" severity="contrast" (click)="cancelEditUser()"/>
+          </div>
+        }
+        @else{
+          <div class="inline">
+            <form [formGroup]="editUserForm">
+              <p-floatlabel variant="on">
+                <input class="input margin-3" pInputText [value]="user.name" disabled>
+              </p-floatlabel>
+              <p-floatlabel variant="on">
+                <input class="input margin-3" pInputText [value]="user.email" disabled>
+              </p-floatlabel>
+            </form>
+          </div>
+          <div class="spacer"></div>
+          <div class="align_right">
+            <p-button icon="pi pi-user-edit" class="margin-3" variant="outlined" severity="contrast" (click)="editUser(user)"/>
+            <p-button icon="pi pi-trash" class="margin-3" variant="outlined" severity="contrast" (click)="deleteUser(user)"/>
+          </div>
+        }
+      </div>
+    }
+
+    @if (is_adding_user){
+        <div class="rounded-container selected margin-top-bot">
+          <form [formGroup]="addUserForm">
+            <p-floatlabel variant="on">
+              <input class="input margin-3" pInputText formControlName="name" placeholder="Nom du participant">
+            </p-floatlabel>
+            <p-floatlabel variant="on">
+              <input class="input margin-3" pInputText formControlName="email" placeholder="Adresse email du participant">
+            </p-floatlabel>
+          </form>
+          <div class="spacer"></div>
+          <div class="align_right">
+            <p-button icon="pi pi-check-circle" class="margin-3" variant="outlined" severity="success" (click)="saveUser()"/>
+            <p-button icon="pi pi-trash" class="margin-3" variant="outlined" severity="contrast" (click)="cancelAddUser()"/>
+          </div>
+        </div>
+    }
+    @if (!is_adding_user && !is_editing_user){
+      <div class="margin-10" >
+        <p-button icon="pi pi-plus" variant="outlined" severity="contrast" (click)="addUser()"/>
+      </div>
+    }
+</div>
+<app-action-bar [buttons]="actionButtons"></app-action-bar>
