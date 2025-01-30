@@ -1,0 +1,6 @@
+<div>
+  <h1>Timer</h1>
+  @if (time>0){<p>Temps écoulé : {{ formatTime(time) }}</p>}
+  @else {<p class="red_txt">Temps écoulé : {{ formatTime(-time) }}</p>}
+  <button (click)="resetTimer()">Réinitialiser</button>
+</div>
