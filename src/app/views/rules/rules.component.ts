@@ -18,10 +18,12 @@ export class RulesComponent {
 
     actionButtons = [
       { label: 'Passer le quiz', action: () => this.continuer(), severity : 'secondary' as const },
-      { label: 'En avant !', action: () => console.log("Quiz started") }
+      { label: 'En avant !', action: () => this.startQuiz() }
     ];
 
     startQuiz(){
+      
+      this.router.navigate(['./cartes_inclusif']);
       console.log("Quiz started");
     }
 }
