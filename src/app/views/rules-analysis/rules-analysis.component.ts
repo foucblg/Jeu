@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {Router } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
-import { ActionBarComponent } from '../components/action-bar/action-bar.component';
+import { ActionBarComponent } from '../../shared/action-bar/action-bar.component';
 
 @Component({
   selector: 'app-rules-analysis',
