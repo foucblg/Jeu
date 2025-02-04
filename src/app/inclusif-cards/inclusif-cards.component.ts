@@ -21,7 +21,6 @@ export class InclusifCardsComponent implements OnInit, OnDestroy {
   suivant = false;
 
   private routeSubscription: Subscription | undefined = undefined;
-  allAnswers = {};
 
 
   constructor(private router: Router, private route: ActivatedRoute,private answerStorage: AnswerStorageService) {}
@@ -29,7 +28,6 @@ export class InclusifCardsComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     // Récupérer les query params lors de l'initialisation du composant
 
-    this.allAnswers = this.answerStorage.getAllAnswers();//Debuggage
 
     this.routeSubscription = this.route.queryParams.subscribe(params => {
       const id = +params['id']; // Récupérer 'id' depuis les query params

@@ -22,7 +22,8 @@
   <div class="card-display">
     <app-navigation-card-solutions 
     [card_number]="currentNumber"
-    [card_answer]="currentAnswer">
+    [card_answer]="currentAnswer"
+    (answerChange)="currentAnswer = $event">
   </app-navigation-card-solutions>
   </div>
 
@@ -38,5 +39,4 @@
     </app-navigation-button-solutions>
   </div>
   
-
 </div>

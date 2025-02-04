@@ -11,7 +11,7 @@ import { navigation_data } from '../../app.component';
   templateUrl: './navigation-card.component.html',
   styleUrl: './navigation-card.component.css'
 })
-export class NavigationCardComponent implements OnInit {
+export class NavigationCardComponent {
   @Input() card_number!: number;
   @Input() card_answer!: boolean;
   @Output() answerChange = new EventEmitter<boolean>();
@@ -21,18 +21,13 @@ export class NavigationCardComponent implements OnInit {
 
   constructor(private router: Router, private answerStorage: AnswerStorageService, private cdRef: ChangeDetectorRef) {}
 
-  ngOnInit(): void {  //debuggage
-    this.allAnswers = this.answerStorage.getAllAnswers();
-  }
+  
   
   onAnswer(answer: boolean) {
     this.card_answer = answer;
     this.answerStorage.setAnswer(this.card_number, answer); // Store answer in service
 
     this.answerChange.emit(this.card_answer);
-
-    // Debugging
-    console.log(this.allAnswers);
 
   }
 
