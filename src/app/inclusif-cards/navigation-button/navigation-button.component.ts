@@ -41,10 +41,8 @@ export class NavigationButtonComponent {
       return;
     }
   
-    // Update category
+  //MAJ des paramètres
     this.cat = navigation_data.data[this.currentNumber]?.categorie ?? '';
-  
-    // Retrieve stored answer (default to false if undefined)
     this.currentAnswer = this.answerStorage.getAnswer(this.currentNumber) ?? false;
   
     // Emit updated values
@@ -56,9 +54,6 @@ export class NavigationButtonComponent {
     this.router.navigate(['cartes_inclusif', 'carte'], {
       queryParams: { id: this.currentNumber }
     });
-  
-    // ✅ Ensure UI updates immediately
-    this.cdRef.detectChanges();
 
   }
 
