@@ -1,5 +1,4 @@
 import { Injectable } from "@angular/core";
-import { FormArray, FormGroup } from "@angular/forms";
 
 class User {
     name: string;
@@ -35,6 +34,7 @@ class Task{
 @Injectable({
     providedIn: 'root'
   })
+  
 export class UserService {
     private users : User[];
 
