@@ -10,7 +10,7 @@ import {Router } from '@angular/router';
   standalone: true,
   imports: [],
   templateUrl: './navigation-card-solutions.component.html',
-  styleUrl: './navigation-card-solutions.component.css'
+  styleUrls: ['./navigation-card-solutions.component.css'],
 })
 export class NavigationCardSolutionsComponent {
   constructor(private router:Router) {}
