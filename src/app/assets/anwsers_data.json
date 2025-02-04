@@ -1,0 +1,71 @@
+{"data":[
+    {
+        "numero": 1,
+        "nom": "Cadrage et Planification",
+        "solution": ["sol 1","sol 2","sol 3","sol 4","sol 5","sol 6","sol 7","sol 8"],
+        "categorie": "Gestion de projet"
+        
+    },
+    {
+        "numero": 2,
+        "nom": "Equipe projet et partenariats",
+        "solution": ["sol 1","sol 2","sol 3","sol 4","sol 5","sol 6","sol 7","sol 8"],
+        "categorie": "Gestion de projet"
+    },
+    {
+        "numero": 3,
+        "nom": "Evaluation et certification du projet",
+        "solution": ["sol 1","sol 2","sol 3","sol 4","sol 5","sol 6","sol 7","sol 8"],
+        "categorie": "Gestion de projet"
+    },
+    {
+        "numero": 4,
+        "nom": "Immersion",
+        "solution": ["sol 1","sol 2","sol 3","sol 4","sol 5","sol 6","sol 7","sol 8"],
+        "categorie": "Expérience utilisateur"
+    },
+    {
+        "numero": 5,
+        "nom": "Décryptage et analyse",
+        "solution": ["sol 1","sol 2","sol 3","sol 4","sol 5","sol 6","sol 7","sol 8"],
+        "categorie":"Expérience utilisateur"
+    },
+    {
+        "numero": 6,
+        "nom": "Idéation et conception",
+        "solution": ["sol 1","sol 2","sol 3","sol 4","sol 5","sol 6","sol 7","sol 8"],
+        "categorie":"Expérience utilisateur"
+    },
+    {
+        "numero": 7,
+        "nom": "Design visuel",
+        "solution": ["sol 1","sol 2","sol 3","sol 4","sol 5","sol 6","sol 7","sol 8"],
+        "categorie":"Interface utilisateur"
+    },
+    {
+        "numero": 8,
+        "nom": "Interactions",
+        "solution": ["sol 1","sol 2","sol 3","sol 4","sol 5","sol 6","sol 7","sol 8"],
+        "categorie":"Interface utilisateur"
+    },
+    {
+        "numero": 9,
+        "nom": "Développements",
+        "solution": ["sol 1","sol 2","sol 3","sol 4","sol 5","sol 6","sol 7","sol 8"],
+        "categorie":"Développement"
+    },
+    {
+        "numero": 10,
+        "nom": "Rédaction textuelle",
+        "solution": ["sol 1","sol 2","sol 3","sol 4","sol 5","sol 6","sol 7","sol 8"],
+        "categorie":"Editorial"
+    },
+    
+    {
+        "numero": 11,
+        "nom": "Contenus",
+        "solution": ["sol 1","sol 2","sol 3","sol 4","sol 5","sol 6","sol 7","sol 8"],
+        "categorie":"Editorial"
+    }
+]
+}

@@ -1,0 +1,72 @@
+{"data":[
+        {
+            "numero": 1,
+            "nom": "Cadrage et Planification",
+            "question": "L'inclusivité de votre service numérique est-il un objectif pour l'équipe ?",
+            "categorie": "Gestion de projet"
+            
+        },
+        {
+            "numero": 2,
+            "nom": "Equipe projet et partenariats",
+            "question": "Avez vous prévu des ressources (personne référente, formation, mobilisation d'experts...) pour favoriser l'inclusivité de votre projet ?",
+            "categorie": "Gestion de projet"
+        },
+        {
+            "numero": 3,
+            "nom": "Evaluation et certification du projet",
+            "question": "Votre projet est-il conforme aux exigences règlementaires ?",
+            "categorie": "Gestion de projet"
+        },
+        {
+            "numero": 4,
+            "nom": "Immersion",
+            "question": "Travailler vous avec vos différents utilisateurs ?",
+            "categorie": "Expérience utilisateur"
+        },
+        {
+            "numero": 5,
+            "nom": "Décryptage et analyse",
+            "question": "Connaissez-vous les besoins de vos utilisateurs ?",
+            "categorie":"Expérience utilisateur"
+        },
+        {
+            "numero": 6,
+            "nom": "Idéation et conception",
+            "question": "Avez-vous défini vos parcours utilisateurs cibles ?",
+            "categorie":"Expérience utilisateur"
+        },
+        {
+            "numero": 7,
+            "nom": "Design visuel",
+            "question": "Vos éléments visuels (couleurs, typographies, pictogrammes...) sont-ils inclusifs ?",
+            "categorie":"Interface utilisateur"
+        },
+        {
+            "numero": 8,
+            "nom": "Interactions",
+            "question": "Vos éléments interactifs (formulaires, éléments cliquables...) sont-ils inclusifs ?",
+            "categorie":"Interface utilisateur"
+        },
+        {
+            "numero": 9,
+            "nom": "Développements",
+            "question": "Vos développements sont-ils accessibles ?",
+            "categorie":"Développement"
+        },
+        {
+            "numero": 10,
+            "nom": "Rédaction textuelle",
+            "question": "La rédaction de vos textes est-elle inclusive ?",
+            "categorie":"Editorial"
+        },
+        
+        {
+            "numero": 11,
+            "nom": "Contenus",
+            "question": "Vos contenus (images, multimédia, documents en téléchargement...) sont-ils inclusifs ?",
+            "categorie":"Editorial"
+        }
+    ]
+}
+

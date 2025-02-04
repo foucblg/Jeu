@@ -1,0 +1,9 @@
+<div>
+  <ul>
+    @for (category of categories; track category) {
+      <li [class.highlighted]="cat === category">
+        {{ category }}
+      </li>
+    }
+  </ul>
+</div>
