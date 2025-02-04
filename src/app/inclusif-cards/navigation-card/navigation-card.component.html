@@ -3,6 +3,7 @@
   @if (Navdata['data'][card_number]) { 
       @let card = Navdata['data'][card_number];
 
+
       <h2 class="category-title">{{ card.categorie }}</h2>
       <h3 class="question-title">{{ card.nom }}</h3>
       <p class="question-text">{{ card.question }}</p>
@@ -21,8 +22,10 @@
               [class]="card_answer ? 'red-card-nselected' : 'red-card-selected'" 
               [disabled]="!card_answer"
               class="no-button">
-              Pas tout à fait
+              Non
           </button>
       </div>
   }
 </div>
+
+
