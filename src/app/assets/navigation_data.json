@@ -3,7 +3,7 @@
             "numero": 1,
             "nom": "Cadrage et Planification",
             "question": "L'inclusivité de votre service numérique est-il un objectif pour l'équipe ?",
-            "description": "Au même titre que la qualité, le délai blablabla",
+            "description": "Au même titre que la qualité, le délai de mise en oeuvre ou le coût d'un service numérique, son inclusivité, c'est-à-dire sa capacité à être inclusif et accessible, peut être un objectif majeur intégré aux différentes phases d'un projet.",
             "categorie": "Gestion de projet"
             
         },
@@ -11,61 +11,78 @@
             "numero": 2,
             "nom": "Equipe projet et partenariats",
             "question": "Avez vous prévu des ressources (personne référente, formation, mobilisation d'experts...) pour favoriser l'inclusivité de votre projet ?",
+            "description":"Les ressources mobilisables peuvent être une personne référente, des temps de formation, des clauses partenariales...",
             "categorie": "Gestion de projet"
         },
         {
             "numero": 3,
             "nom": "Evaluation et certification du projet",
             "question": "Votre projet est-il conforme aux exigences règlementaires ?",
+            "description":"Pour se conformer aux exigences règlementaires il faut respecter le RGAA (Référentiel Général d'Amélioration de l'Accessibilité).",
             "categorie": "Gestion de projet"
         },
         {
             "numero": 4,
             "nom": "Immersion",
             "question": "Travailler vous avec vos différents utilisateurs ?",
+            "description":"Travailler avec ses différentes utilisateurs, c'est avant tout concevoir selon une approche centrée utilisateur. \n Cela revient à aller à la rencontre des utilisateurs afin de les questionner et de tester avec eux, et ce peu importe l'étape du projet.",
             "categorie": "Expérience utilisateur"
         },
         {
             "numero": 5,
             "nom": "Décryptage et analyse",
             "question": "Connaissez-vous les besoins de vos utilisateurs ?",
+            "description":"Connaître ses besoins utilisateurs revient à analyser et formaliser les différentes retours d'expérience et/ou expressions de besoins afin de baser la conception du service sur ceux-ci.",
             "categorie":"Expérience utilisateur"
         },
         {
             "numero": 6,
             "nom": "Idéation et conception",
             "question": "Avez-vous défini vos parcours utilisateurs cibles ?",
+            "description":"L'expérience cible est la façon idéale dont une personne perçoit et ressent l'utilisation d'un produit ou service. Elle est imaginée suite à l'analyse des retours d'expérience issus du terrain.",
             "categorie":"Expérience utilisateur"
         },
         {
             "numero": 7,
             "nom": "Design visuel",
             "question": "Vos éléments visuels (couleurs, typographies, pictogrammes...) sont-ils inclusifs ?",
+            "description":"Les éléments visuels sont par exemple la typographie, les couleurs, les icônes, les illustrations. \n Des éléments visuels inclusifs sont par définition visibles, lisibles et interprétables.",
             "categorie":"Interface utilisateur"
         },
         {
             "numero": 8,
             "nom": "Interactions",
             "question": "Vos éléments interactifs (formulaires, éléments cliquables...) sont-ils inclusifs ?",
+            "description":"Les éléments interactifs sont par exemple les boutons, les interrupteurs, les liens et les formulaires. \n Un élément interactif inclusif est identifiable et intuitif notamment grâce à ses différents éctats tel que le survol ou encore le focus.",
             "categorie":"Interface utilisateur"
         },
         {
             "numero": 9,
             "nom": "Développements",
-            "question": "Vos développements sont-ils accessibles ?",
+            "question": "Votre code est-il inclusif ?",
+            "description":"Le code est le langage de programmation utilisé pour faire fonctionner les services numériques. \n Il doit se conformer aux critères techniques du RGAA.",
             "categorie":"Développement"
         },
         {
             "numero": 10,
+            "nom": "Développements",
+            "question": "Votre navigation est-elle inclusive ?",
+            "description":"La navigation consiste à rechercher et consulter un service numérique. Elle doit être possible quel que soit le moyen utilisé. \n Pour naviguer, beaucoup de personnes en situation de handicap utilisent uniquement le clavier ou un dispositif de pointage. Des technologies d'assistance, comme les lecteurs d'écran, sont également utilisées.",
+            "categorie":"Développement"
+        },
+        {
+            "numero": 11,
             "nom": "Rédaction textuelle",
             "question": "La rédaction de vos textes est-elle inclusive ?",
+            "description":"Un texte inclusif prend en compte la diversité des lecteurs, quels que soient leur capacités intellectuelles, leur niveau d'études ou leurs origines.",
             "categorie":"Editorial"
         },
         
         {
-            "numero": 11,
+            "numero": 12,
             "nom": "Contenus",
             "question": "Vos contenus (images, multimédia, documents en téléchargement...) sont-ils inclusifs ?",
+            "description":"On entend par contenus les images, les éléments multimédia et les documents.",
             "categorie":"Editorial"
         }
     ]
