@@ -23,7 +23,7 @@ export class RulesComponent {
 
     startQuiz(){
       
-      this.router.navigate(['./cartes_inclusif']);
+      this.router.navigate(['./user-registration']);
       console.log("Quiz started");
     }
 }
