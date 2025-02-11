@@ -1,4 +1,11 @@
-
+/* General Container for the Navigation */
+.navigation-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Adds space between elements */
+  }
   
   /* Theme Indicator Styling */
   .theme-indicator {
