@@ -20,16 +20,13 @@
   /* Card Display Area Styling */
   .card-display {
     width: 700px; /* Fixed width for the square */
-    height: 400px; /* Fixed height for the square */
+    height: 600px; /* Fixed height for the square */
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #4caf50; /* Optional border for the card */
-    background-color: #f0f0f0; /* Background color for the card */
     padding: 10px;
     box-sizing: border-box; /* Ensures padding is included in the size */
     text-align: center;
-    overflow: hidden; /* Prevents text overflow */
   }
   
   /* Add additional styling to make text inside card square look good */
