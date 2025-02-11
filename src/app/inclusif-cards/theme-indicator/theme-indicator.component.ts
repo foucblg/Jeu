@@ -1,14 +1,14 @@
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-theme-indicator',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './theme-indicator.component.html',
-  styleUrl: './theme-indicator.component.css'
+  styleUrls: ['./theme-indicator.component.css']
 })
-export class ThemeIndicatorComponent {
+export class ThemeIndicatorComponent implements OnChanges {
   @Input() cat!: string;
 
   categories: string[] = [
@@ -18,5 +18,22 @@ export class ThemeIndicatorComponent {
     'Développement',
     'Editorial'
   ];
-  
+
+  progressValue: number = 0;
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['cat']) {
+      this.updateProgress();
+    }
+  }
+
+  updateProgress(): void {
+    const index = this.categories.indexOf(this.cat);
+    if (index !== -1) {
+      this.progressValue = (index / (this.categories.length - 1)) * 100;
+    } else {
+      this.progressValue = 0;
+    }
+}
+
 }

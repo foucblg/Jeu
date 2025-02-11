@@ -4,10 +4,12 @@ import { Router } from '@angular/router';
 import { AnswerStorageService } from '../../answer-storage.service';
 import { ChangeDetectorRef } from '@angular/core';
 import { navigation_data } from '../../app.component'; 
+import {RadioButtonModule} from 'primeng/radiobutton'
+import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-navigation-card-solutions',
   standalone: true,
-  imports: [],
+  imports: [RadioButtonModule,FormsModule,CommonModule],
   templateUrl: './navigation-card.component.html',
   styleUrl: './navigation-card.component.css'
 })

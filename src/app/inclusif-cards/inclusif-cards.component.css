@@ -1,36 +1,29 @@
-/* General Container for the Navigation */
-.inclusifs-cards {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 10px; /* Adds space between elements */
-  }
+
   
   /* Theme Indicator Styling */
   .theme-indicator {
-    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px; /* Optional margin */
   }
-  
-  /* Styling for Button Containers */
-  .button-container {
-    margin-right: 10px; /* Adjust for consistent spacing */
+
+  .action-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
   }
-  
-  /* Card Display Area Styling */
+
   .card-display {
-    width: 700px; /* Fixed width for the square */
-    height: 400px; /* Fixed height for the square */
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #4caf50; /* Optional border for the card */
-    background-color: #f0f0f0; /* Background color for the card */
-    padding: 10px;
-    box-sizing: border-box; /* Ensures padding is included in the size */
-    text-align: center;
-    overflow: hidden; /* Prevents text overflow */
+    width: 100%; /* Ensure it takes full width of the parent */
+    height: 100%; /* Ensure it takes full height of the parent */
+    margin: 20px 0; /* Optional margin */
   }
+
   
   /* Add additional styling to make text inside card square look good */
   .card-display app-navigcard {

@@ -1,11 +1,22 @@
-<div class="inclusifs-cards">
+
+<div class="theme-indicator">
+  <app-theme-indicator [cat]="cat"></app-theme-indicator>
+</div>
 
 
-  <!-- Theme Indicator -->
-  <div class="theme-indicator">
-    <app-theme-indicator [cat]="cat"></app-theme-indicator>
-  </div>
+<!-- Card Number Display -->
+<div class="card-display">
+  <app-navigation-card-solutions 
+    [card_number]="currentNumber"
+    [card_answer]="currentAnswer"
+    (answerChange)="currentAnswer = $event">
+  </app-navigation-card-solutions>
+</div>
 
+
+
+<!-- Action Bar -->
+<div class="action-bar">
   <!-- Back Button -->
   <div class="button-container">
     <app-navigation-button-solutions 
@@ -16,15 +27,6 @@
       (catChange)="cat = $event"
       (answerChange)="currentAnswer = $event">
     </app-navigation-button-solutions>
-  </div>
-
-  <!-- Card Number Display -->
-  <div class="card-display">
-    <app-navigation-card-solutions 
-    [card_number]="currentNumber"
-    [card_answer]="currentAnswer"
-    (answerChange)="currentAnswer = $event">
-  </app-navigation-card-solutions>
   </div>
 
   <!-- Next Button -->
@@ -38,5 +40,4 @@
       (answerChange)="currentAnswer = $event">
     </app-navigation-button-solutions>
   </div>
-  
 </div>
