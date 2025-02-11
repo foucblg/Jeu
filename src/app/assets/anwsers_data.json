@@ -356,25 +356,14 @@
             "id":27 ,
             "categorie": "Interface utilisateur",
             "sous_categorie": "Design visuel",
-            "titre": "Pensez responsive",
+            "titre": "Rendez vos pictogrammes inclusifs",
             "contenu": [
               "Prévoyez vos interfaces pour les diffénrents terminaux sur lesquels ils seront utilisés. Cela peut implique de concevoir le service au format mobile, tablette ou encore ordinateur.",
-              "Suivez une logique de points de rupture ('breakpoints') pour les différentes mises en page et assurez-vosu que les plus petites résolutions d'écran soient utilisables."
+              "Suivez une logique de points de rupture "
             ],
             "source": {
-                "nom": "Système de design de l'Etat",
-                "description": "Le site du système de design de l'Etat recence de nombreuses bonnes partiques aisni que des acs concrets.."
-            }
-          },
-          {
-            "id":28 ,
-            "categorie": "Interface utilisateur",
-            "sous_categorie": "Interactions",
-            "titre": "Espacez et hiérarchisez",
-            "contenu": [
-              "Des espaces cohérents et suffisament importants permettent de hiérarchiser la structure d'un écran tout en évitant les erreurs de manipulation. \n Gardez une logique pour les espacements au niveau d'un service. Il existe plusieurs systèmes de grilles et d'espacements tels que le système de 8. Cela revient à baser la taille des composants aisni que des éléments de la grilles sur des multiples de 8."
-            ],
-            "source": {
+                "nom": "Iconify Design (en anglais)",
+                "description": "Iconify est un sit référançant de nombreuses ressources et bibliothèques d'icônes open sources."
             }
           },
     
