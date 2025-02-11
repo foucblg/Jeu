@@ -1,43 +1,31 @@
 <div class="card-container">
-    @if (Navdata['data'][card_number]) { 
-        @let card = Navdata['data'][card_number];
     <div class="tags">
-        <span class="tag project">{{ card.categorie }}</span>
-        <span class="tag planning">{{ card.sous_categorie }}</span>
+        <span class="tag project">Gestion de projet</span>
+        <span class="tag planning">Cadrage et planification</span>
     </div>
 
-    <h2 class="category-title">{{ card.titre }}</h2>
+    <h2 class="category-title">Menez une veille sur l’inclusivité</h2>
 
     <ul class="content">
-        {{ card.contenu }}
+        <li>Identifiez des services numériques se présentant comme inclusifs pour vous en inspirer, par exemple les sites de réfugiés.info et de la SNCF.</li>
+        <li>Abonnez-vous à des sources de référence pour rester informé des actualités du sujet, comme le site <strong>design.gouv</strong>, ou le site <strong>inclusive.microsoft.design</strong> (en anglais).</li>
+        <li>Inspirez-vous hors du champ numérique, par exemple avec l’électro-ménager (Groupe SEB) ou le bâtiment (accessibilité des bâtiments publics).</li>
     </ul>
 
     <div class="highlight">
         <div class="highlight-logo">
-            <img src="logo.png" [alt]="card.source?.nom || ''">
+            <img src="logo.png" alt="Design.gouv">
         </div>
         <div class="highlight-text">
-            <strong>{{ card.source?.nom }}</strong><br>
-            {{ card.source?.description }}
+            <strong>Design.gouv</strong><br>
+            Sur <strong>design.gouv</strong>, trouvez des outils, formations, et actualités liées à l’inclusivité numérique.
         </div>
     </div>
 
-    <div>
-        <label for="dropdown">Qui s'en occupe?</label>
-            <p-dropdown 
-                [options]="options"
-                [(ngModel)]="selectedOption"
-                placeholder="Choisissez une option"
-                (onChange)="onAnswer(selectedOption)"
-                class="custom-dropdown"
-                [filter]="true" 
-                [showClear]="true" 
-                [scrollHeight]="'150px'">
-            </p-dropdown>
-
-
+    <div class="button-container">
+        <button class="yes-button">Oui !</button>
+        <button class="no-button">Pas tout à fait</button>
     </div>
 
-    <div class="page-number">{{card.id}}</div>
-}
+    <div class="page-number">2</div>
 </div>

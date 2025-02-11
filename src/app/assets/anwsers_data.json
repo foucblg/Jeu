@@ -127,7 +127,7 @@
             "sous_categorie": "Évaluation et certification",
             "titre": "Faites auditer votre service numérique",
             "contenu": [
-              "Soumettez votre service numérique à un audit RGAA (Référentiel Général d'Amélioration de l'Accessibilité) \n Pour cela, contactez votre référent accéssibilité numérique, s'il y en a un dans votre structure. Il pourra réaliser l'audit RGAA ou il fera appel à un prestataire spécialisé avec une expertise RGAA\n A l'issue de l'audit RGAA, vous obtiendrez le taux de conformité de votre service numérique. La liste des non conformités vous sera fournie, avec les préconisations de corrections."
+              "Soumettez votre service numérique à un audit RGAA (Référentiel Général d'Amélioration de l'Accessibilité) \n Pour cela, contactez votre référent accéssibilité numérique, s'il y en a un dans votre structure. Il pourra réaliser l'audit RGAA ou il fera appel à un prestataire spécialisé avec une expertise RGAA\n A l'issue de l'audit RGAA, vous obtiendrez le taux de conformité de votre service numérique. La liste des non conformités vous sera fournie, avec les préconisations de corrections.",
             ],
             "source": {
                 
@@ -376,7 +376,7 @@
             ],
             "source": {
             }
-          }
+          },
     
 ]
 }
