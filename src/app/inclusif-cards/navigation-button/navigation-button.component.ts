@@ -4,10 +4,14 @@ import { Router } from '@angular/router';
 import { navigation_data } from '../../app.component';
 import { AnswerStorageService } from '../../answer-storage.service';
 import { ChangeDetectorRef } from '@angular/core';
+
+import {Button, ButtonModule } from 'primeng/button';
+
+
 @Component({
   selector: 'app-navigation-button-solutions',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,ButtonModule],
   templateUrl: './navigation-button.component.html',
   styleUrls: ['./navigation-button.component.css']
 })

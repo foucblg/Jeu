@@ -49,5 +49,8 @@ export class InclusifCardsComponent implements OnInit, OnDestroy {
     }
   }
 
+  actionsbuttons = [{label : 'Retour', }]
+
+
  
 }

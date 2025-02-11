@@ -1,9 +1,15 @@
-<div>
-  <ul>
-    @for (category of categories; track category) {
-      <li [class.highlighted]="cat === category">
-        {{ category }}
-      </li>
-    }
-  </ul>
+<div class="theme-indicator-container">
+  <div class="progress-bar-container">
+    <div class="progress-bar" [style.width.%]="progressValue"></div>
+    <div class="dots">
+      <div *ngFor="let category of categories; let i = index" 
+           class="dot" 
+           [class.active]="cat === category"
+           [style.left.%]="(i / (categories.length - 1)) * 100">
+      </div>
+    </div>
+  </div>
+  <div class="category-labels">
+    <span *ngFor="let category of categories" class="category-label">{{ category }}</span>
+  </div>
 </div>
