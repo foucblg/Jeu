@@ -29,7 +29,6 @@ export class InclusifCardsComponent implements OnInit, OnDestroy {
     // Récupérer les query params lors de l'initialisation du composant
 
 
-
     this.routeSubscription = this.route.queryParams.subscribe(params => {
       const id = +params['id']; // Récupérer 'id' depuis les query params
 
