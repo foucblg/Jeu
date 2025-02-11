@@ -1,5 +1,5 @@
 /* General Container for the Navigation */
-.inclusifs-cards {
+.navigation-container {
     display: flex;
     flex-direction: row;
     align-items: center;
