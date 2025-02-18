@@ -14,4 +14,11 @@
 ::ng-deep p-button button {
   width: 150px !important; /* Force the width */
   height: 40px !important; /* Force the height */
+  
+}
+
+::ng-deep p-button.p-button-secondary {
+  background-color:blue !important;
+  color:blue !important;
+  
 }

@@ -21,18 +21,21 @@ export class NavigationCardComponent {
   allAnswers: { [key: number]: boolean } = {};
   Navdata=navigation_data;
 
-  ngModel = 'FaitMarcherPrimeNG';
+  ngModel1 = 'Oui';
+  ngModel2 = 'Non';
 
 
   constructor(private router: Router, private answerStorage: AnswerStorageService, private cdRef: ChangeDetectorRef) {}
 
-  
+
+ 
   
   onAnswer(answer: boolean) {
     this.card_answer = answer;
     this.answerStorage.setAnswer(this.card_number, answer); // Store answer in service
 
     this.answerChange.emit(this.card_answer);
+    console.log(this.answerStorage.getAllAnswers());
 
   }
 
