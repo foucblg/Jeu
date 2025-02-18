@@ -6,10 +6,11 @@ import { ChangeDetectorRef } from '@angular/core';
 import { navigation_data } from '../../app.component'; 
 import {RadioButtonModule} from 'primeng/radiobutton'
 import { FormsModule } from '@angular/forms';
+import { ImageModule } from 'primeng/image';
 @Component({
   selector: 'app-navigation-card-solutions',
   standalone: true,
-  imports: [RadioButtonModule,FormsModule,CommonModule],
+  imports: [RadioButtonModule,FormsModule,CommonModule, ImageModule],
   templateUrl: './navigation-card.component.html',
   styleUrl: './navigation-card.component.css'
 })
@@ -27,7 +28,6 @@ export class NavigationCardComponent {
 
   constructor(private router: Router, private answerStorage: AnswerStorageService, private cdRef: ChangeDetectorRef) {}
 
-
  
   
   onAnswer(answer: boolean) {
@@ -41,5 +41,9 @@ export class NavigationCardComponent {
 
   getSavedAnswer() {
     return this.answerStorage.getAnswer(this.card_number);
+  }
+
+  onImageError(imageUrl: string) {
+    console.error(`Image not found: ${imageUrl}`);
   }
 }

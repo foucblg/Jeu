@@ -1,151 +1,134 @@
 /* Card Container Styling */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Optional padding */
+}
 
+.question-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #0b4c31;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: 'Lato', sans-serif;
+  width: 100%; /* Ensure it takes full width of the parent */
+  padding-left: 10px; /* Add padding to the left */
+  margin-bottom: 20px; /* Add margin to the bottom */
+}
 
-  .card-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px; /* Optional padding */
-  }
+.card-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
 
-  .question-container {
-    display: center;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 500px; /* One-third of the viewport width */
-    height: 275px !important;
-    background-color: #d56ddf; /* Colored background */
-    border: 2px solid #ccc; /* Optional border */
-    border-radius: 8px; /* Optional rounded corners */
-    padding: 20px; /* Optional padding */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom : 40px;
-  }
+/* Question Text Styling */
+.question-text {
+  font-size: 24px;
+  color: #0b4c31;
+  text-align: left; /* Align text to the left */
+  overflow: hidden; /* Hide overflow content */
+  word-wrap: break-word; /* Enable word wrapping */
+  word-break: break-word; /* Break words that are too long */
+  white-space: normal; /* Allow the text to wrap naturally */
+  margin-bottom: 20px;
+  max-width: 100%; /* Ensure it takes full width of the parent */
+  height: auto; /* Adjust height to fit content */
+  line-height: 1.3em; /* Reduced line height for tighter text spacing */
+  padding: 0 10px; /* Reduced padding */
+  font-weight: bold; /* Make the question text bold */
+  font-family: 'Lato', sans-serif;
+}
 
-  .question-title {
-    font-size: 16px;
-    font-weight: bold;
-    color: #0b4c31;
-    margin-bottom: 50px; /* Reduced spacing below the question title */
-    text-align: left;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-family: 'Lato', sans-serif;
-  }
-  
-  /* Question Text Styling */
-  .question-text {
-    font-size: 26px;
-    color: #0b4c31;
-    text-align: center;
-    overflow: hidden; /* Hide overflow content */
-    word-wrap: break-word; /* Enable word wrapping */
-    word-break: break-word; /* Break words that are too long */
-    white-space: normal; /* Allow the text to wrap naturally */
-    margin-bottom: 20px;
-    max-width: 100%; /* Ensure it takes full width of the parent */
-    height: auto; /* Adjust height to fit content */
-    line-height: 1.3em; /* Reduced line height for tighter text spacing */
-    padding: 0 10px; /* Reduced padding */
-    font-weight: bold; /* Make the question text bold */
-    font-family: 'Lato', sans-serif;
-  }
+.desc-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 620px; /* One-third of the viewport width */
+  height: 200px;
+  background-color: #ffffff; /* Colored background */
+  border-radius: 8px; /* Optional rounded corners */
+}
 
-  .desc-button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
-    justify-content: center;
-    width: 600px; /* One-third of the viewport width */
-    height: 200px;
-    background-color: #ffffff; /* Colored background */
-    border-radius: 8px; /* Optional rounded corners */
+.question-desc {
+  font-size: 16px;
+  color: #333333;
+  text-align: left; /* Align text to the left */
+  overflow: hidden; /* Hide overflow content */
+  word-wrap: break-word; /* Enable word wrapping */
+  word-break: break-word; /* Break words that are too long */
+  white-space: normal; /* Allow the text to wrap naturally */
+  margin-bottom: 20px;
+  max-width: 100%; /* Ensure it takes full width of the parent */
+  height: auto; /* Adjust height to fit content */
+  line-height: 1.3em; /* Reduced line height for tighter text spacing */
+  padding: 0 10px; /* Reduced padding */
+  font-family: 'Lato', sans-serif;
+}
 
+.radiobutton-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
-  }
+.not-clickable .radio {
+  pointer-events: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px 0px;
+  --p-radiobutton-icon-checked-color: #333333 !important;
+}
 
-  .question-desc {
-    font-size: 16px;
-    color: #333333;
-    text-align: center;
-    overflow: hidden; /* Hide overflow content */
-    word-wrap: break-word; /* Enable word wrapping */
-    word-break: break-word; /* Break words that are too long */
-    white-space: normal; /* Allow the text to wrap naturally */
-    margin-bottom: 20px;
-    max-width: 100%; /* Ensure it takes full width of the parent */
-    height: auto; /* Adjust height to fit content */
-    line-height: 1.3em; /* Reduced line height for tighter text spacing */
-    padding: 0 10px; /* Reduced padding */
-    font-family: 'Lato', sans-serif;
-  }
+.clickable .radio {
+  --p-radiobutton-icon-checked-color: transparent !important;
+}
 
-  .radiobutton-container {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
+.radioButton {
+  display: flex;
+  align-content: center;
+  width: 600px;
+  height: 40px;
+  border: 1px solid #929292;
+  border-radius: 8px;
+  padding: 4px;
+  margin: 0 auto;
+  align-items: center;
+  word-wrap: break-word;
+  color: #333333;
+  margin-bottom: 16px;
+}
 
-  .not-clickable .radio{
-    pointer-events: none;
-    box-shadow:
-      rgba(0, 0, 0, 0.1) 0px 12px 24px 0px;  
-    --p-radiobutton-icon-checked-color: #333333 !important;
-    
-  }
+.radio {
+  padding-left: 15px;
+  padding-right: 15px;
+  --p-radiobutton-icon-vertical-align: middle;
+  --p-radiobutton-vertical-align: middle;
+  --p-radiobutton-box-vertical-align: middle;
+  --p-radiobutton-icon-align-items: center;
+  --p-radiobutton-box-align-items: center;
+  --p-radiobutton-align-items: center;
+  --p-radiobutton-display: inline-block;
+  --p-radiobutton-height: 24px;
+  --p-radiobutton-width: 24px;
+  --p-radiobutton-icon-size: 16px;
+  --p-radiobutton-icon-checked-hover-color: #333333;
+  --p-radiobutton-border-color: #333333;
+  --p-radiobutton-hover-border-color: #333333;
+  --p-radiobutton-checked-border-color: #333333;
+  --p-radiobutton-checked-hover-border-color: #333333;
+}
 
-  .clickable .radio{ 
+.radioButton:hover {
+  border: 2px solid #333333;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px 0px;
+}
 
-    --p-radiobutton-icon-checked-color: transparent !important;
-  }
-
-  .radioButton {
-    display: flex;
-    align-content: center;
-    width: 600px;
-    height: 40px;
-    border: 2px solid #929292;
-    border-radius: 8px;
-    padding: 4px;
-    margin: 0 auto;
-    align-items: center;
-    word-wrap: break-word;
-    color: #333333;
-    margin-bottom: 16px;
-    
-  }
-  
-  
-  .radio{
-    padding-left: 15px;
-    padding-right: 15px;
-    --p-radiobutton-icon-vertical-align: middle;
-    --p-radiobutton-vertical-align: middle;
-    --p-radiobutton-box-vertical-align: middle;
-    --p-radiobutton-icon-align-items: center;
-    --p-radiobutton-box-align-items: center;
-    --p-radiobutton-align-items: center;
-    
-    --p-radiobutton-display: inline-block;
-    --p-radiobutton-height: 24px;
-    --p-radiobutton-width: 24px;
-    --p-radiobutton-icon-size: 16px;
-    --p-radiobutton-icon-checked-hover-color:#333333;
-    --p-radiobutton-border-color:#333333;
-    --p-radiobutton-hover-border-color:#333333;
-    --p-radiobutton-checked-border-color:#333333;
-    --p-radiobutton-checked-hover-border-color:#333333;
-  }
-  
-  .radioButton:hover{
-    border: 2px solid #333333;
-    box-shadow:
-      rgba(0, 0, 0, 0.1) 0px 12px 24px 0px;
-  }
-
-  .choice-text {
-    padding-left: 0.5em;
-  }
+.choice-text {
+  padding-left: 0.5em;
+}

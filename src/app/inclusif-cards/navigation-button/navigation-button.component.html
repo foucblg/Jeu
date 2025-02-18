@@ -1,4 +1,4 @@
 
-<p-button (click)="changecard()" class="navigation-button" severity="secondary">
+<p-button (click)="changecard()" class="navigation-button" [severity]="carte_suivante ? null : 'secondary'">
   {{ carte_suivante ? 'Suivant' : 'Retour' }}
 </p-button>
