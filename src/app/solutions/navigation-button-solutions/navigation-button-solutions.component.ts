@@ -35,14 +35,14 @@ export class NavigationButtonSolutionsComponent {
       this.cat = navigation_data_solutions.data[this.currentNumber]?.categorie;
       this.updateQueryParams();
     }else if(this.avance && this.currentNumber==navigation_data_solutions.data.length-1){
-      this.router.navigate(['rules_conclusion'])
+      this.router.navigate(['règles_conclusion'])
     }else if (!this.avance && this.currentNumber >= 1 ) {
       this.currentNumber -= 1;
       this.cat = navigation_data_solutions.data[this.currentNumber]?.categorie;
       this.updateQueryParams();
       }
       else if(!this.avance){
-        this.router.navigate(['rules_solutions'])
+        this.router.navigate(['règles_solutions'])
       }
       else{
         this.cat = navigation_data_solutions.data[this.currentNumber]?.categorie;

@@ -13,7 +13,7 @@ export class RulesComponent {
 
     constructor(private router:Router) {}
     continuer(){
-      this.router.navigate(['./user-registration']);
+      this.router.navigate(['./inscription']);
     }
 
     actionButtons = [
@@ -23,7 +23,7 @@ export class RulesComponent {
 
     startQuiz(){
       
-      this.router.navigate(['./cartes_inclusif']);
+      this.router.navigate(['./inscription']);
       console.log("Quiz started");
     }
 }

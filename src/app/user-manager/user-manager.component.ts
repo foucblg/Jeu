@@ -35,7 +35,7 @@ export class UserManagerComponent {
   }
 
   continuer(){
-    this.router.navigate(['./rules_analysis'])
+    this.router.navigate(['./règles_analyse'])
   }
 
   addUser() {

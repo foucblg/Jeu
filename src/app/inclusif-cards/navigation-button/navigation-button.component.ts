@@ -37,11 +37,11 @@ export class NavigationButtonComponent {
       this.currentNumber -= 1;
     } 
     else if (this.carte_suivante) {
-      this.router.navigate(['rules_solutions']);
+      this.router.navigate(['règles_solutions']);
       return;
     } 
     else {
-      this.router.navigate(['rules_analysis']);
+      this.router.navigate(['règles_analyse']);
       return;
     }
   

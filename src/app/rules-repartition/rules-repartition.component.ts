@@ -12,7 +12,7 @@ import { ActionBarComponent } from '../components/action-bar/action-bar.componen
 export class RulesRepartitionComponent {
   constructor(private router:Router) {}
         continuer(){
-          this.router.navigate(['./MODIFIER_POUR_LE_BON'])
+          this.router.navigate(['solutions'])
         }
 
         actionButtons = [

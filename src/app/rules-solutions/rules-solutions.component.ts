@@ -11,7 +11,7 @@ import { ActionBarComponent } from '../components/action-bar/action-bar.componen
 export class RulesSolutionsComponent {
   constructor(private router:Router) {}
         continuer(){
-          this.router.navigate(['./solutions'])
+          this.router.navigate(['règles_répartition'])
         }
     
         actionButtons = [

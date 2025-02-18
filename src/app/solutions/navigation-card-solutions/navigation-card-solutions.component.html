@@ -2,20 +2,20 @@
     @if (Navdata['data'][card_number]) { 
         @let card = Navdata['data'][card_number];
     <div class="tags">
-        <span class="tag project">{{ card.categorie }}</span>
         <span class="tag planning">{{ card.sous_categorie }}</span>
     </div>
 
     <h2 class="category-title">{{ card.titre }}</h2>
 
-    <ul class="content">
-        {{ card.contenu }}
+    <ul class="content" *ngIf="card.contenu.length > 1">
+        @for( item of card.contenu; track $index){
+        <li >{{ item }}</li>}
     </ul>
+    @if(card.contenu.length == 1){
+    <p>{{ card.contenu[0] }}</p>}
+    
 
-    <div class="highlight">
-        <div class="highlight-logo">
-            <img src="logo.png" [alt]="card.source?.nom || ''">
-        </div>
+    <div class="highlight" *ngIf="card.source?.nom">
         <div class="highlight-text">
             <strong>{{ card.source?.nom }}</strong><br>
             {{ card.source?.description }}
@@ -23,20 +23,22 @@
     </div>
 
     <label for="dropdown">Qui s'en occupe?</label>
-    <div *ngFor="let dropdown of dropdowns; let i = index" class="dropdown-wrapper">
+    @for(dropdown of dropdowns; track $index){
+    <div class="dropdown-wrapper">
         <p-dropdown 
             [options]="options"
             [(ngModel)]="dropdown.selectedOption"
             placeholder="Choisissez une option"
-            (onChange)="onAnswer(dropdown.selectedOption, i)"
+            (onChange)="onAnswer(dropdown.selectedOption, $index)"
             class="custom-dropdown"
             [filter]="true" 
             [showClear]="true" 
             [scrollHeight]="'150px'">
         </p-dropdown>
-        <button *ngIf="i > 0" (click)="removeDropdown(i)" class="remove-button">X</button>
-    </div>
-
-    <button *ngIf="dropdowns[dropdowns.length - 1].selectedOption" (click)="addDropdown()">Ajouter un autre</button>
+        @if ($index>0){
+        <button (click)="removeDropdown($index)" class="remove-button">X</button>}
+    </div>}
+    @if(dropdowns[dropdowns.length - 1].selectedOption){
+    <button (click)="addDropdown()">Ajouter un autre</button>}
 }
 </div>

@@ -12,14 +12,14 @@ import { NavigationCardComponent } from './inclusif-cards/navigation-card/naviga
 import { SolutionsComponent } from './solutions/solutions.component';
 
 export const routes: Routes = [
-    {path: 'homepage', component: HomepageComponent},
+    {path: "page_d'acceuil", component: HomepageComponent},
     {path: 'contexte', component: ContexteComponent},
-    {path: 'rules_analysis', component: RulesAnalysisComponent},
-    {path: 'rules_conclusion', component: RulesConclusionComponent},
-    {path: 'rules_repartition', component: RulesRepartitionComponent},
-    {path: 'rules_solutions', component: RulesSolutionsComponent},
-    {path: 'rules', component: RulesComponent},
-    {path: 'user-registration', component: UserManagerComponent},
+    {path: 'règles_analyse', component: RulesAnalysisComponent},
+    {path: 'règles_conclusion', component: RulesConclusionComponent},
+    {path: 'règles_répartition', component: RulesRepartitionComponent},
+    {path: 'règles_solutions', component: RulesSolutionsComponent},
+    {path: 'règles', component: RulesComponent},
+    {path: 'inscription', component: UserManagerComponent},
     {path: 'cartes_inclusif',
           component: InclusifCardsComponent,
           children: [
@@ -34,10 +34,10 @@ export const routes: Routes = [
           { path: '', redirectTo: '0', pathMatch: 'full' }
         ]},
         { path: '**',
-            redirectTo: 'homepage',
+            redirectTo: "page_d'acceuil",
             pathMatch: 'full'},
     { path: '**',
-        redirectTo: 'homepage',
+        redirectTo: "page_d'acceuil",
         pathMatch: 'full'
       },
     
