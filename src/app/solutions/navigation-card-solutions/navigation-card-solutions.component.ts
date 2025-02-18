@@ -1,8 +1,6 @@
-import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { FormsModule } from '@angular/forms';
-import { DropdownModule } from 'primeng/dropdown';
-import { UserService } from '../../user-service';
+import { CommonModule } from '@angular/common';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import {FormControl, FormGroup, ReactiveFormsModule} from '@angular/forms';
 import { navigation_data_solutions } from '../../app.component';
 import { CommonModule } from '@angular/common';
 @Component({
@@ -12,7 +10,8 @@ import { CommonModule } from '@angular/common';
   templateUrl: './navigation-card-solutions.component.html',
   styleUrls: ['./navigation-card-solutions.component.css'],
 })
-export class NavigationCardSolutionsComponent implements OnInit {
+export class NavigationCardSolutionsComponent {
+  constructor(private router:Router) {}
   @Input() card_number!: number;
   @Output() answer = new EventEmitter<string>();
   card_answer = "";
@@ -46,11 +45,10 @@ export class NavigationCardSolutionsComponent implements OnInit {
   }
 
   updateQueryParams(): void {
-    // Update query parameters with card_answer
     this.router.navigate([], {
-      queryParams: { answered: this.card_answer },
-      queryParamsHandling: 'merge',
-      skipLocationChange: false,
+      queryParams: { awnsered: ''+this.card_answer },
+      queryParamsHandling: 'merge', // Merge avec les paramètres existants
+      skipLocationChange: false // Mettre à jour l'URL dans la barre d'adresse
     });
   }
 }
