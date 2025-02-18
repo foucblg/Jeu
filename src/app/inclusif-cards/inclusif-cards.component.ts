@@ -19,9 +19,10 @@ export class InclusifCardsComponent implements OnInit, OnDestroy {
   cat = navigation_data.data[0]?.categorie; // Catégorie dans laquelle se trouve la carte
   currentAnswer : boolean = false;
   suivant = false;
+  remainingTime: number = 2400;
 
   private routeSubscription: Subscription | undefined = undefined;
-
+  private timerSubscription: Subscription | undefined = undefined;
 
   constructor(private router: Router, private route: ActivatedRoute,private answerStorage: AnswerStorageService) {}
 
@@ -38,14 +39,19 @@ export class InclusifCardsComponent implements OnInit, OnDestroy {
         this.currentAnswer= this.answerStorage.getAnswer(id) //Mise a jour de la réponse associée à la caret
       }
     });
-    
+
+    // Start the countdown timer
+    this.answerStorage.startTimer();
+
   }
 
   ngOnDestroy(): void {
     // Eviter les memory leaks
     if (this.routeSubscription) {
       this.routeSubscription.unsubscribe();
-    }
+    } 
+    // Clear the timer interval
+    this.answerStorage.stopTimer();
   }
 
   actionsbuttons = [{label : 'Retour', }]
