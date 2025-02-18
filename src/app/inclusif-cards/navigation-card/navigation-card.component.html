@@ -6,32 +6,53 @@
       <div class="question-container">
       <h3 class="question-title">{{ card.nom }}</h3>
       <p class="question-text">{{ card.question }}</p>
-      
-    </div>
-
+      </div>
+    
     <div class="desc-button-container">
-    <p class="question-desc">{{ card.description }}</p>
 
+      <div class="desc-container">
+      <p class="question-desc">{{ card.description }}</p>
+      </div>
 
-    <label class = "radioButton">
-        <p-radiobutton 
-        (click)="onAnswer(true)" 
-        [disabled]="card_answer" 
-        [(ngModel)]="card_answer"
-        inputId="answertrue">
-    </p-radiobutton>
-    <label for="answertrue" class="at">Oui</label>
+    <div class="radiobutton-container"></div>
+    <label [ngClass]="{'radioButton': true,'not-clickable': card_answer, 'clickable' : !card_answer}">
+
+      <p-radiobutton class="radio"
+        type="radio"
+        name="OuiNon"
+        value="Oui"
+        [(ngModel)]="ngModel"
+        (click)="onAnswer(true)" >
+      </p-radiobutton>
+    
+    <p class="choice-text">Oui</p>
+
     </label>
 
-    <label class = "radioButton">
-        <p-radiobutton 
-      (click)="onAnswer(false)" 
-      [disabled]="!card_answer"
-      [(ngModel)]="card_answer"
-      inputId="answerfalse">
+
+    <label [ngClass]="{'radioButton': true,'not-clickable': !card_answer, 'clickable' : card_answer}">
+
+      <p-radiobutton  class="radio"
+      type="radio"
+      name="OuiNon"
+      value="Non"
+      [(ngModel)]="ngModel"
+      (click)="onAnswer(false)" >
     </p-radiobutton>
-    <label for="answerfalse" class="af">Non</label>
+
+    
+
+    <p class="choice-text">Non</p>
+
     </label>
-</div>
+
+    <label class="test">
+    <p-radio-button
+      name="Test" disabled>
+    </p-radio-button>
+    <p>test</p>
+  </label>
+  
+  </div>
   }
 </div>
