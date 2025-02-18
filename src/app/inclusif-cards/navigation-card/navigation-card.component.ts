@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { ImageModule } from 'primeng/image';
 import { ButtonModule } from 'primeng/button';
 import { DialogModule } from 'primeng/dialog';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-navigation-card-solutions',
@@ -27,11 +28,25 @@ export class NavigationCardComponent {
   ngModel1 = 'Oui';
   ngModel2 = 'Non';
   displayDialog = false;
+  remainingTime: number = 0;
+  private timerSubscription: Subscription | undefined = undefined;
 
 
   constructor(private router: Router, private answerStorage: AnswerStorageService, private cdRef: ChangeDetectorRef) {}
 
- 
+  ngOnInit(): void {
+    // Subscribe to the remaining time from the service
+    this.timerSubscription = this.answerStorage.getRemainingTime().subscribe(time => {
+      this.remainingTime = time;
+    });
+  }
+
+  ngOnDestroy(): void {
+    // Avoid memory leaks
+    if (this.timerSubscription) {
+      this.timerSubscription.unsubscribe();
+    }
+  }
   
   onAnswer(answer: boolean) { //Met a jour la réponse donnée par l'utilisateur à la carte diagnostic
     this.card_answer = answer;
