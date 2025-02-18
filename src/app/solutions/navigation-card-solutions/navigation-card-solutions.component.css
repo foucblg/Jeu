@@ -77,6 +77,27 @@ h2 {
   font-size: 13px;
 }
 
+.dropdown-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.remove-button {
+  position: absolute;
+  right: -30px; /* Adjust this value as needed */
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.custom-dropdown {
+  flex: 1;
+}
+
+/* Other existing styles */
 .button-container {
   display: flex;
   justify-content: space-between;
@@ -110,6 +131,7 @@ button {
 .dropdown:hover {
   background-color: #45a049;
 }
+
 .page-number {
   position: absolute;
   bottom: 10px;

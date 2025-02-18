@@ -4,11 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { DropdownModule } from 'primeng/dropdown';
 import { UserService } from '../../user-service';
 import { navigation_data_solutions } from '../../app.component';
-
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-navigation-card-solutions',
   standalone: true,
-  imports: [DropdownModule, FormsModule],
+  imports: [DropdownModule, FormsModule,CommonModule],
   templateUrl: './navigation-card-solutions.component.html',
   styleUrls: ['./navigation-card-solutions.component.css'],
 })
@@ -19,7 +19,7 @@ export class NavigationCardSolutionsComponent implements OnInit {
   Navdata = navigation_data_solutions;
 
   options: { label: string, value: string }[] = [];
-  selectedOption: string = ''; // Initial selected value
+  dropdowns: { selectedOption: string }[] = [{ selectedOption: '' }];
 
   constructor(private router: Router, public service: UserService) {}
 
@@ -29,11 +29,20 @@ export class NavigationCardSolutionsComponent implements OnInit {
       label: user.name,   // User's name as label
       value: user.email   // User's email as value
     }));
+  }
 
-    // Set initial selected option if needed
-    if (this.options.length > 0) {
-      this.selectedOption = this.options[0].value;
-    }
+  addDropdown(): void {
+    this.dropdowns.push({ selectedOption: '' });
+  }
+
+  removeDropdown(index: number): void {
+    this.dropdowns.splice(index, 1);
+  }
+
+  onAnswer(answer: string, index: number): void {
+    this.card_answer = answer; // Update answer
+    this.answer.emit(this.card_answer); // Emit the answer to the parent component
+    this.updateQueryParams(); // Update query params with the answer
   }
 
   updateQueryParams(): void {
@@ -43,11 +52,5 @@ export class NavigationCardSolutionsComponent implements OnInit {
       queryParamsHandling: 'merge',
       skipLocationChange: false,
     });
-  }
-
-  onAnswer(answer: string): void {
-    this.card_answer = answer; // Update answer
-    this.answer.emit(this.card_answer); // Emit the answer to the parent component
-    this.updateQueryParams(); // Update query params with the answer
   }
 }
