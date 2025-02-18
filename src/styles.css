@@ -3,6 +3,7 @@
 
 :root {
     width: 100%;
+    --secondary: blue;
   }
   
   * {
@@ -22,3 +23,5 @@
   .subtext {
     color: var(--text-secondary-color);
   }
+
+  

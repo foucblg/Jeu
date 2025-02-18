@@ -21,7 +21,7 @@
         type="radio"
         name="OuiNon"
         value="Oui"
-        [(ngModel)]="ngModel"
+        [(ngModel)]="ngModel1"
         (click)="onAnswer(true)" >
       </p-radiobutton>
     
@@ -36,7 +36,7 @@
       type="radio"
       name="OuiNon"
       value="Non"
-      [(ngModel)]="ngModel"
+      [(ngModel)]="ngModel2"
       (click)="onAnswer(false)" >
     </p-radiobutton>
 
@@ -46,13 +46,10 @@
 
     </label>
 
-    <label class="test">
-    <p-radio-button
-      name="Test" disabled>
-    </p-radio-button>
-    <p>test</p>
-  </label>
+    
   
   </div>
   }
 </div>
+
+
