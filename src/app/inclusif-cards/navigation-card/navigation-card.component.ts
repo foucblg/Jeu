@@ -21,6 +21,9 @@ export class NavigationCardComponent {
   allAnswers: { [key: number]: boolean } = {};
   Navdata=navigation_data;
 
+  ngModel = 'FaitMarcherPrimeNG';
+
+
   constructor(private router: Router, private answerStorage: AnswerStorageService, private cdRef: ChangeDetectorRef) {}
 
   

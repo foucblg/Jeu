@@ -5,7 +5,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     margin-bottom: 20px; /* Optional margin */
   }
 
@@ -24,14 +23,5 @@
     margin: 20px 0; /* Optional margin */
   }
 
-  
-  /* Add additional styling to make text inside card square look good */
-  .card-display app-navigcard {
-    display: block; /* Ensures the content is properly displayed */
-    font-size: 14px; /* Set font size for better readability */
-    color: #333; /* Set text color */
-    text-overflow: ellipsis; /* In case text is too long */
-    white-space: nowrap; /* Prevent text wrapping */
-    overflow: hidden; /* Hide overflowing text */
-  }
+
   
