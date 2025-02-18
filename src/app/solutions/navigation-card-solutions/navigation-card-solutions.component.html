@@ -22,10 +22,21 @@
         </div>
     </div>
 
-    <div class="button-container">
-        <button class="yes-button">Oui !</button>
-        <button class="no-button">Pas tout à fait</button>
+    <label for="dropdown">Qui s'en occupe?</label>
+    <div *ngFor="let dropdown of dropdowns; let i = index" class="dropdown-wrapper">
+        <p-dropdown 
+            [options]="options"
+            [(ngModel)]="dropdown.selectedOption"
+            placeholder="Choisissez une option"
+            (onChange)="onAnswer(dropdown.selectedOption, i)"
+            class="custom-dropdown"
+            [filter]="true" 
+            [showClear]="true" 
+            [scrollHeight]="'150px'">
+        </p-dropdown>
+        <button *ngIf="i > 0" (click)="removeDropdown(i)" class="remove-button">X</button>
     </div>
 
-    <div class="page-number">2</div>
+    <button *ngIf="dropdowns[dropdowns.length - 1].selectedOption" (click)="addDropdown()">Ajouter un autre</button>
+}
 </div>
