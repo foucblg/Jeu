@@ -11,7 +11,7 @@ import { ActionBarComponent } from '../../shared/action-bar/action-bar.component
 export class RulesSolutionsComponent {
   constructor(private router:Router) {}
         continuer(){
-          this.router.navigate(['./solutions'])
+          this.router.navigate(['./rules_conclusion'])
         }
     
         actionButtons = [
