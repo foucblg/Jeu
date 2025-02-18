@@ -5,7 +5,7 @@ import { ActionBarComponent } from "../../shared/action-bar/action-bar.component
 
 @Component({
   selector: 'app-rules',
-  imports: [ButtonModule, ActionBarComponent],
+  imports: [ButtonModule],
   templateUrl: './rules.component.html',
   styleUrl: './rules.component.css'
 })
@@ -15,11 +15,6 @@ export class RulesComponent {
     continuer(){
       this.router.navigate(['./user-registration']);
     }
-
-    actionButtons = [
-      { label: 'Passer le quiz', action: () => this.continuer(), severity : 'secondary' as const },
-      { label: 'En avant !', action: () => this.startQuiz() }
-    ];
 
     startQuiz(){
       
