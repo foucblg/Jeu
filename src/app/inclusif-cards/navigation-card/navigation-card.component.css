@@ -105,6 +105,7 @@
   pointer-events: none;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px 0px;
   --p-radiobutton-icon-checked-color: #333333 !important;
+
 }
 
 .clickable .radio {
@@ -116,7 +117,7 @@
   align-content: center;
   width: 600px;
   height: 40px;
-  border: 1px solid #929292;
+  border: 1px solid #696969;
   border-radius: 8px;
   padding: 4px;
   margin: 0 auto;
@@ -127,6 +128,7 @@
 }
 
 .radio {
+  background-color:#ffffff;
   padding-left: 15px;
   padding-right: 15px;
   --p-radiobutton-icon-vertical-align: middle;
@@ -144,12 +146,14 @@
   --p-radiobutton-hover-border-color: #333333;
   --p-radiobutton-checked-border-color: #333333;
   --p-radiobutton-checked-hover-border-color: #333333;
+  
 }
 
 .radioButton:hover {
   border: 2px solid #333333;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px 0px;
 }
+
 
 .choice-text {
   padding-left: 0.5em;
