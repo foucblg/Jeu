@@ -17,8 +17,8 @@
   
 }
 
-::ng-deep p-button.p-button-secondary {
-  background-color:blue !important;
-  color:blue !important;
-  
+::ng-deep .p-button.p-button-secondary {
+  background-color: #FFFFFF ;
+  color: #333333;
+  border: 1px solid #333333 !important;
 }
