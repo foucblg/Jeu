@@ -1,10 +1,10 @@
-/* Card Container Styling */
+
 .card-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px; /* Optional padding */
+  padding: 20px;
 }
 
 .title-container {
@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-top:10px;
+  margin-top: 10px;
 }
 
 .question-title {
@@ -24,22 +24,20 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   font-family: 'Lato', sans-serif;
-  width: 100%; /* Ensure it takes full width of the parent */
-  padding-left: 10px; /* Add padding to the left */
+  width: 100%;
+  padding-left: 10px;
 }
 
 .info-button {
   margin-left: 10px;
-  margin-right:20px;
-  width:32px;
-  height:32px;
-  margin-bottom:20px;
+  margin-right: 20px;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 20px;
 }
 
-
-
 ::ng-deep .p-button.p-button-info {
-  background-color: #0073e9 ;
+  background-color: #0073e9;
   color: #ffffff;
 }
 
@@ -54,17 +52,17 @@
 .question-text {
   font-size: 24px;
   color: #0b4c31;
-  text-align: left; /* Align text to the left */
-  overflow: hidden; /* Hide overflow content */
-  word-wrap: break-word; /* Enable word wrapping */
-  word-break: break-word; /* Break words that are too long */
-  white-space: normal; /* Allow the text to wrap naturally */
+  text-align: left;
+  overflow: hidden;
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
   margin-bottom: 20px;
-  max-width: 100%; /* Ensure it takes full width of the parent */
-  height: auto; /* Adjust height to fit content */
-  line-height: 1.3em; /* Reduced line height for tighter text spacing */
-  padding: 0 10px; /* Reduced padding */
-  font-weight: bold; /* Make the question text bold */
+  max-width: 100%;
+  height: auto;
+  line-height: 1.3em;
+  padding: 0 10px;
+  font-weight: bold;
   font-family: 'Lato', sans-serif;
 }
 
@@ -73,46 +71,29 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 620px; /* One-third of the viewport width */
+  width: 620px;
   height: 200px;
-  background-color: #ffffff; /* Colored background */
-  border-radius: 8px; /* Optional rounded corners */
+  background-color: #ffffff;
+  border-radius: 8px;
 }
 
 .question-desc {
   font-size: 16px;
   color: #333333;
-  text-align: left; /* Align text to the left */
-  overflow: hidden; /* Hide overflow content */
-  word-wrap: break-word; /* Enable word wrapping */
-  word-break: break-word; /* Break words that are too long */
-  white-space: normal; /* Allow the text to wrap naturally */
+  text-align: left;
+  overflow: hidden;
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
   margin-bottom: 20px;
-  max-width: 100%; /* Ensure it takes full width of the parent */
-  height: auto; /* Adjust height to fit content */
-  line-height: 1.3em; /* Reduced line height for tighter text spacing */
-  padding: 0 10px; /* Reduced padding */
+  max-width: 100%;
+  height: auto;
+  line-height: 1.3em;
+  padding: 0 10px;
   font-family: 'Lato', sans-serif;
 }
 
-.radiobutton-container {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.not-clickable .radio {
-  pointer-events: none;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px 0px;
-  --p-radiobutton-icon-checked-color: #333333 !important;
-
-}
-
-.clickable .radio {
-  --p-radiobutton-icon-checked-color: transparent !important;
-}
-
-.radioButton {
+.clickable {
   display: flex;
   align-content: center;
   width: 600px;
@@ -127,8 +108,30 @@
   margin-bottom: 16px;
 }
 
+.not-clickable {
+  display: flex;
+  align-content: center;
+  width: 600px;
+  height: 40px;
+  border-radius: 8px;
+  padding: 4px;
+  margin: 0 auto;
+  align-items: center;
+  word-wrap: break-word;
+  color: #333333;
+  margin-bottom: 16px;
+  border: 1px solid #0073e9;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px 0px;
+}
+
+.not-clickable .radio {
+  pointer-events: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px 0px;
+  --p-radiobutton-icon-checked-color: #333333 !important;
+}
+
 .radio {
-  background-color:#ffffff;
+  background-color: #ffffff;
   padding-left: 15px;
   padding-right: 15px;
   --p-radiobutton-icon-vertical-align: middle;
@@ -146,21 +149,19 @@
   --p-radiobutton-hover-border-color: #333333;
   --p-radiobutton-checked-border-color: #333333;
   --p-radiobutton-checked-hover-border-color: #333333;
-  
 }
 
 .radioButton:hover {
-  border: 2px solid #333333;
+  border: 1px solid #333333;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px 0px;
 }
-
 
 .choice-text {
   padding-left: 0.5em;
 }
 
 .dialog-footer {
-  margin-top:20px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
 }

@@ -4,14 +4,12 @@ import { Router } from '@angular/router';
 import { navigation_data } from '../../app.component';
 import { AnswerStorageService } from '../../answer-storage.service';
 import { ChangeDetectorRef } from '@angular/core';
-
-import {Button, ButtonModule } from 'primeng/button';
-
+import { ButtonModule } from 'primeng/button';
 
 @Component({
-  selector: 'app-navigation-button-solutions',
+  selector: 'app-navigation-button',
   standalone: true,
-  imports: [CommonModule,ButtonModule],
+  imports: [CommonModule, ButtonModule],
   templateUrl: './navigation-button.component.html',
   styleUrls: ['./navigation-button.component.css']
 })
@@ -19,47 +17,47 @@ export class NavigationButtonComponent {
   @Input() carte_suivante!: boolean;
   @Input() currentNumber: number = 0;
   @Input() cat!: string;
-  @Input() currentAnswer!:boolean;
+  @Input() currentAnswer!: boolean;
+
   @Output() cardChange = new EventEmitter<number>();
   @Output() catChange = new EventEmitter<string>();
   @Output() answerChange = new EventEmitter<boolean>();
 
+  constructor(private router: Router, private answerStorage: AnswerStorageService, private cdRef: ChangeDetectorRef) {
+    this.answerStorage.getCurrentNumber().subscribe(number => {
+      this.currentNumber = number;
+    });
+    this.answerStorage.getCat().subscribe(cat => {
+      this.cat = cat;
+    });
+  }
 
-  constructor(private router: Router, private answerStorage : AnswerStorageService, private cdRef : ChangeDetectorRef) {}
-
-
-  //Change de carte
+  // Change de carte
   changecard() {
     if (this.carte_suivante && this.currentNumber < navigation_data.data.length - 1) {
       this.currentNumber += 1;
-    } 
-    else if (!this.carte_suivante && this.currentNumber > 0) {
+    } else if (!this.carte_suivante && this.currentNumber > 0) {
       this.currentNumber -= 1;
-    } 
-    else if (this.carte_suivante) {
+    } else if (this.carte_suivante) {
       this.router.navigate(['rules_solutions']);
       return;
-    } 
-    else {
+    } else {
       this.router.navigate(['rules_analysis']);
       return;
     }
-  
-  //MAJ des paramètres
-    this.cat = navigation_data.data[this.currentNumber]?.categorie ?? '';
-    this.currentAnswer = this.answerStorage.getAnswer(this.currentNumber) ?? false;
-  
-    // Emit updated values
+
+  //Mise à jour des valeurs
     this.cardChange.emit(this.currentNumber);
     this.catChange.emit(this.cat);
     this.answerChange.emit(this.currentAnswer);
-  
-    // Ensure navigation updates the query parameters
+
+    this.answerStorage.setCurrentNumber(this.currentNumber);
+    this.answerStorage.setCat(this.cat);
+
+    //Navigation à la carte suivante
     this.router.navigate(['cartes_inclusif', 'carte'], {
       queryParams: { id: this.currentNumber }
     });
-
   }
-
-  }
+}
 

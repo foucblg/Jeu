@@ -1,42 +1,32 @@
-
 <div class="theme-indicator">
   <app-theme-indicator [cat]="cat"></app-theme-indicator>
 </div>
 
-
-<!-- Card Display -->
+<!-- Carte -->
 <div class="card-display">
   <app-navigation-card-solutions 
+    *ngIf="showCard"
     [card_number]="currentNumber"
     [card_answer]="currentAnswer"
     (answerChange)="currentAnswer = $event">
   </app-navigation-card-solutions>
 </div>
 
-
-<!-- Action Bar -->
+<!-- Barre d'action -->
 <div class="action-bar">
-  <!-- Back Button -->
+  <!-- Bouton de retour -->
   <div class="button-container" id="back-button">
-    <app-navigation-button-solutions 
-      [carte_suivante]="false" 
-      [currentNumber]="currentNumber"
-      [currentAnswer]="currentAnswer"
-      (cardChange)="currentNumber = $event"
-      (catChange)="cat = $event"
-      (answerChange)="currentAnswer = $event">
-    </app-navigation-button-solutions>
+    <app-navigation-button 
+      [carte_suivante]="false"
+      (cardChange)="onCardChange($event)">
+    </app-navigation-button>
   </div>
 
-  <!-- Next Button -->
+  <!-- Bouton suivant -->
   <div class="button-container">
-    <app-navigation-button-solutions 
-      [carte_suivante]="true" 
-      [currentNumber]="currentNumber"
-      [currentAnswer]="currentAnswer"
-      (cardChange)="currentNumber = $event"
-      (catChange)="cat = $event"
-      (answerChange)="currentAnswer = $event">
-    </app-navigation-button-solutions>
+    <app-navigation-button 
+      [carte_suivante]="true"
+      (cardChange)="onCardChange($event)">
+    </app-navigation-button>
   </div>
 </div>
