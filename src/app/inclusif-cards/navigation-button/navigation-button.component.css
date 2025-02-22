@@ -6,14 +6,14 @@
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  display: inline-flex; /* Ensure the button respects width and height */
-  align-items: center; /* Center content vertically */
+  display: inline-flex;
+  align-items: center; 
   justify-content: center;
 }
   
 ::ng-deep p-button > button {
-  width: 150px ; /* Force the width */
-  height: 40px ; /* Force the height */
+  width: 150px ; 
+  height: 40px ;
 }
 
 ::ng-deep .p-button.p-button-secondary {

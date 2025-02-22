@@ -1,11 +1,11 @@
 
   
-  /* Theme Indicator Styling */
+
   .theme-indicator {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px; /* Optional margin */
+    margin-bottom: 20px; 
   }
 
   .action-bar {
@@ -18,10 +18,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%; /* Ensure it takes full width of the parent */
-    height: 100%; /* Ensure it takes full height of the parent */
-    margin: 20px 0; /* Optional margin */
+    width: 100%;
+    height: 100%; 
+    margin: 20px 0; 
   }
-
 
   

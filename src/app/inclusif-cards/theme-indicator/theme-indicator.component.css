@@ -7,17 +7,17 @@
 
 .progress-bar-container {
   position: relative;
-  width: 80%; /* Adjust the width as needed */
+  width: 80%;
   margin-bottom: 10px;
-  height: 20px; /* Adjust the height as needed */
-  background-color: #ccc; /* Background color of the progress bar */
-  border-radius: 10px; /* Rounded corners for the progress bar */
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 10px;
 }
 
 .progress-bar {
   height: 100%;
-  background-color: #007bff; /* Color of the progress bar */
-  border-radius: 10px; /* Rounded corners for the progress bar */
+  background-color: #007bff;
+  border-radius: 10px;
 }
 
 .dots {
@@ -28,7 +28,7 @@
   height: 0;
   display: flex;
   justify-content: space-between;
-  pointer-events: none; /* Ensure the dots do not interfere with progress bar interactions */
+  pointer-events: none;
 }
 
 .dot {
@@ -47,7 +47,7 @@
 .category-labels {
   display: flex;
   justify-content: space-between;
-  width: 80%; /* Match the width of the progress bar */
+  width: 80%;
 }
 
 .category-label {

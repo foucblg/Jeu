@@ -18,29 +18,30 @@
         <p class="question-desc">{{ card.description }}</p>
       </div>
 
-      <div class="radiobutton-container"></div>
-      <label [ngClass]="{'radioButton': true,'not-clickable': card_answer, 'clickable' : !card_answer}">
+      <label [ngClass]="{'radioButton': true, 'not-clickable': ngModel === 'Oui', 'clickable': ngModel !== 'Oui'}">
 
         <p-radiobutton class="radio"
           type="radio"
           name="OuiNon"
           value="Oui"
-          [(ngModel)]="ngModel1"
-          (click)="onAnswer(true)" >
+          [(ngModel)]="ngModel"
+          (click)="onAnswer(true)"
+          >
         </p-radiobutton>
       
         <p class="choice-text">Oui</p>
 
       </label>
 
-      <label [ngClass]="{'radioButton': true,'not-clickable': !card_answer, 'clickable' : card_answer}">
+      <label [ngClass]="{'radioButton': true, 'not-clickable': ngModel === 'Non', 'clickable': ngModel !== 'Non'}">
 
         <p-radiobutton  class="radio"
           type="radio"
           name="OuiNon"
           value="Non"
-          [(ngModel)]="ngModel2"
-          (click)="onAnswer(false)" >
+          [(ngModel)]="ngModel"
+          (click)="onAnswer(false)"
+          >
         </p-radiobutton>
 
         <p class="choice-text">Non</p>
