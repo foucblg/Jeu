@@ -1,0 +1,59 @@
+<div class="card-container">
+
+  @if (Navdata['data'][card_number]) { 
+      @let card = Navdata['data'][card_number];
+
+      <div class="title-container">
+        <h3 class="question-title" [style.color]="card.textcolor">{{ card.nom }}</h3>
+        <span class="remaining-time">{{formatTime(remainingTime)}}</span>
+        <p-button class="info-button" icon="pi pi-info" [rounded]="true" severity="info" (click)="showDialog()"></p-button>
+      </div>
+    
+      <p-image src={{card.imageurl}} alt="{{ card.nom }}" [imageStyle]="{ objectFit: 'contain' }" class="card-image" width="600px" height="125px"></p-image>
+      
+    <div class="desc-button-container">
+      
+      <div class="desc-container">
+        <p class="question-text">{{ card.question }}</p>
+        <p class="question-desc">{{ card.description }}</p>
+      </div>
+
+      <label [ngClass]="{'radioButton': true, 'not-clickable': ngModel === 'Oui', 'clickable': ngModel !== 'Oui'}">
+
+        <p-radiobutton class="radio"
+          type="radio"
+          name="OuiNon"
+          value="Oui"
+          [(ngModel)]="ngModel"
+          (click)="onAnswer(true)"
+          >
+        </p-radiobutton>
+      
+        <p class="choice-text">Oui</p>
+
+      </label>
+
+      <label [ngClass]="{'radioButton': true, 'not-clickable': ngModel === 'Non', 'clickable': ngModel !== 'Non'}">
+
+        <p-radiobutton  class="radio"
+          type="radio"
+          name="OuiNon"
+          value="Non"
+          [(ngModel)]="ngModel"
+          (click)="onAnswer(false)"
+          >
+        </p-radiobutton>
+
+        <p class="choice-text">Non</p>
+
+      </label>
+    </div>
+  }
+</div>
+
+<p-dialog header="Règles du jeu" [(visible)]="displayDialog" [modal]="true" [closable]="false">
+  <p>Ceci est un exemple</p>
+    <div class="dialog-footer">
+      <p-button label="Ok" icon="pi pi-check" (click)="hideDialog()"></p-button>
+    </div>
+</p-dialog>
