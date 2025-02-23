@@ -11,7 +11,7 @@ import { AnswerStorageService } from '../answer-storage.service';
 @Component({
   selector: 'app-inclusif-cards',
   standalone: true,
-  imports: [CommonModule, NavigationButtonComponent, ThemeIndicatorComponent, NavigationCardComponent],
+  imports: [CommonModule, NavigationButtonComponent, NavigationCardComponent],
   templateUrl: './inclusif-cards.component.html',
   styleUrls: ['./inclusif-cards.component.css'],
 })
