@@ -7,11 +7,12 @@ import { navigation_data } from "../app.component";
 import { NavigationCardComponent } from "./navigation-card/navigation-card.component";
 import { Subscription } from 'rxjs';
 import { AnswerStorageService } from '../answer-storage.service';
+import {DividerModule } from 'primeng/divider';
 
 @Component({
   selector: 'app-inclusif-cards',
   standalone: true,
-  imports: [CommonModule, NavigationButtonComponent, NavigationCardComponent],
+  imports: [CommonModule, NavigationButtonComponent, NavigationCardComponent, DividerModule],
   templateUrl: './inclusif-cards.component.html',
   styleUrls: ['./inclusif-cards.component.css'],
 })

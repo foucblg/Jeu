@@ -16,8 +16,31 @@
   height: 40px ;
 }
 
+/* Pour le bouton retour*/
 ::ng-deep .p-button.p-button-secondary {
   background-color: #FFFFFF ;
   color: #333333;
   border: 1px solid #333333 !important;
+
+}
+
+::ng-deep .p-button.p-button-secondary:hover {
+  background-color: #e9e9e9 ;
+}
+
+::ng-deep .p-button.p-button-secondary:active {
+  background-color: #f4f4f4 ;
+}
+
+
+/*Style bouton suivant */
+::ng-deep .p-button:not(.p-button-secondary):hover {
+  background-color: #cd2524;
+  border-color: #cd2524;
+}
+
+
+::ng-deep .p-button:not(.p-button-secondary):active {
+  background-color: #ff5d5c; 
+  border-color: #ff5d5c;
 }

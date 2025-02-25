@@ -5,7 +5,7 @@
 
       <div class="title-container">
         <h3 class="question-title" [style.color]="card.textcolor">{{ card.nom }}</h3>
-        <span class="remaining-time">{{formatTime(remainingTime)}}</span>
+        <span class="remaining-time rounded-rectangle">{{formatTime(remainingTime)}}</span>
         <p-button class="info-button" icon="pi pi-info" [rounded]="true" severity="info" (click)="showDialog()"></p-button>
       </div>
     

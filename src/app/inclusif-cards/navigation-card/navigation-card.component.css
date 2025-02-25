@@ -33,12 +33,23 @@
   margin-right: 20px;
   width: 32px;
   height: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  transform: scale(0.75)
 }
 
 ::ng-deep .p-button.p-button-info {
-  background-color: #0073e9;
-  color: #ffffff;
+  background-color: #333333;
+  border-color:#333333; 
+}
+
+::ng-deep .p-button.p-button-info:hover{
+  background-color: #4c4d53;
+  border-color:#4c4d53 ; 
+}
+
+::ng-deep .p-button.p-button-info:active{
+  background-color: #696969;
+  border-color:#696969 ; 
 }
 
 .card-image {
@@ -73,7 +84,6 @@
   justify-content: center;
   width: 620px;
   height: 200px;
-  background-color: #ffffff;
   border-radius: 8px;
 }
 
@@ -120,18 +130,16 @@
   word-wrap: break-word;
   color: #333333;
   margin-bottom: 16px;
-  border: 1px solid #0073e9;
+  border: 1px solid #da3635 !important;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px 0px;
 }
 
 .not-clickable .radio {
   pointer-events: none;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px 0px;
   --p-radiobutton-icon-checked-color: #333333 !important;
 }
 
 .radio {
-  background-color: #ffffff;
   padding-left: 15px;
   padding-right: 15px;
   --p-radiobutton-icon-vertical-align: middle;
@@ -144,9 +152,11 @@
   --p-radiobutton-height: 24px;
   --p-radiobutton-width: 24px;
   --p-radiobutton-icon-size: 16px;
-  --p-radiobutton-icon-checked-hover-color: #333333;
+
   --p-radiobutton-border-color: #333333;
   --p-radiobutton-hover-border-color: #333333;
+
+  --p-radiobutton-icon-checked-hover-color: #333333;
   --p-radiobutton-checked-border-color: #333333;
   --p-radiobutton-checked-hover-border-color: #333333;
 }
@@ -164,4 +174,11 @@
   margin-top: 20px;
   display: flex;
   justify-content: center;
+}
+
+.rounded-rectangle {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #333333; 
 }
