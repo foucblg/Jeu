@@ -1,44 +1,60 @@
+/* Ensure the main container takes up the full height of the viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the container takes up the full height of the viewport */
+}
+
+.content {
+  flex: 1; /* Allow the content to take up the remaining space */
+}
+
 /* Footer */
 footer {
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    color: white;
-    padding: 0 28px;
-    font-size: 12px;
-    width: 100%;
-    margin-top: auto; /* Force le footer à rester en bas */
-  }
-  
-  footer ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 12px; /* Espace entre les éléments */
-  }
-  
-  footer li {
-    display: inline-block;
-  }
-  
-  footer a {
-    display: flex;
-    color: white !important;
-    text-decoration: none;
-    align-items: center;
-    vertical-align: middle;
-  }
-  
-  
-  footer .right-section {
-    display: flex;
-    align-items: center;
-  }
-  
-  footer .right-section img {
-    height: 20px;
-    margin-right: 5px;
-  }
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 0 28px;
+  font-size: 12px;
+  width: 100%;
+  margin-top: auto; /* Force the footer to stay at the bottom */
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 12px; /* Space between items */
+}
+
+footer li {
+  display: inline-block;
+}
+
+footer a {
+  display: flex;
+  color: white !important;
+  text-decoration: none;
+  align-items: center;
+  vertical-align: middle;
+}
+
+footer .right-section {
+  display: flex;
+  align-items: center;
+}
+
+footer .right-section img {
+  height: 20px;
+  margin-right: 5px;
+}
