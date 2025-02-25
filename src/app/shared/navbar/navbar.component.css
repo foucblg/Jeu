@@ -1,0 +1,27 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  height: 100%;
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.16) 0px 10px 20px;
+}
+
+.title {
+  font-weight: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 16px;
+  font-size: 15px;
+  color: var(--p-gray-700);
+}
+
+a {
+  text-decoration: none;
+}
+
+.intlogo{
+  padding: 1px 30px 0px 53px;
+  color: #696969;
+}

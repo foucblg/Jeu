@@ -1,0 +1,184 @@
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.question-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #0b4c31;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.info-button {
+  margin-left: 10px;
+  margin-right: 20px;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 18px;
+  transform: scale(0.75)
+}
+
+::ng-deep .p-button.p-button-info {
+  background-color: #333333;
+  border-color:#333333; 
+}
+
+::ng-deep .p-button.p-button-info:hover{
+  background-color: #4c4d53;
+  border-color:#4c4d53 ; 
+}
+
+::ng-deep .p-button.p-button-info:active{
+  background-color: #696969;
+  border-color:#696969 ; 
+}
+
+.card-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+/* Question Text Styling */
+.question-text {
+  font-size: 24px;
+  color: #0b4c31;
+  text-align: left;
+  overflow: hidden;
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+  margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+  line-height: 1.3em;
+  padding: 0 10px;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}
+
+.desc-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 620px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.question-desc {
+  font-size: 16px;
+  color: #333333;
+  text-align: left;
+  overflow: hidden;
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+  margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+  line-height: 1.3em;
+  padding: 0 10px;
+  font-family: 'Lato', sans-serif;
+}
+
+.clickable {
+  display: flex;
+  align-content: center;
+  width: 600px;
+  height: 40px;
+  border: 1px solid #696969;
+  border-radius: 8px;
+  padding: 4px;
+  margin: 0 auto;
+  align-items: center;
+  word-wrap: break-word;
+  color: #333333;
+  margin-bottom: 16px;
+}
+
+.not-clickable {
+  display: flex;
+  align-content: center;
+  width: 600px;
+  height: 40px;
+  border-radius: 8px;
+  padding: 4px;
+  margin: 0 auto;
+  align-items: center;
+  word-wrap: break-word;
+  color: #333333;
+  margin-bottom: 16px;
+  border: 1px solid #da3635 !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px 0px;
+}
+
+.not-clickable .radio {
+  pointer-events: none;
+  --p-radiobutton-icon-checked-color: #333333 !important;
+}
+
+.radio {
+  padding-left: 15px;
+  padding-right: 15px;
+  --p-radiobutton-icon-vertical-align: middle;
+  --p-radiobutton-vertical-align: middle;
+  --p-radiobutton-box-vertical-align: middle;
+  --p-radiobutton-icon-align-items: center;
+  --p-radiobutton-box-align-items: center;
+  --p-radiobutton-align-items: center;
+  --p-radiobutton-display: inline-block;
+  --p-radiobutton-height: 24px;
+  --p-radiobutton-width: 24px;
+  --p-radiobutton-icon-size: 16px;
+
+  --p-radiobutton-border-color: #333333;
+  --p-radiobutton-hover-border-color: #333333;
+
+  --p-radiobutton-icon-checked-hover-color: #333333;
+  --p-radiobutton-checked-border-color: #333333;
+  --p-radiobutton-checked-hover-border-color: #333333;
+}
+
+.radioButton:hover {
+  border: 1px solid #333333;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px 0px;
+}
+
+.choice-text {
+  padding-left: 0.5em;
+}
+
+.dialog-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.rounded-rectangle {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #333333; 
+}

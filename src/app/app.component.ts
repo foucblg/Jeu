@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from './components/navbar/navbar.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 import { RouterOutlet } from '@angular/router';
 import * as donnees from './assets/navigation_data.json';
 import * as donnees2 from './assets/anwsers_data.json';
