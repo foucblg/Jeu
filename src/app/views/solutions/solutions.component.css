@@ -1,0 +1,53 @@
+/* General Container for the Navigation */
+.navigation-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
+  justify-content: center;
+  gap: 36px; /* Adds space between the sections */
+}
+/* Card Display Area Styling */
+.card-display {
+  margin-top: 9px;
+  width: 700px; /* Fixed width */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Additional styling for card content */
+.card-display app-navigcard {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* Wrapper for horizontal elements */
+.horizontal-group {
+  display: flex;
+  flex-direction: row; /* Aligns children in a row */
+  gap: 10px; /* Adds space between the buttons */
+  align-items: center; /* Center elements horizontally */
+  justify-content: center;
+  border-top: 3px solid #E9E9E9;
+  height: 92px;
+  width:1088px;
+}
+
+/* Theme Indicator Styling */
+.theme-indicator {
+  margin-bottom: 10px; /* Adds spacing between the first element and the row */
+}
+
+/* Styling for Button Containers */
+.button-container {
+  margin: 0 10px; /* Adjust for consistent spacing */
+}
+
+
