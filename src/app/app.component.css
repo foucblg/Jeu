@@ -13,7 +13,7 @@ html, body {
 
 .content {
   flex: 1; 
-  margin-bottom: 20px;
+  margin-bottom: 0 px;
 }
 
 /* Footer */
@@ -27,7 +27,7 @@ footer {
   padding: 0 28px;
   font-size: 12px;
   width: 100%;
-  margin-top: auto;
+  margin-top: 5px;
 }
 
 footer ul {
