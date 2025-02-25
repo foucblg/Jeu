@@ -21,7 +21,7 @@ export class NavigationCardSolutionsComponent implements OnInit {
   options: { label: string, value: string }[] = [];
   dropdowns: { selectedOption: string }[] = [{ selectedOption: '' }];
 
-  constructor(private router: Router, public service: UserService) {}
+  constructor(private router: Router, public service: UserService) {console.log("bonjour");}
 
   ngOnInit(): void {
     // Convert users data to options in the required format
@@ -29,6 +29,7 @@ export class NavigationCardSolutionsComponent implements OnInit {
       label: user.name,   // User's name as label
       value: user.email   // User's email as value
     }));
+    
   }
 
   addDropdown(): void {
@@ -51,6 +52,12 @@ export class NavigationCardSolutionsComponent implements OnInit {
       queryParams: { answered: this.card_answer },
       queryParamsHandling: 'merge',
       skipLocationChange: false,
+      
     });
+  }
+  handleMissingImage(event: any) {
+    event.target.style.display = 'none'; // Cache l'image si elle n'existe pas
+    console.log("on a pas d'image pour la "+this.card_number);
+    console.log("'/images/solution_' + card.id + '.png'");
   }
 }

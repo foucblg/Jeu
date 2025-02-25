@@ -7,20 +7,22 @@
 
     <h2 class="category-title">{{ card.titre }}</h2>
 
-    <ul class="content" *ngIf="card.contenu.length > 1">
+    @if(card.contenu.length > 1){<ul>
         @for( item of card.contenu; track $index){
         <li >{{ item }}</li>}
-    </ul>
+    </ul>}
     @if(card.contenu.length == 1){
     <p>{{ card.contenu[0] }}</p>}
-    
-
-    <div class="highlight" *ngIf="card.source?.nom">
+    <div class="imagewrapper">
+        @if('/images/solution_' + card.id + '.png'){
+        <img class="image" [src]="'/images/solution_' + card.id + '.png'">}
+    </div>
+    @if(card.source?.nom){<div class="highlight">
         <div class="highlight-text">
             <strong>{{ card.source?.nom }}</strong><br>
             {{ card.source?.description }}
         </div>
-    </div>
+    </div>}
 
     <label for="dropdown">Qui s'en occupe?</label>
     @for(dropdown of dropdowns; track $index){

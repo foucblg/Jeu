@@ -17,6 +17,7 @@ body {
   border: none; /* Supprime la bordure supérieure */
   position: static; /* Réinitialise la position */
   text-align: left;
+  align-items: center;
   
 }
 
@@ -66,8 +67,16 @@ h2 {
   text-align:center;
   margin-top: 15px;
   color: #0073E9;
+  margin-bottom: 5px;
 }
-
+.image {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  max-height: 150px; /* Maximum height */
+  width: auto; /* Maintain aspect ratio */
+  align-items: center;
+  text-align: center;
+}
 
 .highlight-logo img {
   width: 40px;
@@ -84,6 +93,7 @@ h2 {
   position: relative;
   display: flex;
   align-items: center;
+  margin-top: 5px;
 }
 
 .remove-button {

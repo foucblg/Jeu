@@ -35,7 +35,7 @@ export class InclusifCardsComponent implements OnInit, OnDestroy {
       if (id && id !== this.currentNumber && id >= 0 && id < navigation_data.data.length) {
         this.currentNumber = id; // Mise à jour de currentNumber si le query param 'id' est valide
         this.cat = navigation_data.data[this.currentNumber]?.categorie; // Mettre à jour la catégorie
-        this.currentAnswer= this.answerStorage.getAnswer(id) //Mise a jour de la réponse associée à la caret
+        this.currentAnswer= this.answerStorage.getAnswer(id) //Mise a jour de la réponse associée à la carte
       }
     });
     
