@@ -1,0 +1,46 @@
+<div class="card-container">
+    @if (Navdata['data'][card_number]) { 
+        @let card = Navdata['data'][card_number];
+    <div class="tags">
+        <span class="tag planning">{{ card.sous_categorie }}</span>
+    </div>
+
+    <h2 class="category-title">{{ card.titre }}</h2>
+
+    @if(card.contenu.length > 1){<ul>
+        @for( item of card.contenu; track $index){
+        <li >{{ item }}</li>}
+    </ul>}
+    @if(card.contenu.length == 1){
+    <p>{{ card.contenu[0] }}</p>}
+    <div class="imagewrapper">
+        @if('/images/solution_' + card.id + '.png'){
+        <img class="image" [src]="'/images/solution_' + card.id + '.png'">}
+    </div>
+    @if(card.source?.nom){<div class="highlight">
+        <div class="highlight-text">
+            <strong>{{ card.source?.nom }}</strong><br>
+            {{ card.source?.description }}
+        </div>
+    </div>}
+
+    <label for="dropdown">Qui s'en occupe?</label>
+    @for(dropdown of dropdowns; track $index){
+    <div class="dropdown-wrapper">
+        <p-dropdown 
+            [options]="options"
+            [(ngModel)]="dropdown.selectedOption"
+            placeholder="Choisissez une option"
+            (onChange)="onAnswer(dropdown.selectedOption, $index)"
+            class="custom-dropdown"
+            [filter]="true" 
+            [showClear]="true" 
+            [scrollHeight]="'150px'">
+        </p-dropdown>
+        @if ($index>0){
+        <button (click)="removeDropdown($index)" class="remove-button">X</button>}
+    </div>}
+    @if(dropdowns[dropdowns.length - 1].selectedOption){
+    <button (click)="addDropdown()">Ajouter un autre</button>}
+}
+</div>
