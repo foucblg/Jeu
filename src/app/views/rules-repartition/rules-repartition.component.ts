@@ -5,17 +5,13 @@ import { ActionBarComponent } from '../../shared/action-bar/action-bar.component
 
 @Component({
   selector: 'app-rules-repartition',
-  imports: [ButtonModule, ActionBarComponent],
+  imports: [ButtonModule],
   templateUrl: './rules-repartition.component.html',
   styleUrl: './rules-repartition.component.css'
 })
 export class RulesRepartitionComponent {
   constructor(private router:Router) {}
-        continuer(){
-          this.router.navigate(['./MODIFIER_POUR_LE_BON'])
-        }
-
-        actionButtons = [
-          { label: 'Continuer', action: () => this.continuer() }
-        ];
+    continuer(){
+      this.router.navigate(['./MODIFIER_POUR_LE_BON'])
+    }
 }

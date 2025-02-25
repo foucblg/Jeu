@@ -27,3 +27,7 @@
     font-weight: 400;
     padding: 5px;
 }
+
+.btn{
+  justify-content: center;
+}

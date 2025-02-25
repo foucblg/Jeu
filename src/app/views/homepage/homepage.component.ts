@@ -9,7 +9,7 @@ import { ImageModule } from 'primeng/image';
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css',
-  imports: [ButtonModule, ActionBarComponent, ImageModule]
+  imports: [ButtonModule, ImageModule]
 })
 export class HomepageComponent {
   constructor(private router:Router) {}
@@ -17,9 +17,5 @@ export class HomepageComponent {
   commencer(){
     this.router.navigate(['./contexte'])
   }
-
-  actionButtons = [
-    { label: "Passer à l'action", action: () => this.commencer() }
-  ];
 
 }

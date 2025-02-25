@@ -7,15 +7,11 @@ import { ActionBarComponent } from '../../shared/action-bar/action-bar.component
   selector: 'app-contexte',
   templateUrl: './contexte.component.html',
   styleUrl: './contexte.component.css',
-  imports: [ButtonModule, ActionBarComponent]
+  imports: [ButtonModule]
 })
 export class ContexteComponent {
   constructor(private router:Router) {}
   continuer(){
     this.router.navigate(['./rules'])
   }
-
-  actionButtons = [
-    { label: 'Continuer', action: () => this.continuer() }
-  ];
 }

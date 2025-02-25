@@ -5,14 +5,13 @@ import { Router } from '@angular/router';
 import { InputTextModule } from 'primeng/inputtext';
 import { FloatLabelModule } from 'primeng/floatlabel';
 import { ButtonModule } from 'primeng/button';
-import { ActionBarComponent } from '../../shared/action-bar/action-bar.component';
 
 
 @Component({
   selector: 'app-user-manager',
   templateUrl: './user-manager.component.html',
   styleUrls: ['./user-manager.component.css'],
-  imports: [ReactiveFormsModule, FloatLabelModule, InputTextModule, ButtonModule, ActionBarComponent],
+  imports: [ReactiveFormsModule, FloatLabelModule, InputTextModule, ButtonModule],
 })
 export class UserManagerComponent {
   addUserForm: FormGroup;

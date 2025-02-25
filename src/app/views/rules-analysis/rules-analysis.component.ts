@@ -5,17 +5,13 @@ import { ActionBarComponent } from '../../shared/action-bar/action-bar.component
 
 @Component({
   selector: 'app-rules-analysis',
-  imports: [ButtonModule, ActionBarComponent],
+  imports: [ButtonModule],
   templateUrl: './rules-analysis.component.html',
   styleUrl: './rules-analysis.component.css'
 })
 export class RulesAnalysisComponent {
   constructor(private router:Router) {}
-      continuer(){
-        this.router.navigate(['./cartes_inclusif'])
-      }
-
-      actionButtons = [
-        { label: 'Continuer', action: () => this.continuer()}
-      ];
+  continuer(){
+    this.router.navigate(['./cartes_inclusif'])
+  }
 }
