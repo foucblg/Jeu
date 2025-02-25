@@ -13,6 +13,8 @@
   </app-navigation-card-solutions>
 </div>
 
+<p-divider class="divider" />
+
 <!-- Barre d'action -->
 <div class="action-bar">
   <!-- Bouton de retour -->
@@ -24,7 +26,7 @@
   </div>
 
   <!-- Bouton suivant -->
-  <div class="button-container">
+  <div class="button-container" id="next-button">
     <app-navigation-button 
       [carte_suivante]="true"
       (cardChange)="onCardChange($event)">

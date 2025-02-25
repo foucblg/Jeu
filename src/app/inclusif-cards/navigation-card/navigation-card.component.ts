@@ -25,11 +25,11 @@ export class NavigationCardComponent implements OnInit, OnDestroy {
 
   allAnswers: { [key: number]: boolean } = {}; // Contient la réponse de chaque carte
 
-  Navdata = navigation_data;
+  Navdata = navigation_data; //Récupération des données des cartes
   ngModel = 'Non'; // Valeur par défaut pour le bouton radio
 
   displayDialog = false;
-  remainingTime: number = 0;
+  remainingTime: number = 0; // Temps restant
   private timerSubscription: Subscription | undefined = undefined;
 
   constructor(private router: Router, private answerStorage: AnswerStorageService, private cdRef: ChangeDetectorRef) {}
