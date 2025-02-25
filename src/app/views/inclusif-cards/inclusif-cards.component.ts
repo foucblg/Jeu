@@ -1,12 +1,12 @@
 import { Component, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NavigationButtonComponent } from "./navigation-button/navigation-button.component";
+import { NavigationButtonComponent } from './navigation-button/navigation-button.component';
 import { ThemeIndicatorComponent } from './theme-indicator/theme-indicator.component';
 import { ActivatedRoute, Router } from '@angular/router';
-import { navigation_data } from "../app.component";
+import { navigation_data } from '../../app.component';
 import { NavigationCardComponent } from "./navigation-card/navigation-card.component";
 import { Subscription } from 'rxjs';
-import { AnswerStorageService } from '../answer-storage.service';
+import { AnswerStorageService } from '../../answer-storage.service';
 import {DividerModule } from 'primeng/divider';
 
 @Component({

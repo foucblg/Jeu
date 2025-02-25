@@ -7,19 +7,19 @@ import { RulesConclusionComponent } from './views/rules-conclusion/rules-conclus
 import { RulesRepartitionComponent } from './views/rules-repartition/rules-repartition.component';
 import { RulesSolutionsComponent } from './views/rules-solutions/rules-solutions.component';
 import { UserManagerComponent } from './views/user-manager/user-manager.component';
-import { InclusifCardsComponent } from './inclusif-cards/inclusif-cards.component';
-import { NavigationCardComponent } from './inclusif-cards/navigation-card/navigation-card.component';
-import { SolutionsComponent } from './solutions/solutions.component';
+import { InclusifCardsComponent } from './views/inclusif-cards/inclusif-cards.component';
+import { NavigationCardComponent } from './views/inclusif-cards/navigation-card/navigation-card.component';
+
 
 export const routes: Routes = [
-    {path: 'homepage', component: HomepageComponent},
+    {path: 'accueil', component: HomepageComponent},
     {path: 'contexte', component: ContexteComponent},
-    {path: 'rules_analysis', component: RulesAnalysisComponent},
-    {path: 'rules_conclusion', component: RulesConclusionComponent},
-    {path: 'rules_repartition', component: RulesRepartitionComponent},
-    {path: 'rules_solutions', component: RulesSolutionsComponent},
-    {path: 'rules', component: RulesComponent},
-    {path: 'user-registration', component: UserManagerComponent},
+    {path: 'regles_analyse', component: RulesAnalysisComponent},
+    {path: 'regles_conclusion', component: RulesConclusionComponent},
+    {path: 'regles_repartition', component: RulesRepartitionComponent},
+    {path: 'regles_solutions', component: RulesSolutionsComponent},
+    {path: 'regles', component: RulesComponent},
+    {path: 'enregistrement_utilisateur', component: UserManagerComponent},
     {path: 'cartes_inclusif',
           component: InclusifCardsComponent,
           children: [
@@ -30,32 +30,10 @@ export const routes: Routes = [
             },
             { path: '**', redirectTo: 'cartes_inclusif' }  // Rediriger les routes invalides
           ]},
-        {path:'solutions', component:SolutionsComponent,children : [
-          { path: '', redirectTo: '0', pathMatch: 'full' }
-        ]},
-        { path: '**',
-            redirectTo: 'homepage',
-            pathMatch: 'full'},
-    {path: 'cartes_inclusif',
-          component: InclusifCardsComponent,
-          children: [
-            { path: '', redirectTo: 'carte', pathMatch: 'full' }, // Redirection vers carte avec query params
-            {
-              path: 'carte',
-              component: NavigationCardComponent,  // Le composant NavigcardComponent reste ici
-            },
-            { path: '**', redirectTo: 'cartes_inclusif' }  // Rediriger les routes invalides
-          ]},
-        {path:'solutions', component:SolutionsComponent,children : [
-          { path: '', redirectTo: '0', pathMatch: 'full' }
-        ]},
-        { path: '**',
-            redirectTo: 'homepage',
-            pathMatch: 'full'},
     { path: '**',
-        redirectTo: 'homepage',
+        redirectTo: 'accueil',
         pathMatch: 'full'
       },
-    
+      
 
 ];

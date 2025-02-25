@@ -12,6 +12,6 @@ import { ActionBarComponent } from '../../shared/action-bar/action-bar.component
 export class ContexteComponent {
   constructor(private router:Router) {}
   continuer(){
-    this.router.navigate(['./rules'])
+    this.router.navigate(['./regles'])
   }
 }

@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Router } from '@angular/router';
-import { navigation_data } from '../../app.component';
-import { AnswerStorageService } from '../../answer-storage.service';
+import { navigation_data } from '../../../app.component';
+import { AnswerStorageService } from '../../../answer-storage.service';
 import { ChangeDetectorRef } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 
@@ -39,10 +39,10 @@ export class NavigationButtonComponent {
     } else if (!this.carte_suivante && this.currentNumber > 0) {
       this.currentNumber -= 1;
     } else if (this.carte_suivante) {
-      this.router.navigate(['rules_solutions']);
+      this.router.navigate(['regles_solutions']);
       return;
     } else {
-      this.router.navigate(['rules_analysis']);
+      this.router.navigate(['regles_analyse']);
       return;
     }
 
