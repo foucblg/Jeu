@@ -13,7 +13,7 @@ export class RulesComponent {
 
     constructor(private router:Router) {}
     continuer(){
-      this.router.navigate(['./user-registration']);
+      this.router.navigate(['./enregistrement_utilisateur']);
     }
 
     startQuiz(){

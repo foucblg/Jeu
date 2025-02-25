@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output, OnInit, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
-import { AnswerStorageService } from '../../answer-storage.service';
+import { AnswerStorageService } from '../../../answer-storage.service';
 import { ChangeDetectorRef } from '@angular/core';
-import { navigation_data } from '../../app.component'; 
+import { navigation_data } from '../../../app.component';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { FormsModule } from '@angular/forms';
 import { ImageModule } from 'primeng/image';
