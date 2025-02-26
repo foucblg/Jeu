@@ -11,6 +11,6 @@ import { DividerModule } from 'primeng/divider';
 export class RulesSolutionsComponent {
   constructor(private router:Router) {}
     continuer(){
-      this.router.navigate(['./regles_conclusion'])
+      this.router.navigate(['./solution'])
     }
 }

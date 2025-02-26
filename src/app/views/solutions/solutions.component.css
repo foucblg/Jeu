@@ -10,7 +10,7 @@
 .card-display {
   margin-top: 9px;
   width: 700px; /* Fixed width */
-
+  height: 425px;
   display: flex;
   align-items: center;
   justify-content: center;

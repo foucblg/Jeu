@@ -36,7 +36,7 @@ export class InclusifCardsComponent implements OnInit, OnDestroy {
   constructor(
     private router: Router,
     private route: ActivatedRoute,
-    private answerStorage: AnswerStorageService,
+    public answerStorage: AnswerStorageService,
     private cdRef: ChangeDetectorRef
   ) {}
 
@@ -100,6 +100,7 @@ export class InclusifCardsComponent implements OnInit, OnDestroy {
       this.currentNumber = newCardNumber;
       this.cat = navigation_data.data[newCardNumber]?.categorie ?? '';
       this.currentAnswer = this.answerStorage.getAnswer(newCardNumber);
+      console.log(this.currentAnswer);
       this.showCard = true;
     }, 0);
   }
