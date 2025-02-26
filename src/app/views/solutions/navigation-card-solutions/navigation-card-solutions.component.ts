@@ -2,9 +2,11 @@ import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { DropdownModule } from 'primeng/dropdown';
-import { UserService } from '../../user-service';
-import { navigation_data_solutions } from '../../app.component';
+import { UserService } from '../../../shared/user-service';
+import { navigation_data_solutions } from '../../../app.component';
+import { navigation_data } from '../../../app.component';
 import { CommonModule } from '@angular/common';
+
 @Component({
   selector: 'app-navigation-card-solutions',
   standalone: true,
@@ -15,20 +17,22 @@ import { CommonModule } from '@angular/common';
 export class NavigationCardSolutionsComponent implements OnInit {
   @Input() card_number!: number;
   @Output() answer = new EventEmitter<string>();
-  card_answer = "";
+  
   Navdata = navigation_data_solutions;
 
   options: { label: string, value: string }[] = [];
   dropdowns: { selectedOption: string }[] = [{ selectedOption: '' }];
+  
 
-  constructor(private router: Router, public service: UserService) {console.log("bonjour");}
+  constructor(private router: Router, public service: UserService) {}
 
   ngOnInit(): void {
-    // Convert users data to options in the required format
+    
     this.options = this.service.getUsers().map(user => ({
       label: user.name,   // User's name as label
       value: user.email   // User's email as value
     }));
+    
     
   }
 
@@ -41,15 +45,12 @@ export class NavigationCardSolutionsComponent implements OnInit {
   }
 
   onAnswer(answer: string, index: number): void {
-    this.card_answer = answer; // Update answer
-    this.answer.emit(this.card_answer); // Emit the answer to the parent component
     this.updateQueryParams(); // Update query params with the answer
   }
 
   updateQueryParams(): void {
     // Update query parameters with card_answer
     this.router.navigate([], {
-      queryParams: { answered: this.card_answer },
       queryParamsHandling: 'merge',
       skipLocationChange: false,
       

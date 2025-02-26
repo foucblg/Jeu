@@ -32,7 +32,7 @@ export class InclusifCardsComponent implements OnInit, OnDestroy {
   constructor(
     private router: Router,
     private route: ActivatedRoute,
-    private answerStorage: AnswerStorageService,
+    public answerStorage: AnswerStorageService,
     private cdRef: ChangeDetectorRef
   ) {}
 
@@ -93,6 +93,7 @@ export class InclusifCardsComponent implements OnInit, OnDestroy {
     setTimeout(() => {
       this.currentNumber = newCardNumber;
       this.currentAnswer = this.answerStorage.getAnswer(newCardNumber);
+      console.log(this.currentAnswer);
       this.showCard = true;
       this.cdRef.detectChanges(); // Forcer la détection des changements
     }, 0);
