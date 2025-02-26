@@ -2,7 +2,7 @@
             {
             "id": 1,
             "categorie": "Gestion de projet",
-            "sous_categorie": "Cadrage et planification",
+            "sous_categorie": "Cadrage et Planification",
             "titre": "Mettez l’inclusivité au programme",
             "contenu": [
               "Proposez aux sponsors du projet que l’inclusivité soit un objectif concret du projet.",
@@ -14,7 +14,7 @@
           {
             "id": 2,
             "categorie": "Gestion de projet",
-            "sous_categorie": "Cadrage et planification",
+            "sous_categorie": "Cadrage et Planification",
             "titre": "Menez une veille sur l’inclusivité",
             "contenu": [
               "Identifiez des services numériques se présentant comme inclusifs pour vous en inspirer, par exemple les sites de refugies.info et de la SNCF.",
@@ -29,7 +29,7 @@
           {
             "id": 3,
             "categorie": "Gestion de projet",
-            "sous_categorie": "Cadrage et planification",
+            "sous_categorie": "Cadrage et Planification",
             "titre": "Identifiez vos utilisateurs dès le début",
             "contenu": [
               "Identifiez les publics et contextes dont votre projet doit tenir compte, pour proposer un service utilisable par tous.",
@@ -45,7 +45,7 @@
           {
             "id": 4,
             "categorie": "Gestion de projet",
-            "sous_categorie": "Cadrage et planification",
+            "sous_categorie": "Cadrage et Planification",
             "titre": "Invitez des utilisateurs à challenger vos idées",
             "contenu": [
               "Prévoyez dès le début du projet des phases de challenge de vos idées, puis des maquettes et des fonctionnalités du service pour les publics concernés.",
@@ -60,7 +60,7 @@
           {
             "id": 5,
             "categorie": "Gestion de projet",
-            "sous_categorie": "Équipe projet et partenariats",
+            "sous_categorie": "Equipe projet et partenariats",
             "titre": "Formez l'équipe sur ce thème",
             "contenu": [
               "Proposez des mini-formations à l'inclusivité aux membres de votre équipe",
@@ -75,7 +75,7 @@
           {
             "id": 6,
             "categorie": "Gestion de projet",
-            "sous_categorie": "Équipe projet et partenariats",
+            "sous_categorie": "Equipe projet et partenariats",
             "titre": "Désignez une personne référente",
             "contenu": [
               "Choisissez une personne qui vous semble être la plus pertinnente comme référence inclusivité dans votre projet",
@@ -87,7 +87,7 @@
           {
             "id": 7,
             "categorie": "Gestion de projet",
-            "sous_categorie": "Équipe projet et partenariats",
+            "sous_categorie": "Equipe projet et partenariats",
             "titre": "Vérifiez vos cahiers des charges et contrats",
             "contenu": [
               "Intégrez à vos cahiers des charges et contrats des prestations externes les exigences d'accessibilté et d'inclusivité pour les partenaires.",
@@ -100,7 +100,7 @@
           {
             "id": 8,
             "categorie": "Gestion de projet",
-            "sous_categorie": "Équipe projet et partenariats",
+            "sous_categorie": "Equipe projet et partenariats",
             "titre": "Intégrez des sachants",
             "contenu": [
               "Intégrez à l'équipe de projet des personnes expertes, internes ou externes: des designers, des services, des psychologues sociaux, des salariés, apprentis, stagiaires avec une sensibilité ou spécificité particulière... \n Par exemple, acceuillez un stagiaire en webdesign en situation de handicap (surdité...), issu de cursus de formations adaptés."
@@ -111,7 +111,7 @@
           {
             "id":9 ,
             "categorie": "Gestion de projet",
-            "sous_categorie": "Équipe projet et partenariats",
+            "sous_categorie": "Equipe projet et partenariats",
             "titre": "Consultez des experts",
             "contenu": [
               "Associez au projet des parties prenantes externes, expertes de certains publics cibles et de leur besoins"
@@ -124,7 +124,7 @@
           {
             "id":10 ,
             "categorie": "Gestion de projet",
-            "sous_categorie": "Évaluation et certification",
+            "sous_categorie": "Evaluation et certification",
             "titre": "Faites auditer votre service numérique",
             "contenu": [
               "Soumettez votre service numérique à un audit RGAA (Référentiel Général d'Amélioration de l'Accessibilité) \n Pour cela, contactez votre référent accéssibilité numérique, s'il y en a un dans votre structure. Il pourra réaliser l'audit RGAA ou il fera appel à un prestataire spécialisé avec une expertise RGAA\n A l'issue de l'audit RGAA, vous obtiendrez le taux de conformité de votre service numérique. La liste des non conformités vous sera fournie, avec les préconisations de corrections."
@@ -136,7 +136,7 @@
           {
             "id":11 ,
             "categorie": "Gestion de projet",
-            "sous_categorie": "Évaluation et certification",
+            "sous_categorie": "Evaluation et certification",
             "titre": "Mettez en place les obligations de communication du RGAA",
             "contenu": [
               "Mettez en place une page Accessibilité à partir de la décalaration d'accessibilité issue de l'audit.",
@@ -151,7 +151,7 @@
           {
             "id":12 ,
             "categorie": "Gestion de projet",
-            "sous_categorie": "Évaluation et certification",
+            "sous_categorie": "Evaluation et certification",
             "titre": "Suivez votre progression",
             "contenu": [
               "Estimez l'inclusivité de votre projet régulièrement après la réalisation de cette session",
