@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { DropdownModule } from 'primeng/dropdown';
 import { UserService } from '../../../shared/user-service';
 import { navigation_data_solutions } from '../../../app.component';
-import { navigation_data } from '../../../app.component';
+//import { navigation_data } from '../../../app.component';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -48,6 +48,20 @@ export class NavigationCardSolutionsComponent implements OnInit {
     this.updateQueryParams(); // Update query params with the answer
   }
 
+  getFilteredOptions(index: number) {
+    // Récupère toutes les options possibles
+    let availableOptions = [...this.options];
+  
+    // Récupère toutes les valeurs sélectionnées sauf pour le dropdown actuel
+    const selectedValues = this.dropdowns
+      .filter((_, i) => i !== index)
+      .map(d => d.selectedOption)
+      .filter(val => val !== ''); // Évite de filtrer les valeurs vides
+  
+    // Retourne uniquement les options qui ne sont pas encore sélectionnées
+    return availableOptions.filter(option => !selectedValues.includes(option.value));
+  }
+
   updateQueryParams(): void {
     // Update query parameters with card_answer
     this.router.navigate([], {
@@ -57,8 +71,6 @@ export class NavigationCardSolutionsComponent implements OnInit {
     });
   }
   handleMissingImage(event: any) {
-    event.target.style.display = 'none'; // Cache l'image si elle n'existe pas
-    console.log("on a pas d'image pour la "+this.card_number);
-    console.log("'/images/solution_' + card.id + '.png'");
+    event.target.style.display = 'none'; // Cache l'image si elle n'existe pas (pas utilisé car avec l'implémentation de error, il trouve l'image si elle existe mais ne l'affiche pas ¯\_(ツ)_/¯ )
   }
 }

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { navigation_data_solutions } from '../../../app.component';
 import {ActivatedRoute, Router } from '@angular/router';
 import { AnswerStorageService } from '../../../answer-storage.service';
@@ -12,24 +12,24 @@ import { Subscription } from 'rxjs';
   templateUrl: './navigation-button-solutions.component.html',
   styleUrls: ['./navigation-button-solutions.component.css']
 })
-export class NavigationButtonSolutionsComponent {
+export class NavigationButtonSolutionsComponent implements OnInit{
   constructor(private router:Router,private awnser_service:AnswerStorageService,private route: ActivatedRoute) {}
   private routeSubscription: Subscription | undefined = undefined;
   applyFilters(): void {
     this.router.navigate(['/solutions'], { queryParams: { numero: '0', awnsered: 'false' } });
   }
-  indice_reponse=0;
+  @Input() indice_reponse: number=0;
   Navdata = navigation_data_solutions;
   @Input() avance!: boolean;
-  @Input() currentNumber: number = 0
+  
   @Input() cat!: string
   matchingIds: number[] = [];
   @Output() cardChange = new EventEmitter<number>();
   @Output() catChange = new EventEmitter<string>();
+  currentNumber: number = 0;
   ngOnInit(){
     this.routeSubscription = this.route.queryParams.subscribe(params => {
       const id = +params['numero']; // Récupérer 'id' depuis les query params
-      console.log("coucou"+id);
       if (id && id !== this.currentNumber && id >= 0 && id < navigation_data_solutions.data.length) {
         this.currentNumber = id; // Mise à jour de currentNumber si le query param 'id' est valide
         this.cat = navigation_data_solutions.data[this.currentNumber]?.categorie; // Mettre à jour la catégorie
@@ -55,7 +55,7 @@ export class NavigationButtonSolutionsComponent {
         
     // Convert users data to options in the required format
     this.indice_reponse= this.matchingIds.indexOf(this.currentNumber );
-    console.log(this.matchingIds+" "+this.matchingIds[this.indice_reponse] +"   "+this.matchingIds.indexOf(5)+"   "+this.indice_reponse);
+    console.log(this.currentNumber+" euuuuh  "+this.indice_reponse);
     this.cat = navigation_data_solutions.data[this.currentNumber]?.categorie;
     this.catChange.emit(this.cat);
   }
@@ -66,18 +66,19 @@ export class NavigationButtonSolutionsComponent {
       skipLocationChange: false // Mettre à jour l'URL dans la barre d'adresse
     });
   }
+  
   // Changement de carte
   changeCard() {
-    console.log("l'indice de réponse est  "+this.indice_reponse+" et le nombre de la question correspondant est "+this.currentNumber);
+    this.indice_reponse=this.matchingIds.indexOf(this.currentNumber);
     if (this.avance && this.indice_reponse<this.matchingIds.length-1) {
-      this.indice_reponse += 1;
+      this.indice_reponse =this.indice_reponse+1;
       this.currentNumber= this.matchingIds[this.indice_reponse];
       this.cat = navigation_data_solutions.data[this.currentNumber]?.categorie;
       this.updateQueryParams();
     }else if(this.avance && this.indice_reponse==this.matchingIds.length-1){
       this.router.navigate(['regles_conclusion'])
-    }else if (!this.avance && this.indice_reponse >= 1 ) {
-      this.indice_reponse -= 1;
+    }else if (!this.avance && this.indice_reponse > 0 ) {
+      this.indice_reponse = this.indice_reponse-1;
       this.currentNumber= this.matchingIds[this.indice_reponse];
       this.cat = navigation_data_solutions.data[this.currentNumber]?.categorie;
       this.updateQueryParams();
@@ -91,6 +92,6 @@ export class NavigationButtonSolutionsComponent {
       
     this.cardChange.emit(this.indice_reponse); //Mise a jour des paramètres 
     this.catChange.emit(this.cat);
-  }
+   }
 
 }

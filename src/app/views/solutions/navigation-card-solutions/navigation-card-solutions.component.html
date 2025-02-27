@@ -28,7 +28,7 @@
     @for(dropdown of dropdowns; track $index){
     <div class="dropdown-wrapper">
         <p-dropdown 
-            [options]="options"
+            [options]="getFilteredOptions($index)"
             [(ngModel)]="dropdown.selectedOption"
             placeholder="Choisissez une option"
             (onChange)="onAnswer(dropdown.selectedOption, $index)"
