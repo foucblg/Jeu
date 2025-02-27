@@ -1,15 +1,78 @@
 <div class="theme-indicator-container">
-  <div class="progress-bar-container">
-    <div class="progress-bar" [style.width.%]="progressValue"></div>
-    <div class="dots">
-      <div *ngFor="let category of categories; let i = index" 
-           class="dot" 
-           [class.active]="cat === category"
-           [style.left.%]="(i / (categories.length - 1)) * 100">
-      </div>
-    </div>
-  </div>
-  <div class="category-labels">
-    <span *ngFor="let category of categories" class="category-label">{{ category }}</span>
-  </div>
+  <ol class = "ProgressBar">
+    @for (categorie of categories; track $index){
+      @if (cat  === categorie){
+        <li class="ProgressBar">
+          <svg class="ProgressBar-icon-before"><use xlink:href="#checkmark-bold"/></svg>
+          <div class = "ProgressBar-span-before">
+            <span class="ProgressBar-stepLabel-before">{{categories[$index]}}</span>
+          </div>
+          @if ($index == 4){
+            <div class = "ProgressBar-wellFill-void">
+              <span class="void"></span>
+            </div>
+          }
+          @else{
+            <div class = "ProgressBar-wellFill-now">
+              <span class="void"></span>
+            </div>
+          }
+        </li>
+      }
+      @else if ($index  === index_cat + 1){
+        <li class="ProgressBar">
+          <svg class="ProgressBar-icon-now"><use xlink:href="#checkmark-bold"/></svg>
+          <div class = "ProgressBar-span-now">
+            <span class="ProgressBar-stepLabel-now">{{categories[$index]}}</span>
+          </div>
+          @if ($index == 4){
+            <div class = "ProgressBar-wellFill-void">
+              <span class="void"></span>
+            </div>
+          }
+          @else{
+            <div class = "ProgressBar-wellFill">
+              <span class="void"></span>
+            </div>
+          }
+        </li>
+      }
+      @else if ($index < index_cat){
+        <li class="ProgressBar">
+          <svg class="ProgressBar-icon-before"><use xlink:href="#checkmark-bold"/></svg>
+          <div class = "ProgressBar-span-before">
+            <span class="ProgressBar-stepLabel-before">{{categories[$index]}}</span>
+          </div>
+          @if ($index == 4){
+            <div class = "ProgressBar-wellFill-void">
+              <span class="void"></span>
+            </div>
+          }
+          @else{
+            <div class = "ProgressBar-wellFill-before">
+              <span class="void"></span>
+            </div>
+          }
+        </li>
+      }
+      @else{
+      <li class="ProgressBar">
+        <svg class="ProgressBar-icon"><use xlink:href="#checkmark-bold"/></svg>
+        <div class = "ProgressBar-span">
+          <span class="ProgressBar-stepLabel">{{categories[$index]}}</span>
+        </div>
+        @if ($index == 4){
+          <div class = "ProgressBar-wellFill-void">
+            <span class="void"></span>
+          </div>
+        }
+        @else{
+          <div class = "ProgressBar-wellFill">
+            <span class="void"></span>
+          </div>
+        }      
+      </li>
+      }
+    }
+  </ol>
 </div>

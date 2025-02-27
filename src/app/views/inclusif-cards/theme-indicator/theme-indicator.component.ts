@@ -20,6 +20,7 @@ export class ThemeIndicatorComponent implements OnChanges {
   ];
 
   progressValue: number = 0;
+  index_cat: number = 0;
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['cat']) {
@@ -28,12 +29,13 @@ export class ThemeIndicatorComponent implements OnChanges {
   }
 
   updateProgress(): void {
+    console.log(this.cat);
     const index = this.categories.indexOf(this.cat);
     if (index !== -1) {
       this.progressValue = (index / (this.categories.length - 1)) * 100;
     } else {
       this.progressValue = 0;
     }
-}
-
+    this.index_cat = this.categories.indexOf(this.cat);
+  }
 }
