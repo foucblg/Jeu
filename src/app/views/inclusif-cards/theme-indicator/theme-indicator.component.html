@@ -3,38 +3,15 @@
     @for (categorie of categories; track $index){
       @if (cat  === categorie){
         <li class="ProgressBar">
-          <svg class="ProgressBar-icon-before"><use xlink:href="#checkmark-bold"/></svg>
-          <div class = "ProgressBar-span-before">
-            <span class="ProgressBar-stepLabel-before">{{categories[$index]}}</span>
-          </div>
-          @if ($index == 4){
-            <div class = "ProgressBar-wellFill-void">
-              <span class="void"></span>
-            </div>
-          }
-          @else{
-            <div class = "ProgressBar-wellFill-now">
-              <span class="void"></span>
-            </div>
-          }
-        </li>
-      }
-      @else if ($index  === index_cat + 1){
-        <li class="ProgressBar">
           <svg class="ProgressBar-icon-now"><use xlink:href="#checkmark-bold"/></svg>
           <div class = "ProgressBar-span-now">
             <span class="ProgressBar-stepLabel-now">{{categories[$index]}}</span>
           </div>
-          @if ($index == 4){
-            <div class = "ProgressBar-wellFill-void">
+          <div class = "ProgressBar-wellFill">
+            <div class="ProgressBar-wellFill-now" style = 'width:{{percentage}}%;'>
               <span class="void"></span>
             </div>
-          }
-          @else{
-            <div class = "ProgressBar-wellFill">
-              <span class="void"></span>
-            </div>
-          }
+          </div>
         </li>
       }
       @else if ($index < index_cat){
@@ -43,16 +20,9 @@
           <div class = "ProgressBar-span-before">
             <span class="ProgressBar-stepLabel-before">{{categories[$index]}}</span>
           </div>
-          @if ($index == 4){
-            <div class = "ProgressBar-wellFill-void">
-              <span class="void"></span>
-            </div>
-          }
-          @else{
-            <div class = "ProgressBar-wellFill-before">
-              <span class="void"></span>
-            </div>
-          }
+          <div class = "ProgressBar-wellFill-before">
+            <span class="void"></span>
+          </div>
         </li>
       }
       @else{
@@ -61,18 +31,21 @@
         <div class = "ProgressBar-span">
           <span class="ProgressBar-stepLabel">{{categories[$index]}}</span>
         </div>
-        @if ($index == 4){
-          <div class = "ProgressBar-wellFill-void">
-            <span class="void"></span>
-          </div>
-        }
-        @else{
-          <div class = "ProgressBar-wellFill">
-            <span class="void"></span>
-          </div>
-        }      
+        <div class = "ProgressBar-wellFill">
+          <span class="void"></span>
+        </div> 
       </li>
       }
     }
+    
+    <li class="ProgressBar">
+      <svg class="ProgressBar-icon"><use xlink:href="#checkmark-bold"/></svg>
+      <div class = "ProgressBar-span">
+        <span class="ProgressBar-stepLabel"> Fin </span>
+      </div>
+      <div class = "ProgressBar-wellFill-void">
+        <span class="void"></span>
+      </div> 
+    </li>
   </ol>
 </div>

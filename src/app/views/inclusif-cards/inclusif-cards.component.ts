@@ -97,7 +97,6 @@ export class InclusifCardsComponent implements OnInit, OnDestroy {
       this.cat = navigation_data.data[newCardNumber]?.categorie ?? '';
       this.currentAnswer = this.answerStorage.getAnswer(newCardNumber);
       this.showCard = true;
-      this.cdRef.detectChanges(); // Forcer la détection des changements
     }, 0);
   }
 }

@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges, inject } from '@angular/core';
+import { AnswerStorageService } from '../../../answer-storage.service';
 
 @Component({
   selector: 'app-theme-indicator',
@@ -9,33 +10,28 @@ import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
   styleUrls: ['./theme-indicator.component.css']
 })
 export class ThemeIndicatorComponent implements OnChanges {
-  @Input() cat!: string;
-
-  categories: string[] = [
-    'Gestion de projet',
-    'Expérience utilisateur',
-    'Interface utilisateur',
-    'Développement',
-    'Editorial'
-  ];
-
-  progressValue: number = 0;
+  @Input() id: number = 0;
+  answerStorageService: AnswerStorageService = inject(AnswerStorageService);
   index_cat: number = 0;
+  percentage: number = 0;
+  cat: string = this.answerStorageService.getCategorie(this.id);
+  categories: string[] = this.answerStorageService.getCategories();
+
+  ngOnInit(): void {
+    this.updateProgress();
+  }
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (changes['cat']) {
+    if (changes['id']) {
       this.updateProgress();
     }
   }
 
   updateProgress(): void {
+    this.cat = this.answerStorageService.getCategorie(this.id);
     console.log(this.cat);
-    const index = this.categories.indexOf(this.cat);
-    if (index !== -1) {
-      this.progressValue = (index / (this.categories.length - 1)) * 100;
-    } else {
-      this.progressValue = 0;
-    }
     this.index_cat = this.categories.indexOf(this.cat);
+    this.percentage = this.answerStorageService.getPercentage(this.id);
+    console.log(this.percentage);
   }
 }

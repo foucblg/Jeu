@@ -29,9 +29,9 @@
   display: block;
   height: 5px;
   position: relative;
-  width: 200px;
+  width: 100%;
   top: -35px;
-  left: 95px;
+  left: 50%;
 }
 
 .ProgressBar-icon {
@@ -70,12 +70,7 @@
 .ProgressBar-wellFill-now{
   border-radius: 10%;
   background-color: #DA3635;
-  display: block;
-  height: 5px;     
-  position: relative;
-  width: 200px;
-  top: -35px;
-  left: 95px;
+  height: 5px;
 }
 
 .ProgressBar-icon-now {
@@ -117,9 +112,9 @@
   display: block;
   height: 5px;     
   position: relative;
-  width: 200px;
+  width: 100%;
   top: -35px;
-  left: 95px;
+  left: 50%;
 }
 
 .ProgressBar-icon-before {
@@ -161,7 +156,7 @@
   display: block;
   height: 5px;     
   position: relative;
-  width: 150px;
+  width: 100%;
   top: -35px;
-  left: 100px;
+  left: 50%;
 }
