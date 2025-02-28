@@ -12,6 +12,7 @@ export class AnswerStorageService {
   private currentNumberSubject: BehaviorSubject<number> = new BehaviorSubject<number>(0); // Initial current number
   private catSubject: BehaviorSubject<string> = new BehaviorSubject<string>(navigation_data.data[0]?.categorie ?? ''); // Initial category
   private continue: boolean = true;
+  private categories: string[] = [];
 
   constructor() {
     navigation_data.data.forEach((item, index) => {
@@ -24,10 +25,48 @@ export class AnswerStorageService {
     this.answers[cardNumber] = answer;
   }
 
+  setCategories(): string[] {
+    if (this.categories.length > 0) {
+      return this.categories;
+    }
+    else{
+      navigation_data.data.forEach(item => {
+        if (!this.categories.includes(item.categorie)){
+          this.categories.push(item.categorie);
+        }
+      });
+      return this.categories;
+    }
+  }
+
+  getCategorie(cardNumber:number): string {
+    return navigation_data.data[cardNumber].categorie;
+  }
+
+  getCategories(): string[] {
+    return this.categories;
+  }
+
   // Retrieve answer
   getAnswer(cardNumber: number): boolean {
     return this.answers[cardNumber];
   }
+
+  getPercentage(cardNumber: number): number {
+    this.setCategories();
+    let compteur = 0;
+    let place = 0;
+    navigation_data.data.forEach(item => {
+      if (item.categorie === navigation_data.data[cardNumber].categorie) {
+        console.log(item.numero);
+        compteur++;
+        if (item.numero === cardNumber) {
+          place = compteur;
+        }
+      }
+    });
+    return (place / compteur) * 100;
+  };
 
   getAllAnswers(): { [key: number]: boolean } {
     return this.answers;

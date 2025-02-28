@@ -1,58 +1,162 @@
 .theme-indicator-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 25px;
+}
+
+
+.ProgressBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.ProgressBar li {
+  display: table-cell;
+  text-align: center;
+  position: relative;
   width: 100%;
 }
 
-.progress-bar-container {
+.ProgressBar-wellFill {
+  border-radius: 10%;
+  background-color: #BDBDBD;
+  display: block;
+  height: 5px;
   position: relative;
-  width: 80%;
-  margin-bottom: 10px;
+  width: 100%;
+  top: -35px;
+  left: 50%;
+}
+
+.ProgressBar-icon {
+  width: 20px;
   height: 20px;
-  background-color: #ccc;
-  border-radius: 10px;
-}
-
-.progress-bar {
-  height: 100%;
-  background-color: #007bff;
-  border-radius: 10px;
-}
-
-.dots {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 0;
-  display: flex;
-  justify-content: space-between;
-  pointer-events: none;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  background-color: #c70714;
+  background-color: #ffffff;
   border-radius: 50%;
-  position: absolute;
-  transform: translateX(-50%) translateY(-50%);
+  border: 4px solid #BDBDBD;
+  max-width: 100%;
+  z-index: 10;
+  position: relative;
+  transition: all .25s ease-out;
 }
 
-.dot.active {
-  background-color: #007bff;
-}
-
-.category-labels {
+.ProgressBar-span {
   display: flex;
-  justify-content: space-between;
-  width: 80%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #E9E9E9;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 4px;
+  margin: auto;
+  padding: 2px 5px 2px 5px;
 }
 
-.category-label {
-  flex: 1;
-  text-align: center;
-  font-size: 14px;
-  font-weight: bold;
+.ProgressBar-stepLabel {
+  font-size: 12px;
+  color: #696969;
+  width: 100%;
+  transition: all .25s ease-out;
+}
+
+.ProgressBar-wellFill-now{
+  border-radius: 10%;
+  background-color: #DA3635;
+  height: 5px;
+}
+
+.ProgressBar-icon-now {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 4px solid #DA3635;
+  max-width: 100%;
+  z-index: 10;
+  position: relative;
+  transition: all .25s ease-out;
+}
+
+.ProgressBar-span-now {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #FFE5E4;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 4px;
+  margin: auto;
+  padding: 2px 5px 2px 5px;
+}
+
+.ProgressBar-stepLabel-now {
+  font-size: 12px;
+  color: #DA3635;
+  width: 100%;
+  transition: all .25s ease-out;
+}
+
+.ProgressBar-wellFill-before{
+  border-radius: 10%;
+  background-color: #1D8844;
+  display: block;
+  height: 5px;     
+  position: relative;
+  width: 100%;
+  top: -35px;
+  left: 50%;
+}
+
+.ProgressBar-icon-before {
+  width: 20px;
+  height: 20px;
+  background-color: #1D8844;
+  border-radius: 50%;
+  max-width: 100%;
+  z-index: 10;
+  position: relative;
+  transition: all .25s ease-out;
+}
+
+.ProgressBar-span-before {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #EEFFE4;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 4px;
+  margin: auto;
+  padding: 2px 5px 2px 5px;
+}
+
+
+.ProgressBar-stepLabel-before {
+  font-size: 12px;
+  color: #1D8844;
+  width: 100%;
+  transition: all .25s ease-out;
+}
+
+.ProgressBar-wellFill-void{
+  border-radius: 10%;
+  background-color: #ffffff;
+  display: block;
+  height: 5px;     
+  position: relative;
+  width: 100%;
+  top: -35px;
+  left: 50%;
 }
