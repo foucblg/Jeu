@@ -28,7 +28,9 @@
   }
   
   .navigation-button:focus {
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  }
+    outline: 3px solid black; /* Bordure noire épaisse */
+    outline-offset: 2px; /* Petit espacement entre la bordure et le bouton */
+}
+
+
   

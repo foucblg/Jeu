@@ -160,3 +160,30 @@ button {
   font-weight: bold;
   border-radius: 50%;
 }
+.comparison-container {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.comparison-label {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.bad {
+  margin-left:37px ;
+  color: red;
+  background-color: rgba(255, 0, 0, 0.1);
+  align-self: flex-start;
+}
+
+.good {
+  margin-left: 125px;
+  color: green;
+  background-color: rgba(0, 255, 0, 0.1);
+}
