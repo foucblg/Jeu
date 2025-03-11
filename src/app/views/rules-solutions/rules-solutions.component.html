@@ -1,14 +1,26 @@
-<div class="rules-solutions">
-    <div class="container">
+<div class="container">
     <h1>Inclusif, le jeu</h1>
     <h3>Solutions</h3>
-        <p>Vous avez réalisé une première évaluation de votre projet ou service numérique: à présent, choisissez les solutions concrètes à mettre en place pour chaque catégorie d'analyse jugée peu ou pas inclusive.</p>
-        <p>Cliquez sur les catégories pour lesquelles il y a eu des réponses négatives et regardez les cartes solutions correspondantes. Chaque carte présente une solution concrète à mettre en œuvre.</p>
-        <p>Lisez attentivement les cartes, et sélectionnez celles que vous choisissez de mettre en œuvre.</p>
-        <p>Faites la même chose pour chaque catégorie du plateau. À la fin de cette étape, vous obtenez une liste de solutions concrètes à mettre en œuvre pour rendre votre projet ou service numérique plus inclusif.</p>
+    
+    <p>Vous avez réalisé une première évaluation de votre projet ou service numérique: à présent, choisissez les solutions concrètes à mettre en place pour chaque catégorie d'analyse jugée peu ou pas inclusive.</p>
+    <p>Cliquez sur les catégories pour lesquelles il y a eu des réponses négatives et regardez les cartes solutions correspondantes. Chaque carte présente une solution concrète à mettre en œuvre.</p>
+    <p>Lisez attentivement les cartes, et sélectionnez celles que vous choisissez de mettre en œuvre.</p>
+    <p>Faites la même chose pour chaque catégorie du plateau. À la fin de cette étape, vous obtenez une liste de solutions concrètes à mettre en œuvre pour rendre votre projet ou service numérique plus inclusif.</p>
+</div>
+
+
+<div class="lower-section">
+    <p-divider/>
+
+    <!-- Bouton pour démarrer le jeu -->
+    <div class = "avance-button">
+        <p-button
+        class = "avance"
+        (click)="continuer()"
+        aria-label="Commencer le Jeu"
+        label = "Continuer"
+        severity="primary">
+        </p-button>
     </div>
-    <p-button (click)="continuer()" severity="primary" >
-        {{"Continuer"}}
-     </p-button>
 </div>
 
