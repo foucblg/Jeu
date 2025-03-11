@@ -24,7 +24,7 @@ export class NavigationButtonComponent {
   @Output() catChange = new EventEmitter<string>();
   @Output() answerChange = new EventEmitter<boolean>();
 
-  constructor(private router: Router, private answerStorage: AnswerStorageService, private cdRef: ChangeDetectorRef) {
+  constructor(private router: Router, public answerStorage: AnswerStorageService, private cdRef: ChangeDetectorRef) {
     this.answerStorage.getCurrentNumber().subscribe(number => {
       this.currentNumber = number;
     });

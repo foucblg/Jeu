@@ -11,6 +11,10 @@ import { ActionBarComponent } from '../../shared/action-bar/action-bar.component
 export class RulesSolutionsComponent {
   constructor(private router:Router) {}
     continuer(){
-      this.router.navigate(['./regles_conclusion'])
+      this.router.navigate(['./solution'], {
+        queryParams: { numero: 1},
+        queryParamsHandling: 'merge', // Merge avec les paramètres existants
+        skipLocationChange: false // Mettre à jour l'URL dans la barre d'adresse
+      })
     }
 }
