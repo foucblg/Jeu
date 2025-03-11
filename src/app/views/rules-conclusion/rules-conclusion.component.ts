@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import {Router } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
-import { ActionBarComponent } from '../../shared/action-bar/action-bar.component';
+import { DividerModule } from 'primeng/divider';
 
 @Component({
   selector: 'app-rules-conclusion',
-  imports: [ButtonModule],
+  imports: [ButtonModule, DividerModule],
   templateUrl: './rules-conclusion.component.html',
   styleUrl: './rules-conclusion.component.css'
 })

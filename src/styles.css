@@ -10,16 +10,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Lato, Helvetica, sans-serif;
   }
   
   html,
   body,
   my-app {
     height: 100%;
-    height: 100vh;
+    color: #333333;
   }
   
+  html {
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+     display: flex;
+     flex-direction: column;
+   }
+
   .subtext {
     color: var(--text-secondary-color);
   }

@@ -1,20 +1,31 @@
 <div class="presentation-section">
-  <div class="container">
-    <h1>Inclusif, le jeu</h1>
-    <h2>Concevons nos services numériques pour tout le monde !</h2>
+  <h1>Inclusif, le jeu</h1>
+  <h2>Concevons nos services numériques pour tout le monde !</h2>
+  <p-image
+    src="images/banner.png"
+    alt="Image de présentation du jeu"
+    [imageStyle]="{ objectFit: 'contain' }"
+    width="80%"
+  />
+  <p>
+    Bienvenue sur Inclusif, le jeu.
+    <br>
+    Ce jeu vous permet d’aborder de manière ludique les problèmes liés à l’inclusivité
+  </p>
+</div>
+
+<div class="lower-section">
+  <p-divider/>
+  
+  <!-- Bouton pour démarrer le jeu -->
+  <div class = "start-button">
+    <p-button
+      class = "start"
+      (click)="commencer()"
+      aria-label="Commencer le Jeu"
+      label = "En avant"
+      severity="primary">
+    </p-button>
   </div>
-    <p-image
-      src="images/banner.png"
-      alt="Image de présentation du jeu"
-      [imageStyle]="{ objectFit: 'contain' }"
-      width="80%"
-    />
-    <div class="container">
-      <p>Bienvenue sur Inclusif, le jeu.</p>
-      <p>Ce jeu vous permet d’aborder de manière ludique les problèmes liés à l’inclusivité</p>
-    </div>
-    <p-button (click)="commencer()" severity="primary" >
-      {{"Passer à l'action"}}
-   </p-button>
-  </div>
+</div>
 
