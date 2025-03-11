@@ -1,10 +1,9 @@
-<div class="navigation-container">
 
+ 
     <!-- Theme Indicator -->
-    <div class="theme-indicator">
-      <app-theme-indicator [cat]="cat"></app-theme-indicator>
-    </div>
+    <app-theme-indicator [id]="theme_currentNumber"></app-theme-indicator>
     <!-- Card Number Display -->
+    <div class="navigation-container">
     <div class="card-display">
       <app-navigation-card-solutions [card_number]="currentNumber"></app-navigation-card-solutions>
     </div>
@@ -14,7 +13,8 @@
       <app-navigation-button-solutions 
         [avance]="false" 
         (cardChange)="currentNumber = $event"
-        (catChange)="cat = $event">
+        (catChange)="cat = $event"
+        (themeChange)="theme_currentNumber = $event">
       </app-navigation-button-solutions>
     </div>
   
@@ -25,7 +25,8 @@
       <app-navigation-button-solutions 
         [avance]="true" 
         (cardChange)="currentNumber = $event"
-        (catChange)="cat = $event">
+        (catChange)="cat = $event"
+        (themeChange)="theme_currentNumber = $event">
       </app-navigation-button-solutions>
     </div>
     </div>

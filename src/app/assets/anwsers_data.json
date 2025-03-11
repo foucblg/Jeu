@@ -463,18 +463,173 @@
               "C'est également mieux pour le référencement dans les moteurs de recherche."
             ],
             "source": {
-            }
+                "nom": "Système et design de l'état",
+                "description": "Le site de recensement de l'état recense de nombreuses bonnespratiques ainsi que des cas concrets."
+            },
+            "image": true,
+            "image_comparaison":false
+          },
+          {
+            "id":28 ,
+            "categorie": "Interface utilisateur",
+            "sous_categorie": "Design visuel",
+            "titre": "Espacez et hiérarchisez",
+            "contenu": [
+              "Des espaces cohérents et suffisament importants permettent de hiérarchiser la structure d'un écran tout en évitant les erreurs de manipulation.\n\n Gardez une logique pour les espacements au niveau d'un service. Il existe plusieurs systèmes de grilles et d'espacement tels qu le système de 8. Cela revient à baser la taille des composants ainsi que des éléments de la grille sur des multiples de 8"
+            ],
+            "source": {
+            },
+            "image": true,
+            "image_comparaison":true
+          },
+          {
+            "id":29 ,
+            "categorie": "Interface utilisateur",
+            "sous_categorie": "Interactions",
+            "titre": "Explicitez vos champs de saisie",
+            "contenu": [
+              "Les champs de saisie sont des éléments essentiels de certains écrans de saisie et doivent toujours être accompagnés d'un libéllé \n\nExplicitez à l'utilisateur les attentes en terme de saisie. Il est aussi intéressant des les accompagner d'une phrase descriptive si nécessaire."
+              ],
+            "source": {
+            },
+            "image": true,
+            "image_comparaison":true
+          },
+          {
+            "id":30 ,
+            "categorie": "Interface utilisateur",
+            "sous_categorie": "Interactions",
+            "titre": "Structurez vos formulaires",
+            "contenu": [
+              "Structurez vos formuliares sous la forme d'une seule colonne.",
+              "Donnez un retour direct aux actions de l'utilisateur pour le rassurer et éviter les erreurs de saisie.",
+              "Veillez à ne pas surchargger vos formulaires:\n découpez les endifférentes étapes si le formulaire est trop complexe, ou si un même écran nécessite trop d'intéraction."
+            ],
+            "source": {
+            },
+            "image": true,
+            "image_comparaison":true
+          },
+          {
+            "id":31 ,
+            "categorie": "Développement",
+            "sous_categorie": "Code",
+            "titre": "Mettez une langue par défaut",
+            "contenu": [
+              "L'attribut HTML permet de définir la langue du texte utilisée sur la page web. Il faut toujours indiquer la langue ^par défaut sur cet attribut. \n\n En effet, le lecteur d'écran doit savoir quelle langue utiliser pour chaque pasge. Un texte en français (<html lang='fr'>) sera ainsi lu par une voix française."
+            ],
+            "source": {
+            },
+            "image": true,
+            "image_comparaison":true
           },
           {
             "id":32 ,
             "categorie": "Développement",
             "sous_categorie": "Code",
-            "titre": "Développez des scripts accessibles",
+            "titre": "Ajoutez un titre de page",
             "contenu": [
-              
+              "Chaque page de web doit avoir un titre de page (attribut HTML title).\n\n Un titre de page permet à l'utilisateur de mieux comprendre le contexte de sa navigation.\n\n C'est également mieux pour le référencement dans les moteurs de recherche."
             ],
             "source": {
-            }
+            },
+            "image": true,
+            "image_comparaison":false
+          },
+          {
+            "id":33 ,
+            "categorie": "Développement",
+            "sous_categorie": "Code",
+            "titre": "Développez des scripts accessibles",
+            "contenu": [
+              "Les scripts doivent être contrôlables par l'utilisateur, au clavier et par tout dispositif de pointage.\n\n Un script est un ensemble de lignes de commandes inséré dans une page web pour la rendre dynamique et interactive. Exemples : un carroussel, un menu déroulant, une fenêtre modale, une barre de recherche dépoliante.\n\n Le langage des scripts le plus connu est le JavaScript. "
+            ],
+            "source": {
+            },
+            "image": false,
+            "image_comparaison":false
+          },
+          {
+            "id":34 ,
+            "categorie": "Développement",
+            "sous_categorie": "Code",
+            "titre": "Rendez les tableaux accessibles",
+            "contenu": [
+              "La lecture d'une ligne de tableau doit être compréhensible avec les technologies d'assistance. C'est pourquoi chaque cellule doit être associé à ses en-têtes (colonnes et lignes)."
+            ],
+            "source": {
+            },
+            "image": false,
+            "image_comparaison":false
+          },{
+            "id":35 ,
+            "categorie": "Développement",
+            "sous_categorie": "Code",
+            "titre": "Contrôlez les éléments multimédias",
+            "contenu": [
+              "L'utilisateur doit pouvoir contrôler le déclenchement de tout son ou toute vidéo.\n\n Ainsi, le player audio ou vidéo utilisé doit avoir des boutons Lecture et Pause."],
+            "source": {
+            },
+            "image": true,
+            "image_comparaison":true
+          },
+          {
+            "id":36 ,
+            "categorie": "Développement",
+            "sous_categorie": "Code",
+            "titre": "Restez lisible",
+            "contenu": [
+              "Le texte doit rester lisible lorque la taille des caractères est augmentée jusqu'à 200%."],
+            "source": {
+            },
+            "image": true,
+            "image_comparaison":true
+          },
+          {
+            "id":37 ,
+            "categorie": "Développement",
+            "sous_categorie": "Navigation",
+            "titre": "Restez lisible",
+            "contenu": [
+              "Le texte doit rester lisible lorque la taille des caractères est augmentée jusqu'à 200%."],
+            "source": {
+            },
+            "image": false,
+            "image_comparaison":false
+          },
+          {
+            "id":38 ,
+            "categorie": "Développement",
+            "sous_categorie": "Navigation",
+            "titre": "Laissez le focus visible",
+            "contenu": [
+              "La prise de focus doit être visible pour chaque élément recevant le focus."],
+            "source": {
+            },
+            "image": true,
+            "image_comparaison":true
+          },{
+            "id":39 ,
+            "categorie": "Développement",
+            "sous_categorie": "Navigation",
+            "titre": "Utilisez des titres",
+            "contenu": [
+              "L'information doit être structurée par l'utilisation de titres: H1, H2, H3, etc. Les titres doivent respecter une hiérarchie: le H1 contient des H2 qui contiennent des H3, etc. \n\n Il est plus simple, quand on utlise uniquement un clavier, de naviqguer de titre en titre sans devoir lire la totalité de la page: cela équivaut à un sommaire. \n\n C'est également mieux pour le référencement dans les moteurs de recherche."],
+            "source": {
+            },
+            "image": true,
+            "image_comparaison":true
+          },{
+            "id":40 ,
+            "categorie": "Développement",
+            "sous_categorie": "Navigation",
+            "titre": "Structurez vos listes",
+            "contenu": [
+              "Les listes doivent  être structurées.\n\n Ainsi, pour les listes non ordonnées, il faut utiliser les balises HTML <ul> et <li>. Pour les listes ordonnées, il faut utiliser les balises HTML <ol> et <li>."],
+            "source": {
+            },
+            "image": true,
+            "image_comparaison":true
           }
     
 ]
