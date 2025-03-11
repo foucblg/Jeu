@@ -332,7 +332,7 @@
             "id":25 ,
             "categorie": "Interface utilisateur",
             "sous_categorie": "Design visuel",
-            "titre": "Représentez la diversité",
+            "titre": "Soignez vos mises en pages",
             "contenu": [
               "Gardez les mêmes tailes de titre, marges, règles d'espacement et colonnes. \n Une structure cohérente s'appuie sur le sens de lecture (européen): de gauche à droite puis de haut en bas."
             ],
@@ -345,7 +345,7 @@
             "id":26 ,
             "categorie": "Interface utilisateur",
             "sous_categorie": "Design visuel",
-            "titre": "Soignez vos mises en pages",
+            "titre": "Concevez pour un usage intuitif",
             "contenu": [
               "Les éléments intéractifs de vos écrans doivent être intuitifs et suggérer leur utilisation et leur fonction: c'est l'affordance. \n Travaillez sur les diffénrents états de ces éléments (survol, clic, sélection...) permet d'éviter la frustration ou les erreurs de manipualtion chez vos utilisateurs."
             ],
@@ -356,14 +356,87 @@
             "id":27 ,
             "categorie": "Interface utilisateur",
             "sous_categorie": "Design visuel",
-            "titre": "Rendez vos pictogrammes inclusifs",
+            "titre": "Pensez responsive ",
             "contenu": [
               "Prévoyez vos interfaces pour les diffénrents terminaux sur lesquels ils seront utilisés. Cela peut implique de concevoir le service au format mobile, tablette ou encore ordinateur.",
-              "Suivez une logique de points de rupture "
+              "Suivez une logique de points de rupture (breakpoints) pour les différents mises en pages et assurez-vous que les plus petites résolutions d'écrans soit utilisables."
             ],
             "source": {
-                "nom": "Iconify Design (en anglais)",
-                "description": "Iconify est un sit référançant de nombreuses ressources et bibliothèques d'icônes open sources."
+                "nom": "Système de design de l'état",
+                "description": "Le site du système de design de l'Etat recense de nombreuses bonne pratiques ainsi que des cas concrets"
+            }
+          },
+          {
+            "id":28 ,
+            "categorie": "Interface utilisateur",
+            "sous_categorie": "Interactions",
+            "titre": "Espacez et hiérarchisez ",
+            "contenu": [
+              "Des espaces cohérents et suffisamment importants permettent de hiérarchiser la structure d'un écran tout en évitant les erreurs de manipulation ",
+              "Gardez une logique pour les espacements au niveau d'un service. Il existe plusieurs systèmes de grilles et d'espacements tels que le système de 8. Cela revient à baser la taille des composants ainsi que les éléments de la grille sur des multiples de 8."
+            ],
+            "source": {
+            }
+          },
+          {
+            "id":29 ,
+            "categorie": "Interface utilisateur",
+            "sous_categorie": "Interactions",
+            "titre": "Explicitez vos champs de saisie ",
+            "contenu": [
+              "Les champs de saisie sont des éléments cruciaux de certains écrans et doivent toujours être accompagnés d'une libellé.",
+              "Explicitez à l'utilisateur les attentes en termes de saisie. Il est aussi intéressant de les accompagner d'une phrase descriptivie si nécessaire."
+            ],
+            "source": {
+            }
+          },
+          {
+            "id":30 ,
+            "categorie": "Interface utilisateur",
+            "sous_categorie": "Interactions",
+            "titre": "Structurez vos formulaires ",
+            "contenu": [
+              "Structurez vos formulaires sous la forme d'une seule colonne.",
+              "Donnez un retour direct aux actions de l'utilisateur pour le rassurer et éviter les erreurs de saisie.",
+              "Veillez à ne pas surcharger vos formulaires : découpez les en différentes étapes si le formulaire est trop complexe, ou si un même écran nécessite trop d'interactions."
+            ],
+            "source": {
+            }
+          },
+          {
+            "id":31 ,
+            "categorie": "Développement",
+            "sous_categorie": "Code",
+            "titre": "Mettez une langue par défaut ",
+            "contenu": [
+              "L'attribut HTML Lang est utilisé pour déterminer la langue du texte utilisé pour une page Web. Il faut toujours indiquer la langue par défaut dans cet attribut.",
+              "En effet, le lecteur d'écran doit savoir quelle langue utiliser pour chaque page. Un texte en français (<html lang=\"fr-FR\") sera ainsi lu par une voix française"
+            ],
+            "source": {
+            }
+          },
+          {
+            "id":31 ,
+            "categorie": "Développement",
+            "sous_categorie": "Code",
+            "titre": "Ajoutez un titre de page",
+            "contenu": [
+              "Chaque page web doit avoir un titre de page (attribut HTMl title).",
+              "Un titre de page permet à l'utilisateur de mieux comprendre le contexte de sa navigation.",
+              "C'est également mieux pour le référencement dans les moteurs de recherche."
+            ],
+            "source": {
+            }
+          },
+          {
+            "id":32 ,
+            "categorie": "Développement",
+            "sous_categorie": "Code",
+            "titre": "Développez des scripts accessibles",
+            "contenu": [
+              
+            ],
+            "source": {
             }
           }
     
