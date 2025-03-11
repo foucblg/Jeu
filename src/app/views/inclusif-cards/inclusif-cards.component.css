@@ -1,10 +1,9 @@
-/* General Container for the Navigation */
 .navigation-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Adds space between elements */
+    gap: 10px; 
   }
   
   .action-bar {

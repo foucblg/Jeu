@@ -11,6 +11,9 @@ import { ButtonModule } from 'primeng/button';
 import { DialogModule } from 'primeng/dialog';
 import { Subscription } from 'rxjs';
 
+/* Composant permettant de gérer les cartes inclusives.
+Il permet de sélectionner une réponse pour chaque carte, et de naviguer entre les cartes.
+Il gère également l'affichage des images et du texte pour les questions */
 @Component({
   selector: 'app-navigation-card-solutions',
   standalone: true,
@@ -26,9 +29,10 @@ export class NavigationCardComponent implements OnInit, OnDestroy {
   allAnswers: { [key: number]: boolean } = {}; // Contient la réponse de chaque carte
 
   Navdata = navigation_data; //Récupération des données des cartes
-  ngModel = 'Non'; // Valeur par défaut pour le bouton radio
+  ngModel = 'Non'; // Valeur par défaut pour les bouton radio, devient "Oui" si oui est coché
 
-  displayDialog = false;
+  displayDialog = false; // Booléen pour afficher ou non la boîte de dialogue d'information "i"
+
   remainingTime: number = 0; // Temps restant
   private timerSubscription: Subscription | undefined = undefined;
 
@@ -55,6 +59,12 @@ export class NavigationCardComponent implements OnInit, OnDestroy {
   }
 
   onAnswer(answer: boolean): void {
+    /*
+    Fonction activée lorsqu'un radiobutton est sélectionné ("Oui" ou "Non").
+    Met à jour la réponse de la carte dans le service de stockage des réponses, et 
+    émet un événement pour mettre à jour la réponse dans le parent.
+    */
+
     this.card_answer = answer;
     this.answerStorage.setAnswer(this.card_number, answer);
     this.answerChange.emit(this.card_answer);
@@ -65,14 +75,24 @@ export class NavigationCardComponent implements OnInit, OnDestroy {
   }
 
   showDialog(): void {
+    /*
+    Fonction activée lorsqu'on clique sur le bouton d'information "i".
+    Affiche la boîte de dialogue d'information.
+    */
     this.displayDialog = true;
   }
 
   hideDialog(): void {
+    /* Fonction activée lorsqu'on clique sur le bouton "Fermer" de la boîte de dialogue d'information.
+    Cache la boîte de dialogue d'information.
+    */
     this.displayDialog = false;
   }
 
   formatTime(seconds: number): string {
+    /*
+    Fonction pour formater le temps restant en minutes et secondes.
+    */
     const minutes = Math.floor(seconds / 60);
     const remainingSeconds = seconds % 60;
     return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;

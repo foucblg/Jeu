@@ -6,7 +6,8 @@ import { InputTextModule } from 'primeng/inputtext';
 import { FloatLabelModule } from 'primeng/floatlabel';
 import { ButtonModule } from 'primeng/button';
 
-
+/* Composant permettant de gérer la page de gestion des utilisateurs.
+Il permet d'ajouter, de modifier et de supprimer des utilisateurs. */
 @Component({
   selector: 'app-user-manager',
   templateUrl: './user-manager.component.html',

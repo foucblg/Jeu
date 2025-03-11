@@ -1,4 +1,5 @@
-
+<!-- Bouton de navigation -->
 <p-button (click)="changecard()" class="navigation-button" [severity]="carte_suivante ? null : 'secondary'">
+  <!-- Affiche "Suivant" si carte_suivante est vrai, sinon affiche "Retour" -->
   {{ carte_suivante ? 'Suivant' : 'Retour' }}
 </p-button>

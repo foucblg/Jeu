@@ -1,49 +1,62 @@
 <div class="theme-indicator-container">
-  <ol class = "ProgressBar">
-    @for (categorie of categories; track $index){
-      @if (cat  === categorie){
+  <ol class="ProgressBar">
+    <!-- Boucle sur chaque catégorie pour afficher les étapes de progression -->
+    @for (categorie of categories; track $index) {
+      <!-- Vérifie si la catégorie actuelle correspond à la catégorie de la carte -->
+      @if (cat === categorie) {
         <li class="ProgressBar">
+          <!-- Icône de progression actuelle -->
           <svg class="ProgressBar-icon-now"><use xlink:href="#checkmark-bold"/></svg>
-          <div class = "ProgressBar-span-now">
+          <div class="ProgressBar-span-now">
+            <!-- Affiche le nom de la catégorie actuelle -->
             <span class="ProgressBar-stepLabel-now">{{categories[$index]}}</span>
           </div>
-          <div class = "ProgressBar-wellFill">
-            <div class="ProgressBar-wellFill-now" style = 'width:{{percentage}}%;'>
+          <div class="ProgressBar-wellFill">
+            <!-- Barre de progression pour la catégorie actuelle -->
+            <div class="ProgressBar-wellFill-now" [style.width.%]="percentage">
               <span class="void"></span>
             </div>
           </div>
         </li>
       }
-      @else if ($index < index_cat){
+      <!-- Vérifie si l'index de la catégorie est inférieur à l'index de la catégorie actuelle -->
+      @else if ($index < index_cat) {
         <li class="ProgressBar">
+          <!-- Icône de progression précédente -->
           <svg class="ProgressBar-icon-before"><use xlink:href="#checkmark-bold"/></svg>
-          <div class = "ProgressBar-span-before">
+          <div class="ProgressBar-span-before">
+            <!-- Affiche le nom de la catégorie précédente -->
             <span class="ProgressBar-stepLabel-before">{{categories[$index]}}</span>
           </div>
-          <div class = "ProgressBar-wellFill-before">
+          <div class="ProgressBar-wellFill-before">
             <span class="void"></span>
           </div>
         </li>
       }
-      @else{
-      <li class="ProgressBar">
-        <svg class="ProgressBar-icon"><use xlink:href="#checkmark-bold"/></svg>
-        <div class = "ProgressBar-span">
-          <span class="ProgressBar-stepLabel">{{categories[$index]}}</span>
-        </div>
-        <div class = "ProgressBar-wellFill">
-          <span class="void"></span>
-        </div> 
-      </li>
+      <!-- Pour toutes les autres catégories -->
+      @else {
+        <li class="ProgressBar">
+          <!-- Icône de progression future -->
+          <svg class="ProgressBar-icon"><use xlink:href="#checkmark-bold"/></svg>
+          <div class="ProgressBar-span">
+            <!-- Affiche le nom de la catégorie future -->
+            <span class="ProgressBar-stepLabel">{{categories[$index]}}</span>
+          </div>
+          <div class="ProgressBar-wellFill">
+            <span class="void"></span>
+          </div> 
+        </li>
       }
     }
     
+    <!-- Dernière étape de la progression -->
     <li class="ProgressBar">
       <svg class="ProgressBar-icon"><use xlink:href="#checkmark-bold"/></svg>
-      <div class = "ProgressBar-span">
+      <div class="ProgressBar-span">
+        <!-- Affiche "Fin" pour indiquer la fin de la progression -->
         <span class="ProgressBar-stepLabel"> Fin </span>
       </div>
-      <div class = "ProgressBar-wellFill-void">
+      <div class="ProgressBar-wellFill-void">
         <span class="void"></span>
       </div> 
     </li>
