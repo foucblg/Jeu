@@ -7,12 +7,12 @@ import { navigation_data } from '../../app.component';
 import { NavigationCardComponent } from "./navigation-card/navigation-card.component";
 import { Subscription } from 'rxjs';
 import { AnswerStorageService } from '../../answer-storage.service';
-import {DividerModule } from 'primeng/divider';
+import { DividerModule } from 'primeng/divider';
 
 @Component({
   selector: 'app-inclusif-cards',
   standalone: true,
-  imports: [CommonModule, NavigationButtonComponent, NavigationCardComponent, DividerModule],
+  imports: [CommonModule, NavigationButtonComponent, NavigationCardComponent, DividerModule, ThemeIndicatorComponent],
   templateUrl: './inclusif-cards.component.html',
   styleUrls: ['./inclusif-cards.component.css'],
 })
@@ -42,10 +42,13 @@ export class InclusifCardsComponent implements OnInit, OnDestroy {
       const id = +params['id']; // Récupérer 'id' depuis les query params
 
       if (id && id !== this.currentNumber && id >= 0 && id < navigation_data.data.length) {
+        console.log(id);
         this.answerStorage.setCurrentNumber(id); // Mise à jour de currentNumber si le query param 'id' est valide
         this.answerStorage.setCat(navigation_data.data[id]?.categorie ?? ''); // Mettre à jour la catégorie
         this.currentNumber = id;
+        console.log(this.cat)
         this.cat = navigation_data.data[id]?.categorie ?? '';
+        console.log(this.cat)
         this.currentAnswer = this.answerStorage.getAnswer(id); // Mise à jour de la réponse associée à la carte
       }
     });
@@ -89,12 +92,11 @@ export class InclusifCardsComponent implements OnInit, OnDestroy {
 
   onCardChange(newCardNumber: number): void {
     this.showCard = false;
-    this.cdRef.detectChanges(); // Forcer la détection des changements
     setTimeout(() => {
       this.currentNumber = newCardNumber;
+      this.cat = navigation_data.data[newCardNumber]?.categorie ?? '';
       this.currentAnswer = this.answerStorage.getAnswer(newCardNumber);
       this.showCard = true;
-      this.cdRef.detectChanges(); // Forcer la détection des changements
     }, 0);
   }
 }
