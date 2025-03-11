@@ -8,7 +8,7 @@
         <!-- Affiche le titre de la question avec la couleur de texte spécifiée -->
         <h3 class="question-title" [style.color]="card.textcolor">{{ card.nom }}</h3>
         <!-- Affiche le temps restant dans un rectangle arrondi -->
-        <span class="remaining-time rounded-rectangle">{{formatTime(remainingTime)}}</span>
+        <span class="remaining-time rounded-rectangle" [ngClass] = "{'red-timer': remainingTime <=0}">{{formatTime(remainingTime)}}</span>
         <!-- Bouton d'information -->
         <p-button class="info-button" icon="pi pi-info" [rounded]="true" severity="info" (click)="showDialog()"></p-button>
       </div>
@@ -56,5 +56,13 @@
   <p>Ceci est un exemple</p>
   <div class="dialog-footer">
     <p-button label="Ok" icon="pi pi-check" (click)="hideDialog()"></p-button>
+  </div>
+</p-dialog>
+
+<!-- Dialogue pour afficher le message lorsque le temps est écoulé -->
+<p-dialog header="Temps écoulé" [(visible)]="timeExpiredDialog" [modal]="true" [closable]="false">
+  <p>Le temps est écoulé, essayez de vous dépêcher pour passer à la suite.</p>
+  <div class="dialog-footer">
+    <p-button label="Ok" icon="pi pi-check" (click)="hideTimeExpiredDialog()"></p-button>
   </div>
 </p-dialog>

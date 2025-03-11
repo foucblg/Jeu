@@ -32,6 +32,8 @@ export class NavigationCardComponent implements OnInit, OnDestroy {
   ngModel = 'Non'; // Valeur par défaut pour les bouton radio, devient "Oui" si oui est coché
 
   displayDialog = false; // Booléen pour afficher ou non la boîte de dialogue d'information "i"
+  timeExpiredDialog = false; // Booléen pour afficher ou non la boîte de dialogue lorsque le temps est écoulé
+
 
   remainingTime: number = 0; // Temps restant
   private timerSubscription: Subscription | undefined = undefined;
@@ -45,6 +47,9 @@ export class NavigationCardComponent implements OnInit, OnDestroy {
     // S'abonner au temps restant depuis le service
     this.timerSubscription = this.answerStorage.getRemainingTime().subscribe(time => {
       this.remainingTime = time;
+      if (this.remainingTime === 0) {
+        this.showTimeExpiredDialog();
+      }
     });
 
     console.log('NavigationCardComponent créé');
@@ -89,12 +94,31 @@ export class NavigationCardComponent implements OnInit, OnDestroy {
     this.displayDialog = false;
   }
 
+  showTimeExpiredDialog(): void {
+    /*
+    Fonction activée lorsque le temps est écoulé.
+    Affiche la boîte de dialogue de temps écoulé.
+    */
+    this.timeExpiredDialog = true;
+  }
+
+  hideTimeExpiredDialog(): void {
+    /* Fonction activée lorsqu'on clique sur le bouton "Fermer" de la boîte de dialogue de temps écoulé.
+    Cache la boîte de dialogue de temps écoulé.
+    */
+    this.timeExpiredDialog = false;
+  }
+
   formatTime(seconds: number): string {
     /*
     Fonction pour formater le temps restant en minutes et secondes.
     */
+    const isNegative = seconds < 0;
+    seconds = Math.abs(seconds);
+    
     const minutes = Math.floor(seconds / 60);
     const remainingSeconds = seconds % 60;
-    return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+    
+    return `${isNegative ? '-' : ''}${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
   }
 }

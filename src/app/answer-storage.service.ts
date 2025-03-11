@@ -123,7 +123,7 @@ export class AnswerStorageService {
     this.continue = true;
     const interval = setInterval(() => {
       let currentTime = this.remainingTimeSubject.value;
-      if (currentTime > 0 && this.continue) {
+      if (this.continue) {
         this.setRemainingTime(currentTime - 1);
       } else {
         clearInterval(interval);
