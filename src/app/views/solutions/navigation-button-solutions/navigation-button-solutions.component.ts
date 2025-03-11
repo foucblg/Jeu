@@ -101,7 +101,7 @@ export class NavigationButtonSolutionsComponent implements OnInit{
       
     this.cardChange.emit(this.indice_reponse); //Mise a jour des paramètres 
     this.catChange.emit(this.cat);
-    const sous_categorie = navigation_data_solutions.data[this.currentNumber]?.sous_categorie;
+    const sous_categorie = navigation_data_solutions.data[this.currentNumber-1]?.sous_categorie;
     this.theme_currentNumber = navigation_data.data.find(item => item.nom === sous_categorie)?.numero ?? 0;
     console.log("ID correspondant dans navigation_data :", this.theme_currentNumber,"sous_categorie",sous_categorie);
     this.themeChange.emit(this.theme_currentNumber);
