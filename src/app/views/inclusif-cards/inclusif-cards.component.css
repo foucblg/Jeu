@@ -43,6 +43,37 @@ p-divider{
   padding-bottom: 40px;
   width:80%;
 }
+.card-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.lower-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+  width: 100%;
+  position: relative;
+  bottom:0px;
+}
+
+
+.avance-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+p-divider{
+  margin: 0;
+  padding-bottom: 40px;
+  width:80%;
+}
   
 
   

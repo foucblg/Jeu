@@ -3,10 +3,6 @@ import { Router } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { DividerModule } from 'primeng/divider';
 
-
-/* Composant permettant de gérer la page de contexte.
-Il permet de rediriger l'utilisateur vers la page des règles. */
-
 @Component({
   selector: 'app-contexte',
   templateUrl: './contexte.component.html',
