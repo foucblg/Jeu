@@ -13,7 +13,6 @@
     <div class="button-container">
       <app-navigation-button-solutions 
         [avance]="false" 
-        [currentNumber]="currentNumber"
         (cardChange)="currentNumber = $event"
         (catChange)="cat = $event">
       </app-navigation-button-solutions>
@@ -25,7 +24,6 @@
     <div class="button-container">
       <app-navigation-button-solutions 
         [avance]="true" 
-        [currentNumber]="currentNumber"
         (cardChange)="currentNumber = $event"
         (catChange)="cat = $event">
       </app-navigation-button-solutions>

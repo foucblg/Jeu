@@ -9,7 +9,8 @@
               "Mettez l’inclusivité à l’ordre du jour des réunions de suivi.",
               "Déterminez un indicateur d’inclusivité ou d’accessibilité à suivre régulièrement.",
               "Pour vous aider, consultez le référentiel général d'amélioration de l'accéssibilité (RGAA) ou le site inclusive.microsoft.design (en anglais)."
-            ]
+            ],
+            "image": false
           },
           {
             "id": 2,
@@ -24,7 +25,8 @@
             "source": {
               "nom": "Design.gouv",
               "description": "Sur design.gouv, trouvez des outils, formations et actualités liées à l’inclusivité numérique."
-            }
+            },
+            "image": false
           },
           {
             "id": 3,
@@ -40,7 +42,8 @@
               "nom": "Microsoft Inclusive Design (en anglais)",
               "description": "Des sources d’inspiration utiles sont proposées par Microsoft pour identifier, dès le début d’un projet, vos différents utilisateurs et contextes d’utilisation de votre futur service.",
               "lien": "https://tstu.fr/designinclusif"
-            }
+            },
+            "image": false
           },
           {
             "id": 4,
@@ -55,7 +58,8 @@
             "source": {
               "nom": "Je participe Grand Lyon",
               "description": "Je Participe, site web de la Métropole de Lyon, est un exemple de plateforme de participation citoyenne."
-            }
+            },
+            "image": false
           },
           {
             "id": 5,
@@ -70,7 +74,8 @@
             "source": {
                 "nom": "MOOC de la DITP",
                 "description": "Retrouvez sur le site de la DITP des webinaires dédiés à l'inclusivité et la simplifocation administrative. Par exemple, les 'jeudis de l'expérience usager'."
-            }
+            },
+            "image": false
           },
           {
             "id": 6,
@@ -82,7 +87,8 @@
               "Déterminez avec elle ses responsabilités et actions associées, sur la base des solutions retenues par l'équipe lors de cette session de jeu"
             ],
             "source": {
-            }
+            },
+            "image": false
           },
           {
             "id": 7,
@@ -95,7 +101,8 @@
               "Commencez par exemple par le thème du rédactionnel avec le MOOC dédié de la DITP(direction interministérielle de la transformation publique)."
             ],
             "source": {
-            }
+            },
+            "image": false
           },
           {
             "id": 8,
@@ -106,7 +113,8 @@
               "Intégrez à l'équipe de projet des personnes expertes, internes ou externes: des designers, des services, des psychologues sociaux, des salariés, apprentis, stagiaires avec une sensibilité ou spécificité particulière... \n Par exemple, acceuillez un stagiaire en webdesign en situation de handicap (surdité...), issu de cursus de formations adaptés."
             ],
             "source": {
-            }
+            },
+            "image": false
           },
           {
             "id":9 ,
@@ -119,7 +127,8 @@
             "source": {
                 "nom": "Association APF de France Handicap",
                 "description": "Solicitez par exemple des intervenants de l'association APF France Handicap."
-            }
+            },
+            "image": false
           },
           {
             "id":10 ,
@@ -131,7 +140,8 @@
             ],
             "source": {
                 
-            }
+            },
+            "image": false
           },
           {
             "id":11 ,
@@ -146,7 +156,8 @@
             "source": {
                 "nom": "Accessibilité.numérique.gouv",
                 "description": "Vous trouverez sur le site du gouvernement le référentiel général d'amélioration de l'accessibilité (RGAA)."
-            }
+            },
+            "image": false
           },
           {
             "id":12 ,
@@ -160,7 +171,8 @@
             "source": {
                 "nom": "Support d'auto-évaluation sur le site Rés'in",
                 "description": "Retrouvez le support d'autoévaluation d'inclusivité numérique sur le site dédié à ce jeu."
-            }
+            },
+            "image": false
           },
           {
             "id":13 ,
@@ -173,7 +185,8 @@
             "source": {
                 "nom": "Microsoft inclusif design (en anglais)",
                 "description": "Microsoft propose de nombreuses ressources autours du desing inclusif."
-            }
+            },
+            "image": false
           },
           {
             "id":14 ,
@@ -186,7 +199,8 @@
             "source": {
                 "nom": "Design kit (en anglais)",
                 "description": "De nombreuses méthodes pour interviewer et observer les profils de vos utilisateurs et leurs besoins sont disponibles sur le site Design Kit de l'agence IDEO."
-            }
+            },
+            "image": false
           },
           {
             "id":15 ,
@@ -199,7 +213,8 @@
             "source": {
                 "nom": "Design kit (en anglais)",
                 "description": "De nombreuses méthodes pour interviewer et observer les profils de vos utilisateurs et leurs besoins sont disponibles sur le site Design Kit de l'agence IDEO."
-            }
+            },
+            "image": false
           },
           {
             "id":16 ,
@@ -212,7 +227,9 @@
             "source": {
                 "nom": "Figma community (en anglais)",
                 "description": "La communauté Figma recense de nombreux modèles de personna prêts à l'emploi."
-            }
+            },
+            "image": true,
+            "image_comparaison":false
           },
           {
             "id":17 ,
@@ -225,7 +242,9 @@
             "source": {
                 "nom": "Whimsical (en anglais)",
                 "description": "Whimsical est un outil permettant la conception de parcours utilisateurs."
-            }
+            },
+            "image": true,
+            "image_comparaison":false
           },
           {
             "id":18 ,
@@ -238,7 +257,9 @@
             "source": {
                 "nom": "Figjam",
                 "description": "Figjam est un tableau blanc collaboratif en ligne qui permet la conception d'éléments rapides."
-            }
+            },
+            "image": true,
+            "image_comparaison":false
           },
           {
             "id":19 ,
@@ -251,7 +272,9 @@
             "source": {
                 "nom": "Wireframe.cc (en anglais)",
                 "description": "Wireframe.cc est un outil permettant la conception instantanée et simplifiée de wireframes."
-            }
+            },
+            "image": true,
+            "image_comparaison":true
           },
           {
             "id":20 ,
@@ -266,7 +289,9 @@
             "source": {
                 "nom": "Colors.co (en anglais)",
                 "description": "Colors.co est un site proposant plusieurs outils afin de générer des gammes chromatiques."
-            }
+            },
+            "image": true,
+            "image_comparaison":true
           },
           {
             "id":21 ,
@@ -277,7 +302,9 @@
               "Respecter les normes de contraste mise en place dans le Référentiel Général d'Amélioration de l'Accessibilité (RGAA) permet à chacun de distinguer les éléments des écrans, peu importe ses déficiences ou les conditions d'utilisation du service.\n Il est recommandé de déoasser les normes de contraste lorsque cela est possible"
             ],
             "source": {
-            }
+            },
+            "image": true,
+            "image_comparaison":true
           },
           {
             "id":22 ,
@@ -294,7 +321,9 @@
             "source": {
                 "nom": "Iconify Design (en anglais)",
                 "description": "Iconify est un sit référançant de nombreuses ressources et bibliothèques d'icônes open sources."
-            }
+            },
+            "image": true,
+            "image_comparaison":true
           },
           {
             "id":23 ,
@@ -310,7 +339,9 @@
             "source": {
                 "nom": "Iconify Design (en anglais)",
                 "description": "Iconify est un sit référançant de nombreuses ressources et bibliothèques d'icônes open sources."
-            }
+            },
+            "image": true,
+            "image_comparaison":true
           },
           {
             "id":24 ,
@@ -326,7 +357,9 @@
             "source": {
                 "nom": "Iconify Design (en anglais)",
                 "description": "Iconify est un sit référançant de nombreuses ressources et bibliothèques d'icônes open sources."
-            }
+            },
+            "image": true,
+            "image_comparaison":true
           },
           {
             "id":25 ,
@@ -339,7 +372,9 @@
             "source": {
                 "nom": "Beta.gouv",
                 "description": "Beta.gouv est un exemple de site ayant unr mise en page simple et lisible."
-            }
+            },
+            "image": true,
+            "image_comparaison":true
           },
           {
             "id":26 ,
@@ -350,7 +385,9 @@
               "Les éléments intéractifs de vos écrans doivent être intuitifs et suggérer leur utilisation et leur fonction: c'est l'affordance. \n Travaillez sur les diffénrents états de ces éléments (survol, clic, sélection...) permet d'éviter la frustration ou les erreurs de manipualtion chez vos utilisateurs."
             ],
             "source": {
-            }
+            },
+            "image": true,
+            "image_comparaison":true
           },
           {
             "id":27 ,
