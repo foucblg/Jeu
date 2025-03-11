@@ -9,6 +9,10 @@ import { Subscription } from 'rxjs';
 import { AnswerStorageService } from '../../answer-storage.service';
 import { DividerModule } from 'primeng/divider';
 
+/* Composant permettant de gérer intégralement les cartes diagnostic.
+Il permet de sélectionner une réponse pour chaque carte, et de naviguer entre les cartes.
+Il gère également l'affichage des images et du texte pour les questions ainsi que de la barre de progression
+Les réponses sont alors enregistrées dans un service : answer-storage.service */
 @Component({
   selector: 'app-inclusif-cards',
   standalone: true,

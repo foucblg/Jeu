@@ -3,6 +3,8 @@ import {Router } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { ActionBarComponent } from '../../shared/action-bar/action-bar.component';
 
+/* Composant permettant de gérer la page des règles pour les cartes diagnostic
+Il permet de rediriger l'utilisateur vers la page des cartes diagnostic. */
 @Component({
   selector: 'app-rules-analysis',
   imports: [ButtonModule],

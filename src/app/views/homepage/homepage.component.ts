@@ -4,6 +4,8 @@ import { ButtonModule } from 'primeng/button';
 import { ActionBarComponent } from '../../shared/action-bar/action-bar.component';
 import { ImageModule } from 'primeng/image';
 
+/* Composant permettant de gérer la page d'accueil.
+Il permet de rediriger l'utilisateur vers la page de contexte. */
 
 @Component({
   selector: 'app-homepage',

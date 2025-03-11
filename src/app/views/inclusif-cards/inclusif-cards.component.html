@@ -1,7 +1,9 @@
+<!-- Indicateur de progression des thèmes -->
 <app-theme-indicator [id]="currentNumber"></app-theme-indicator>
 
 <!-- Carte -->
 <div class="card-display">
+  <!-- Composant de la carte de navigation avec solutions -->
   <app-navigation-card-solutions 
     *ngIf="showCard"
     [card_number]="currentNumber"
@@ -10,6 +12,7 @@
   </app-navigation-card-solutions>
 </div>
 
+<!-- Séparateur -->
 <p-divider class="divider" />
 
 <!-- Barre d'action -->

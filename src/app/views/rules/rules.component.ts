@@ -9,6 +9,10 @@ import { ActionBarComponent } from "../../shared/action-bar/action-bar.component
   templateUrl: './rules.component.html',
   styleUrl: './rules.component.css'
 })
+
+/* Composant permettant de gérer la page des règles.
+Il permet de rediriger l'utilisateur vers la page d'enregistrement ou vers le quiz. */
+
 export class RulesComponent {
 
     constructor(private router:Router) {}

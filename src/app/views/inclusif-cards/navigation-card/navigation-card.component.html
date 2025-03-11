@@ -1,59 +1,68 @@
 <div class="card-container">
 
+  <!-- Vérifie si les données de navigation existent pour le numéro de carte actuel -->
   @if (Navdata['data'][card_number]) { 
       @let card = Navdata['data'][card_number];
 
       <div class="title-container">
+        <!-- Affiche le titre de la question avec la couleur de texte spécifiée -->
         <h3 class="question-title" [style.color]="card.textcolor">{{ card.nom }}</h3>
-        <span class="remaining-time rounded-rectangle">{{formatTime(remainingTime)}}</span>
+        <!-- Affiche le temps restant dans un rectangle arrondi -->
+        <span class="remaining-time rounded-rectangle" [ngClass] = "{'red-timer': remainingTime <=0}">{{formatTime(remainingTime)}}</span>
+        <!-- Bouton d'information -->
         <p-button class="info-button" icon="pi pi-info" [rounded]="true" severity="info" (click)="showDialog()"></p-button>
       </div>
     
+      <!-- Affiche l'image de la carte -->
       <p-image src={{card.imageurl}} alt="{{ card.nom }}" [imageStyle]="{ objectFit: 'contain' }" class="card-image" width="600px" height="125px"></p-image>
       
     <div class="desc-button-container">
       
       <div class="desc-container">
+        <!-- Affiche la question et la description de la carte -->
         <p class="question-text">{{ card.question }}</p>
         <p class="question-desc">{{ card.description }}</p>
       </div>
 
+      <!-- Bouton radio pour la réponse "Oui" -->
       <label [ngClass]="{'radioButton': true, 'not-clickable': ngModel === 'Oui', 'clickable': ngModel !== 'Oui'}">
-
         <p-radiobutton class="radio"
           type="radio"
           name="OuiNon"
           value="Oui"
           [(ngModel)]="ngModel"
-          (click)="onAnswer(true)"
-          >
+          (click)="onAnswer(true)">
         </p-radiobutton>
-      
         <p class="choice-text">Oui</p>
-
       </label>
 
+      <!-- Bouton radio pour la réponse "Non" -->
       <label [ngClass]="{'radioButton': true, 'not-clickable': ngModel === 'Non', 'clickable': ngModel !== 'Non'}">
-
-        <p-radiobutton  class="radio"
+        <p-radiobutton class="radio"
           type="radio"
           name="OuiNon"
           value="Non"
           [(ngModel)]="ngModel"
-          (click)="onAnswer(false)"
-          >
+          (click)="onAnswer(false)">
         </p-radiobutton>
-
         <p class="choice-text">Non</p>
-
       </label>
     </div>
   }
 </div>
 
+<!-- Dialogue pour afficher les règles du jeu -->
 <p-dialog header="Règles du jeu" [(visible)]="displayDialog" [modal]="true" [closable]="false">
   <p>Ceci est un exemple</p>
-    <div class="dialog-footer">
-      <p-button label="Ok" icon="pi pi-check" (click)="hideDialog()"></p-button>
-    </div>
+  <div class="dialog-footer">
+    <p-button label="Ok" icon="pi pi-check" (click)="hideDialog()"></p-button>
+  </div>
+</p-dialog>
+
+<!-- Dialogue pour afficher le message lorsque le temps est écoulé -->
+<p-dialog header="Temps écoulé" [(visible)]="timeExpiredDialog" [modal]="true" [closable]="false">
+  <p>Le temps est écoulé, essayez de vous dépêcher pour passer à la suite.</p>
+  <div class="dialog-footer">
+    <p-button label="Ok" icon="pi pi-check" (click)="hideTimeExpiredDialog()"></p-button>
+  </div>
 </p-dialog>
