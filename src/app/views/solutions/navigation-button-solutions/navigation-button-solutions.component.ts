@@ -26,6 +26,8 @@ export class NavigationButtonSolutionsComponent implements OnInit{
   matchingIds: number[] = [];
   @Output() cardChange = new EventEmitter<number>();
   @Output() catChange = new EventEmitter<string>();
+  @Output() themeChange = new EventEmitter<number>();
+  theme_currentNumber: number = 0;
   currentNumber: number = 0;
   ngOnInit(){
     this.routeSubscription = this.route.queryParams.subscribe(params => {
@@ -76,6 +78,9 @@ export class NavigationButtonSolutionsComponent implements OnInit{
       this.currentNumber= this.matchingIds[this.indice_reponse];
       console.log("après changement on a le current number "+this.currentNumber+" et l'indice de reponse "+this.indice_reponse);
       this.cat = navigation_data_solutions.data[this.currentNumber]?.categorie;
+
+    // Trouver l'ID dans navigation_data qui correspond à cette catégorie
+        
       this.updateQueryParams();
     }else if(this.avance && this.indice_reponse==this.matchingIds.length-1){
       this.router.navigate(['regles_conclusion']) 
@@ -95,6 +100,10 @@ export class NavigationButtonSolutionsComponent implements OnInit{
       
     this.cardChange.emit(this.indice_reponse); //Mise a jour des paramètres 
     this.catChange.emit(this.cat);
+    const sous_categorie = navigation_data_solutions.data[this.currentNumber]?.sous_categorie;
+    this.theme_currentNumber = navigation_data.data.find(item => item.nom === sous_categorie)?.numero ?? 0;
+    console.log("ID correspondant dans navigation_data :", this.theme_currentNumber,"sous_categorie",sous_categorie);
+    this.themeChange.emit(this.theme_currentNumber);
    }
 
 }
