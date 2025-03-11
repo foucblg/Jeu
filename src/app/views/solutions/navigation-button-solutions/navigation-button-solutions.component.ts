@@ -55,7 +55,7 @@ export class NavigationButtonSolutionsComponent implements OnInit{
         
     // Convert users data to options in the required format
     this.indice_reponse= this.matchingIds.indexOf(this.currentNumber );
-    console.log(this.currentNumber+" euuuuh  "+this.indice_reponse);
+    //console.log(this.currentNumber+" euuuuh  "+this.indice_reponse);
     this.cat = navigation_data_solutions.data[this.currentNumber]?.categorie;
     this.catChange.emit(this.cat);
   }
@@ -69,18 +69,21 @@ export class NavigationButtonSolutionsComponent implements OnInit{
   
   // Changement de carte
   changeCard() {
+    
     this.indice_reponse=this.matchingIds.indexOf(this.currentNumber);
     if (this.avance && this.indice_reponse<this.matchingIds.length-1) {
       this.indice_reponse =this.indice_reponse+1;
       this.currentNumber= this.matchingIds[this.indice_reponse];
+      console.log("après changement on a le current number "+this.currentNumber+" et l'indice de reponse "+this.indice_reponse);
       this.cat = navigation_data_solutions.data[this.currentNumber]?.categorie;
       this.updateQueryParams();
     }else if(this.avance && this.indice_reponse==this.matchingIds.length-1){
-      this.router.navigate(['regles_conclusion'])
+      this.router.navigate(['regles_conclusion']) 
     }else if (!this.avance && this.indice_reponse > 0 ) {
       this.indice_reponse = this.indice_reponse-1;
       this.currentNumber= this.matchingIds[this.indice_reponse];
       this.cat = navigation_data_solutions.data[this.currentNumber]?.categorie;
+      console.log("après  changement on a le current number "+this.currentNumber+" et l'indice de reponse "+this.indice_reponse);
       this.updateQueryParams();
       }
       else if(!this.avance){
