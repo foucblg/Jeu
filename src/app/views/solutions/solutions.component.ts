@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { NavigationButtonSolutionsComponent } from "./navigation-button-solutions/navigation-button-solutions.component";
 import { ThemeIndicatorComponent } from '../inclusif-cards/theme-indicator/theme-indicator.component';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -18,6 +18,7 @@ import { Subscription } from 'rxjs';
 export class SolutionsComponent implements OnInit, OnDestroy {
   constructor(private router:Router,private route: ActivatedRoute,public awnser_service:AnswerStorageService) {}
     currentNumber = 0;
+    @Input() theme_currentNumber=0;
       cat = navigation_data_solutions.data[0]?.categorie;
       suivant = false;
       applyFilters(): void {
@@ -59,6 +60,7 @@ export class SolutionsComponent implements OnInit, OnDestroy {
             skipLocationChange: false // Mettre à jour l'URL dans la barre d'adresse
           });
       });
+      
       
     }
     ngOnDestroy(): void {

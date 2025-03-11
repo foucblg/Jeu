@@ -75,7 +75,7 @@
     },
     {
         "numero": 9,
-        "nom": "Développements",
+        "nom": "Code",
         "question": "Votre code est-il inclusif ?",
         "description":"Le code est le langage de programmation utilisé pour faire fonctionner les services numériques. \n Il doit se conformer aux critères techniques du RGAA.",
         "categorie":"Développement",
@@ -84,7 +84,7 @@
     },
     {
         "numero": 10,
-        "nom": "Développements",
+        "nom": "Navigation",
         "question": "Votre navigation est-elle inclusive ?",
         "description":"La navigation consiste à rechercher et consulter un service numérique. Elle doit être possible quel que soit le moyen utilisé. \n Pour naviguer, beaucoup de personnes en situation de handicap utilisent uniquement le clavier ou un dispositif de pointage. Des technologies d'assistance, comme les lecteurs d'écran, sont également utilisées.",
         "categorie":"Développement",
