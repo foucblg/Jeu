@@ -7,27 +7,36 @@
     <div class="card-display">
       <app-navigation-card-solutions [card_number]="currentNumber"></app-navigation-card-solutions>
     </div>
-    <div class="horizontal-group">
-    <!-- Back Button -->
-    <div class="button-container">
-      <app-navigation-button-solutions 
-        [avance]="false" 
-        (cardChange)="currentNumber = $event"
-        (catChange)="cat = $event"
-        (themeChange)="theme_currentNumber = $event">
-      </app-navigation-button-solutions>
-    </div>
-  
     
+
+
+
+      <p-divider class="divider" />
+
+      <!-- Barre d'action -->
+      <div class="action-bar">
+        <!-- Bouton de retour -->
+        <div class="button-container" id="back-button">
+          <app-navigation-button-solutions  
+          [avance]="false" 
+          (cardChange)="currentNumber = $event"
+          (catChange)="cat = $event"
+          (themeChange)="theme_currentNumber = $event"> 
+          </app-navigation-button-solutions>
+        </div>
+      
+        <!-- Bouton suivant -->
+        <div class="button-container" id="next-button">
+          <app-navigation-button-solutions 
+          [avance]="true" 
+          (cardChange)="currentNumber = $event"
+          (catChange)="cat = $event"
+          (themeChange)="theme_currentNumber = $event">
+          </app-navigation-button-solutions>
+        </div>
+      </div>
+
+
+
+
   
-    <!-- Next Button -->
-    <div class="button-container">
-      <app-navigation-button-solutions 
-        [avance]="true" 
-        (cardChange)="currentNumber = $event"
-        (catChange)="cat = $event"
-        (themeChange)="theme_currentNumber = $event">
-      </app-navigation-button-solutions>
-    </div>
-    </div>
-  </div>

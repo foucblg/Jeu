@@ -1,3 +1,4 @@
-<button class="navigation-button" (click)="changeCard()">
-  {{ avance ? 'Suivant' : 'Précédant' }}
-</button>
+
+<p-button (click)="changeCard()" class="navigation-button" [severity]="avance ? null : 'secondary'">
+  {{ avance ? 'Suivant' : 'Retour' }}
+</p-button>

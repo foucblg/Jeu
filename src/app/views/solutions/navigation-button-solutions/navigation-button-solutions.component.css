@@ -1,36 +1,44 @@
-.navigation-button {
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    background-color: #4caf50; /* Green for 'Suivant' */
-    color: white;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    display: inline-block;
-    text-align: center;
-  }
+.navigation-button{
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center; 
+  justify-content: center;
+}
   
-  .navigation-button:hover {
-    background-color: #45a049; /* Darker green on hover */
-    transform: scale(1.05); /* Slight scale up effect */
-  }
-  
-  .navigation-button:active {
-    background-color: #388e3c; /* Even darker green on active */
-    transform: scale(1); /* Reset scale when button is pressed */
-  }
-  
-  .navigation-button[disabled] {
-    background-color: #9e9e9e; /* Grey when disabled */
-    cursor: not-allowed;
-  }
-  
-  .navigation-button:focus {
-    outline: 3px solid black; /* Bordure noire épaisse */
-    outline-offset: 2px; /* Petit espacement entre la bordure et le bouton */
+::ng-deep p-button > button {
+  width: 150px ; 
+  height: 40px ;
+}
+
+/* Pour le bouton retour*/
+::ng-deep .p-button.p-button-secondary {
+  background-color: #FFFFFF ;
+  color: #333333;
+  border: 1px solid #333333 !important;
+
+}
+
+::ng-deep .p-button.p-button-secondary:hover {
+  background-color: #e9e9e9 ;
+}
+
+::ng-deep .p-button.p-button-secondary:active {
+  background-color: #f4f4f4 ;
 }
 
 
-  
+/*Style bouton suivant */
+::ng-deep .p-button:not(.p-button-secondary):hover {
+  background-color: #cd2524;
+  border-color: #cd2524;
+}
+
+
+::ng-deep .p-button:not(.p-button-secondary):active {
+  background-color: #ff5d5c; 
+  border-color: #ff5d5c;
+}

@@ -7,11 +7,12 @@ import { navigation_data_solutions } from "../../app.component";
 import { navigation_data } from '../../app.component';
 import { NavigationCardSolutionsComponent } from "./navigation-card-solutions/navigation-card-solutions.component";
 import { Subscription } from 'rxjs';
+import { DividerModule } from 'primeng/divider';
 
 @Component({
   selector: 'app-solutions',
   standalone: true,
-  imports: [NavigationButtonSolutionsComponent, ThemeIndicatorComponent, NavigationCardSolutionsComponent],
+  imports: [NavigationButtonSolutionsComponent, ThemeIndicatorComponent, NavigationCardSolutionsComponent, DividerModule],
   templateUrl: './solutions.component.html',
   styleUrl: './solutions.component.css'
 })

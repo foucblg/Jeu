@@ -5,10 +5,11 @@ import {ActivatedRoute, Router } from '@angular/router';
 import { AnswerStorageService } from '../../../answer-storage.service';
 import { navigation_data } from '../../../app.component';
 import { Subscription } from 'rxjs';
+import { ButtonModule } from 'primeng/button';
 @Component({
   selector: 'app-navigation-button-solutions',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ButtonModule],
   templateUrl: './navigation-button-solutions.component.html',
   styleUrls: ['./navigation-button-solutions.component.css']
 })
