@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import {Router } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
-import { ActionBarComponent } from '../../shared/action-bar/action-bar.component';
+import { DividerModule } from 'primeng/divider';
 
 /* Composant permettant de gérer la page des règles pour les cartes diagnostic
 Il permet de rediriger l'utilisateur vers la page des cartes diagnostic. */
 @Component({
   selector: 'app-rules-analysis',
-  imports: [ButtonModule],
+  imports: [ButtonModule, DividerModule],
   templateUrl: './rules-analysis.component.html',
   styleUrl: './rules-analysis.component.css'
 })

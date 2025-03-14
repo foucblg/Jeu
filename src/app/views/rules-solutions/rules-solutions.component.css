@@ -1,31 +1,61 @@
-.rules-solutions{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding-top: 4%;
-    height: 100%;
-    text-align: center;
+:host {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  margin: auto;
 }
 
-  .rules-solutions h1 {
-    font-size: 40px;
-    font-weight: 400;
-  }
+.container{
+  width: 600px;
+  align-self: anchor-center;
+  text-align: left;
+}
 
-    .rules-solutions h3 {
-        font-size: 30px;
-        font-weight: 400;
-        padding-top: 5px;
-        padding-bottom: 10px;
-    }
+.container h1 {
+  font-size: 28px;
+  font-weight: normal;
+  margin-top: 25px;
+}
 
-    .rules-solutions .container{
-        width: 600px;
-        align-self: anchor-center;
-        text-align: left;
-      }
+.container h3 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .container p{
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 16px;
     padding: 5px;
+}
+
+.lower-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+  width: 100%;
+  position: relative;
+  bottom:0px;
+}
+
+p-divider{
+  margin: 0;
+  padding-bottom: 40px;
+  width:80%;
+}
+
+::ng-deep .avance-button button {
+  width: 150px; /* Force the width */
+  height: 40px; /* Force the height */
+}
+
+.avance{
+  --p-button-primary-active-background: #ff5d5c;
+  --p-button-primary-hover-background: #cd2524;
+  --p-button-primary-active-border-color: #ff5d5c;
+  --p-button-primary-hover-border-color: #cd2524;
 }

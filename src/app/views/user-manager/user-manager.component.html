@@ -62,7 +62,20 @@
         <p-button icon="pi pi-plus" variant="outlined" severity="contrast" (click)="addUser()"/>
       </div>
     }
-    <p-button (click)="continuer()" severity="primary" >
-      {{"Continuer"}}
-   </p-button>
+</div>
+
+
+<div class="lower-section">
+  <p-divider/>
+
+  <!-- Bouton pour démarrer le jeu -->
+  <div class = "avance-button">
+      <p-button
+      class = "avance"
+      (click)="continuer()"
+      aria-label="Commencer le Jeu"
+      label = "Continuer"
+      severity="primary">
+      </p-button>
+  </div>
 </div>

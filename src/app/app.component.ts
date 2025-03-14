@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from './shared/navbar/navbar.component';
+import { HeaderComponent } from './shared/header/header.component';
 import { RouterOutlet } from '@angular/router';
 import * as donnees from './assets/navigation_data.json';
 import * as donnees2 from './assets/anwsers_data.json';
@@ -10,7 +10,7 @@ import * as donnees2 from './assets/anwsers_data.json';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   imports: [
-    NavbarComponent,
+    HeaderComponent,
     RouterOutlet,
 ]
 })

@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { InputTextModule } from 'primeng/inputtext';
 import { FloatLabelModule } from 'primeng/floatlabel';
 import { ButtonModule } from 'primeng/button';
+import { DividerModule } from 'primeng/divider';
 
 /* Composant permettant de gérer la page de gestion des utilisateurs.
 Il permet d'ajouter, de modifier et de supprimer des utilisateurs. */
@@ -12,7 +13,7 @@ Il permet d'ajouter, de modifier et de supprimer des utilisateurs. */
   selector: 'app-user-manager',
   templateUrl: './user-manager.component.html',
   styleUrls: ['./user-manager.component.css'],
-  imports: [ReactiveFormsModule, FloatLabelModule, InputTextModule, ButtonModule],
+  imports: [ReactiveFormsModule, FloatLabelModule, InputTextModule, ButtonModule, DividerModule],
 })
 export class UserManagerComponent {
   addUserForm: FormGroup;

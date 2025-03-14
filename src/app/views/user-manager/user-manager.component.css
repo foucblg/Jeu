@@ -1,3 +1,12 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
 .error {
     color: red;
     font-size: 0.9em;
@@ -67,4 +76,34 @@
 
 .transparent-bg{
   background-color: transparent;
+}
+
+
+.lower-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  position: relative;
+  bottom:0em;
+  width: 100%;
+}
+
+p-divider{
+  margin: 0;
+  padding-bottom: 40px;
+  width:80%;
+}
+
+::ng-deep .avance-button button {
+  width: 150px; /* Force the width */
+  height: 40px; /* Force the height */
+}
+
+.avance{
+  --p-button-primary-active-background: #ff5d5c;
+  --p-button-primary-hover-background: #cd2524;
+  --p-button-primary-active-border-color: #ff5d5c;
+  --p-button-primary-hover-border-color: #cd2524;
 }

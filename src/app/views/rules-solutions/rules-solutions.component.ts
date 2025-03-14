@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import {Router } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
-import { ActionBarComponent } from '../../shared/action-bar/action-bar.component';
+import { DividerModule } from 'primeng/divider';
 @Component({
   selector: 'app-rules-solutions',
-  imports: [ButtonModule],
+  imports: [ButtonModule, DividerModule],
   templateUrl: './rules-solutions.component.html',
   styleUrl: './rules-solutions.component.css'
 })

@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import {Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
-import { ActionBarComponent } from '../../shared/action-bar/action-bar.component';
 import { ImageModule } from 'primeng/image';
+import { DividerModule } from 'primeng/divider';
 
 /* Composant permettant de gérer la page d'accueil.
 Il permet de rediriger l'utilisateur vers la page de contexte. */
@@ -11,7 +11,7 @@ Il permet de rediriger l'utilisateur vers la page de contexte. */
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css',
-  imports: [ButtonModule, ImageModule]
+  imports: [ButtonModule, ImageModule, DividerModule]
 })
 export class HomepageComponent {
   constructor(private router:Router) {}
