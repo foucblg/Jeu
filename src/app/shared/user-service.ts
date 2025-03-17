@@ -42,7 +42,6 @@ export class UserService {
     private users : User[];
 
     constructor() {
-        console.log("init");
         this.users = [];
     }
 
