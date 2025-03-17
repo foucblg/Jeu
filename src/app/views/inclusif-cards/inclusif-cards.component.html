@@ -11,21 +11,26 @@
     (answerChange)="currentAnswer = $event">
   </app-navigation-card-solutions>
 </div>
-<!-- Barre d'action -->
-<div class="action-bar">
-  <!-- Bouton de retour -->
-  <div class="button-container" id="back-button">
-    <app-navigation-button  
-      [carte_suivante]="false"
-      (cardChange)="onCardChange($event)"> 
-    </app-navigation-button>
-  </div>
 
-  <!-- Bouton suivant -->
-  <div class="button-container" id="next-button">
-    <app-navigation-button 
-      [carte_suivante]="true"
-      (cardChange)="onCardChange($event)">
-    </app-navigation-button>
+<!-- Barre d'action -->
+<div class="lower-section">
+  <p-divider/>
+
+  <div class="avance-button">
+    <!-- Bouton de retour -->
+    <div class="button-container" id="back-button">
+      <app-navigation-button 
+        [carte_suivante]="false"
+        (cardChange)="onCardChange($event)">
+      </app-navigation-button>
+    </div>
+  
+    <!-- Bouton suivant -->
+    <div class="button-container" id="next-button">
+      <app-navigation-button 
+        [carte_suivante]="true"
+        (cardChange)="onCardChange($event)">
+      </app-navigation-button>
+    </div>
   </div>
 </div>
