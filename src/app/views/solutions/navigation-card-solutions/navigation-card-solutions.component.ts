@@ -35,13 +35,10 @@ export class NavigationCardSolutionsComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log("jezhfgaizyetrfa af");
     if (changes['card_number']) {
-      console.log("jezhfgaizyetrfa af551354.");
       const change = changes['card_number'];
       this.previousCardNumber = change.previousValue; 
       if (this.previousCardNumber !== change.currentValue) {
-        console.log("aussi oui")
         // Appel pour mettre à jour les dropdowns en fonction de la nouvelle carte
         this.updateDropdownsForNewCard();
       }
@@ -72,8 +69,6 @@ export class NavigationCardSolutionsComponent implements OnInit, OnChanges {
     const previousSelectedEmail = this.previousDropdownValues[index];
     this.previousDropdownValues[index] = currentSelectedEmail;
     // Si la sélection actuelle est vide et que l'ancienne sélection n'est pas vide, on retire la tâche
-    console.log(currentSelectedEmail);
-    console.log(previousSelectedEmail);
     if (!currentSelectedEmail && previousSelectedEmail) {
       this.removeTaskFromUser(index, previousSelectedEmail); // Retirer la tâche de l'utilisateur précédent
     }
@@ -86,8 +81,6 @@ export class NavigationCardSolutionsComponent implements OnInit, OnChanges {
 
   assignTaskToUser(index: number): void {
     const selectedEmail = this.dropdowns[index]?.selectedOption;
-    console.log("Début de la douille2");
-    console.log(selectedEmail);
   
     if (!selectedEmail) {
       return;
@@ -100,12 +93,9 @@ export class NavigationCardSolutionsComponent implements OnInit, OnChanges {
       if (!user.hasTask(cardId)) { 
         // Si l'utilisateur n'a pas encore la tâche, on l'ajoute.
         user.addTask(new Task(cardId));
-        console.log(`Tâche avec ID ${cardId} ajoutée à ${user.name}`);
       } else {
-        console.log(`L'utilisateur ${user.name} a déjà la tâche ${cardId}`);
       }
     } else {
-      console.log("Utilisateur ou ID de carte introuvable !");
     }
   }
 
@@ -119,28 +109,23 @@ export class NavigationCardSolutionsComponent implements OnInit, OnChanges {
     this.dropdowns.splice(index, 1);
   }
   removeTaskFromUser(index: number, email: string): void {
-    console.log(email);
     const user = this.service.getUserByEmail(email);
   
     // Vérifier si l'utilisateur existe
     if (!user) {
-      console.log(`Utilisateur avec email ${email} introuvable`);
       return;
     }
   
     // Récupérer l'ID de la carte actuelle
     const cardId = this.Navdata['data'][this.card_number - 1]?.id;
     if (cardId === undefined) {
-      console.log("ID de la carte introuvable");
       return;
     }
   
     // Supprimer la tâche si l'utilisateur l'a
     if (user.hasTask(cardId)) {
       user.removeTaskById(cardId);
-      console.log(`Tâche avec ID ${cardId} retirée de ${user.name}`);
     } else {
-      console.log(`L'utilisateur ${user.name} n'a pas la tâche ${cardId}`);
     }
   }
 

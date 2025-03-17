@@ -36,9 +36,7 @@ export class ThemeIndicatorComponent implements OnChanges {
     catégorie et l'affiche dans la barre de progression. */
 
     this.cat = this.answerStorageService.getCategorie(this.id);
-    console.log(this.cat);
     this.index_cat = this.categories.indexOf(this.cat);
     this.percentage = this.answerStorageService.getPercentage(this.id);
-    console.log(this.percentage);
   }
 }

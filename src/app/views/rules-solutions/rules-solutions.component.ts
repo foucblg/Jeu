@@ -17,7 +17,6 @@ export class RulesSolutionsComponent implements OnInit {
   ngOnInit(): void {
         // Récupérer les query params lors de l'initialisation du composant
         const answers: { [key: number]: boolean } = this.awnser_service.getAllAnswers();
-        console.log(answers);
         const result2 = Object.keys(answers).filter(key => !answers[+key]);
         // Liste pour stocker les IDs correspondants dans navigation_data_solutions
   
@@ -30,8 +29,6 @@ export class RulesSolutionsComponent implements OnInit {
       .map(item => item.id);}
   constructor(private router:Router,public awnser_service:AnswerStorageService) {}
     continuer(){
-      console.log("on va désormais envahir la pologne.")
-      console.log(this.matchingIds);
       this.router.navigate(['./solution'], {
         queryParams: { numero: this.matchingIds[0]},
         queryParamsHandling: 'merge', // Merge avec les paramètres existants

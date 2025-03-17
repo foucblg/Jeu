@@ -29,7 +29,6 @@ export class SolutionsComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
       // Récupérer les query params lors de l'initialisation du composant
       const answers: { [key: number]: boolean } = this.awnser_service.getAllAnswers();
-      console.log(answers);
       const result2 = Object.keys(answers).filter(key => !answers[+key]);
       // Liste pour stocker les IDs correspondants dans navigation_data_solutions
   let matchingIds: number[] = [];
@@ -41,7 +40,6 @@ export class SolutionsComponent implements OnInit, OnDestroy {
   matchingIds = navigation_data_solutions.data
     .filter(item => correspondingNames.includes(item.sous_categorie))
     .map(item => item.id);
-    console.log(matchingIds);
   if (matchingIds[0]){
   this.currentNumber=matchingIds[0];}
   else{
@@ -49,7 +47,6 @@ export class SolutionsComponent implements OnInit, OnDestroy {
   }
       this.routeSubscription = this.route.queryParams.subscribe(params => {
         const id = +params['numero']; // Récupérer 'id' depuis les query params
-        console.log("coucou"+id);
         if (id && id !== this.currentNumber && id >= 0 && id < navigation_data_solutions.data.length) {
           this.currentNumber = id; // Mise à jour de currentNumber si le query param 'id' est valide
           this.cat = navigation_data_solutions.data[this.currentNumber]?.categorie; // Mettre à jour la catégorie
