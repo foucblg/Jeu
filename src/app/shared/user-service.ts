@@ -13,13 +13,16 @@ class User {
     addTask(task:Task){
         this.tasks.push(task)
     }
-    removeTaskById(id:number){
-        this.tasks.filter((e, i) => e.getId() !== id);
+    removeTaskById(id: number) {
+        this.tasks = this.tasks.filter((e) => e.getId() !== id);
+      }
+    hasTask(taskId: number): boolean {
+        return this.tasks.some(task => task.getId() === taskId);
     }
 
 }
 
-class Task{
+export class Task{
     private id;
     constructor(id:number){
         this.id = id;
@@ -59,6 +62,11 @@ export class UserService {
         user.name = name;
         user.email = email;
     }
-
+    getUserByEmail(email: string): User | undefined {
+        return this.users.find(user => user.email === email);
+    }
+    getUsersWithTask(taskId: number): User[] {
+        return this.users.filter(user => user.hasTask(taskId));  // Filtrer les utilisateurs qui ont cette tâche
+    }
 
 }
