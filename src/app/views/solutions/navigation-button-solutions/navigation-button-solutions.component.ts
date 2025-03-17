@@ -60,6 +60,9 @@ export class NavigationButtonSolutionsComponent implements OnInit{
     this.indice_reponse= this.matchingIds.indexOf(this.currentNumber );
     this.cat = navigation_data_solutions.data[this.currentNumber]?.categorie;
     this.catChange.emit(this.cat);
+    const sous_categorie = navigation_data_solutions.data[this.currentNumber-1]?.sous_categorie;
+    this.theme_currentNumber = navigation_data.data.find(item => item.nom === sous_categorie)?.numero ?? 0;
+    this.themeChange.emit(this.theme_currentNumber-1);
   }
   updateQueryParams(): void {
     this.router.navigate([], {
@@ -100,7 +103,7 @@ export class NavigationButtonSolutionsComponent implements OnInit{
     this.catChange.emit(this.cat);
     const sous_categorie = navigation_data_solutions.data[this.currentNumber-1]?.sous_categorie;
     this.theme_currentNumber = navigation_data.data.find(item => item.nom === sous_categorie)?.numero ?? 0;
-    this.themeChange.emit(this.theme_currentNumber);
+    this.themeChange.emit(this.theme_currentNumber-1);
    }
 
 }

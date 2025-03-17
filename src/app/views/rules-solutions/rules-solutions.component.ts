@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import {Router } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { ActionBarComponent } from '../../shared/action-bar/action-bar.component';
@@ -14,6 +14,7 @@ import { DividerModule } from 'primeng/divider';
 })
 export class RulesSolutionsComponent implements OnInit {
   matchingIds: number[] = [];
+  theme_currentNumber = 0;
   ngOnInit(): void {
         // Récupérer les query params lors de l'initialisation du composant
         const answers: { [key: number]: boolean } = this.awnser_service.getAllAnswers();
@@ -26,7 +27,8 @@ export class RulesSolutionsComponent implements OnInit {
     // Parcourir navigation_data_solutions pour trouver les IDs qui correspondent aux sous_catégories
     this.matchingIds = navigation_data_solutions.data
       .filter(item => correspondingNames.includes(item.sous_categorie))
-      .map(item => item.id);}
+      .map(item => item.id);
+    }
   constructor(private router:Router,public awnser_service:AnswerStorageService) {}
     continuer(){
       this.router.navigate(['./solution'], {
