@@ -11,7 +11,7 @@ import { ButtonModule } from 'primeng/button';
   standalone: true,
   imports: [CommonModule, ButtonModule],
   templateUrl: './navigation-button-solutions.component.html',
-  styleUrls: ['./navigation-button-solutions.component.css']
+  styleUrls: ['./navigation-button-solutions.component.css']  
 })
 export class NavigationButtonSolutionsComponent implements OnInit{
   constructor(private router:Router,private awnser_service:AnswerStorageService,private route: ActivatedRoute) {}
