@@ -1,0 +1,195 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  align-self: flex-start; /* Place la carte en haut de son conteneur */
+  width: 300px;
+}
+
+.card-container {
+  background: none; /* Supprime le fond blanc */
+  width: auto; /* Ajuste la largeur selon le contenu */
+  padding: 0; /* Supprime l'espace intérieur */
+  border-radius: 0; /* Supprime les coins arrondis */
+  box-shadow: none; /* Supprime l'ombre */
+  border: none; /* Supprime la bordure supérieure */
+  position: static; /* Réinitialise la position */
+  text-align: left;
+  align-items: center;
+  width: 600px;
+  height: 500px;
+  
+}
+
+
+.tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.tag {
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+.planning {
+  color: #eb6539;
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.content {
+  list-style-type: none;
+  padding: 0;
+}
+
+.content li {
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.highlight {
+  border-color: #0073E9;
+  border-width: 2px;
+  border-style: solid;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  text-align:center;
+  margin-top: 15px;
+  color: #0073E9;
+  margin-bottom: 5px;
+}
+.image {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  max-height: 150px; /* Maximum height */
+  width: auto; /* Maintain aspect ratio */
+  align-items: center;
+  text-align: center;
+  margin-left:12%;
+  margin-right:12%;
+}
+
+.highlight-logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.highlight-text {
+  font-size: 13px;
+}
+
+.dropdown-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.remove-button {
+  position: absolute;
+  right: -30px; /* Adjust this value as needed */
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.custom-dropdown {
+  flex: 1;
+}
+
+/* Other existing styles */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+/* Style du menu déroulant */
+.dropdown {
+  background-color: #4caf50; /* Même couleur que le bouton Oui */
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 500px;
+}
+
+/* Changement de couleur au survol */
+.dropdown:hover {
+  background-color: #45a049;
+}
+
+.page-number {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f47342;
+  color: white;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 50%;
+}
+.comparison-container {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.comparison-label {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.bad {
+  margin-left:120px ;
+  color: red;
+  background-color: rgba(255, 0, 0, 0.1);
+  align-self: flex-start;
+}
+
+.good {
+  margin-left: 125px;
+  color: green;
+  background-color: rgba(0, 255, 0, 0.1);
+}

@@ -1,444 +1,746 @@
-{"data":[
-            {
-            "id": 1,
-            "categorie": "Gestion de projet",
-            "sous_categorie": "Cadrage et planification",
-            "titre": "Mettez l’inclusivité au programme",
-            "contenu": [
-              "Proposez aux sponsors du projet que l’inclusivité soit un objectif concret du projet.",
-              "Mettez l’inclusivité à l’ordre du jour des réunions de suivi.",
-              "Déterminez un indicateur d’inclusivité ou d’accessibilité à suivre régulièrement.",
-              "Pour vous aider, consultez le référentiel général d'amélioration de l'accéssibilité (RGAA) ou le site inclusive.microsoft.design (en anglais)."
-            ]
-          },
-          {
-            "id": 2,
-            "categorie": "Gestion de projet",
-            "sous_categorie": "Cadrage et planification",
-            "titre": "Menez une veille sur l’inclusivité",
-            "contenu": [
-              "Identifiez des services numériques se présentant comme inclusifs pour vous en inspirer, par exemple les sites de refugies.info et de la SNCF.",
-              "Abonnez-vous à des sources de référence pour rester informé des actualités du sujet, comme le site design.gouv ou le site inclusive.microsoft.design (en anglais).",
-              "Inspirez-vous hors du champ numérique, par exemple avec l’électro-ménager (Groupe SEB) ou le bâtiment (accessibilité des bâtiments publics)."
-            ],
-            "source": {
-              "nom": "Design.gouv",
-              "description": "Sur design.gouv, trouvez des outils, formations et actualités liées à l’inclusivité numérique."
-            }
-          },
-          {
-            "id": 3,
-            "categorie": "Gestion de projet",
-            "sous_categorie": "Cadrage et planification",
-            "titre": "Identifiez vos utilisateurs dès le début",
-            "contenu": [
-              "Identifiez les publics et contextes dont votre projet doit tenir compte, pour proposer un service utilisable par tous.",
-              "Exemples de publics : personnes allophones, éloignées du numérique, jeunes, personnes âgées...",
-              "Exemples de contextes : dans les transports, dans le bruit, dans le noir, en plein soleil..."
-            ],
-            "source": {
-              "nom": "Microsoft Inclusive Design (en anglais)",
-              "description": "Des sources d’inspiration utiles sont proposées par Microsoft pour identifier, dès le début d’un projet, vos différents utilisateurs et contextes d’utilisation de votre futur service.",
-              "lien": "https://tstu.fr/designinclusif"
-            }
-          },
-          {
-            "id": 4,
-            "categorie": "Gestion de projet",
-            "sous_categorie": "Cadrage et planification",
-            "titre": "Invitez des utilisateurs à challenger vos idées",
-            "contenu": [
-              "Prévoyez dès le début du projet des phases de challenge de vos idées, puis des maquettes et des fonctionnalités du service pour les publics concernés.",
-              "Vous pouvez aussi inviter des professionnels, experts internes ou externes (utilisateurs, responsables d’associations d’usagers...).",
-              "Exemples de canaux de mobilisation :\n        - Dans le domaine de la santé : France Assos Santé\n        - Dans le domaine public : jeparticipe.grandlyon.com"
-            ],
-            "source": {
-              "nom": "Je participe Grand Lyon",
-              "description": "Je Participe, site web de la Métropole de Lyon, est un exemple de plateforme de participation citoyenne."
-            }
-          },
-          {
-            "id": 5,
-            "categorie": "Gestion de projet",
-            "sous_categorie": "Équipe projet et partenariats",
-            "titre": "Formez l'équipe sur ce thème",
-            "contenu": [
-              "Proposez des mini-formations à l'inclusivité aux membres de votre équipe",
-              "Diffusez les MOOCs de design.gouv.fr",
-              "Commencez par exemple par le thème du rédactionnel avec le MOOC dédié de la DITP(direction interministérielle de la transformation publique)."
-            ],
-            "source": {
-                "nom": "MOOC de la DITP",
-                "description": "Retrouvez sur le site de la DITP des webinaires dédiés à l'inclusivité et la simplifocation administrative. Par exemple, les 'jeudis de l'expérience usager'."
-            }
-          },
-          {
-            "id": 6,
-            "categorie": "Gestion de projet",
-            "sous_categorie": "Équipe projet et partenariats",
-            "titre": "Désignez une personne référente",
-            "contenu": [
-              "Choisissez une personne qui vous semble être la plus pertinnente comme référence inclusivité dans votre projet",
-              "Déterminez avec elle ses responsabilités et actions associées, sur la base des solutions retenues par l'équipe lors de cette session de jeu"
-            ],
-            "source": {
-            }
-          },
-          {
-            "id": 7,
-            "categorie": "Gestion de projet",
-            "sous_categorie": "Équipe projet et partenariats",
-            "titre": "Vérifiez vos cahiers des charges et contrats",
-            "contenu": [
-              "Intégrez à vos cahiers des charges et contrats des prestations externes les exigences d'accessibilté et d'inclusivité pour les partenaires.",
-              "Exigez un taux d'accessibilité minimum vire la réalisation de cette session de jeu dans votre cahier des charges.",
-              "Commencez par exemple par le thème du rédactionnel avec le MOOC dédié de la DITP(direction interministérielle de la transformation publique)."
-            ],
-            "source": {
-            }
-          },
-          {
-            "id": 8,
-            "categorie": "Gestion de projet",
-            "sous_categorie": "Équipe projet et partenariats",
-            "titre": "Intégrez des sachants",
-            "contenu": [
-              "Intégrez à l'équipe de projet des personnes expertes, internes ou externes: des designers, des services, des psychologues sociaux, des salariés, apprentis, stagiaires avec une sensibilité ou spécificité particulière... \n Par exemple, acceuillez un stagiaire en webdesign en situation de handicap (surdité...), issu de cursus de formations adaptés."
-            ],
-            "source": {
-            }
-          },
-          {
-            "id":9 ,
-            "categorie": "Gestion de projet",
-            "sous_categorie": "Équipe projet et partenariats",
-            "titre": "Consultez des experts",
-            "contenu": [
-              "Associez au projet des parties prenantes externes, expertes de certains publics cibles et de leur besoins"
-            ],
-            "source": {
-                "nom": "Association APF de France Handicap",
-                "description": "Solicitez par exemple des intervenants de l'association APF France Handicap."
-            }
-          },
-          {
-            "id":10 ,
-            "categorie": "Gestion de projet",
-            "sous_categorie": "Évaluation et certification",
-            "titre": "Faites auditer votre service numérique",
-            "contenu": [
-              "Soumettez votre service numérique à un audit RGAA (Référentiel Général d'Amélioration de l'Accessibilité) \n Pour cela, contactez votre référent accéssibilité numérique, s'il y en a un dans votre structure. Il pourra réaliser l'audit RGAA ou il fera appel à un prestataire spécialisé avec une expertise RGAA\n A l'issue de l'audit RGAA, vous obtiendrez le taux de conformité de votre service numérique. La liste des non conformités vous sera fournie, avec les préconisations de corrections."
-            ],
-            "source": {
-                
-            }
-          },
-          {
-            "id":11 ,
-            "categorie": "Gestion de projet",
-            "sous_categorie": "Évaluation et certification",
-            "titre": "Mettez en place les obligations de communication du RGAA",
-            "contenu": [
-              "Mettez en place une page Accessibilité à partir de la décalaration d'accessibilité issue de l'audit.",
-              "Faites un lien vers le schéma pluriannuel de mise en accessibilité.",
-              "Ajoutez la mention obligatoire d'accessibilité sur la page d'accueil (état de conformité)."
-            ],
-            "source": {
-                "nom": "Accessibilité.numérique.gouv",
-                "description": "Vous trouverez sur le site du gouvernement le référentiel général d'amélioration de l'accessibilité (RGAA)."
-            }
-          },
-          {
-            "id":12 ,
-            "categorie": "Gestion de projet",
-            "sous_categorie": "Évaluation et certification",
-            "titre": "Suivez votre progression",
-            "contenu": [
-              "Estimez l'inclusivité de votre projet régulièrement après la réalisation de cette session",
-              "Assurez-vous que les évolutions ultérieures de votre serviecs respectent les bonnes pratiques d'inclusivité. "
-            ],
-            "source": {
-                "nom": "Support d'auto-évaluation sur le site Rés'in",
-                "description": "Retrouvez le support d'autoévaluation d'inclusivité numérique sur le site dédié à ce jeu."
-            }
-          },
-          {
-            "id":13 ,
-            "categorie": "Expérience utilisateur",
-            "sous_categorie": "Immersion",
-            "titre": "Identifiez vos différents utilisateurs",
-            "contenu": [
-              "Identifiez vos utilisateurs en prennant en compte leurs diffénrences telles que : handicaps, déficiences, codes socio-culturels, habitudes. \n Utilisez cette connainssance de vos utilisateurs pour concevoir votre services numériques dans une démarche centrée utilisateur."
-            ],
-            "source": {
-                "nom": "Microsoft inclusif design (en anglais)",
-                "description": "Microsoft propose de nombreuses ressources autours du desing inclusif."
-            }
-          },
-          {
-            "id":14 ,
-            "categorie": "Expérience utilisateur",
-            "sous_categorie": "Immersion",
-            "titre": "Rencontrez vos utilisateurs",
-            "contenu": [
-              "Rencontrez et questionnez vos utilisateurs pour identifier et prioriser des axes de conception ou d'amélioration de votre service. \n Peu importe l'étape du projet, cela vous permettra de préciser les profils de vos utilisateurs et leurs besoins."
-            ],
-            "source": {
-                "nom": "Design kit (en anglais)",
-                "description": "De nombreuses méthodes pour interviewer et observer les profils de vos utilisateurs et leurs besoins sont disponibles sur le site Design Kit de l'agence IDEO."
-            }
-          },
-          {
-            "id":15 ,
-            "categorie": "Expérience utilisateur",
-            "sous_categorie": "Immersion",
-            "titre": "Observez pour mieux comprendre",
-            "contenu": [
-              "Observez avec attention vos utilisateurs en situation réelle pour mieux comprendre leurs habitudes, pratiques, besoins et problématiques. \n Vous pourrez ainsi réduire les points d'exclusion ou de friction lors de la conception de votre service."
-            ],
-            "source": {
-                "nom": "Design kit (en anglais)",
-                "description": "De nombreuses méthodes pour interviewer et observer les profils de vos utilisateurs et leurs besoins sont disponibles sur le site Design Kit de l'agence IDEO."
-            }
-          },
-          {
-            "id":16 ,
-            "categorie": "Expérience utilisateur",
-            "sous_categorie": "Décryptage et analyse",
-            "titre": "Représentez vos utilisateurs",
-            "contenu": [
-              "Utilisez des outils tels que le personna pour repésenter vos utilisateurs: vous porrez ainsi concevoir autours de leurs objectifs. \n Un personna est un personnage fictif que l'on utilise afin de se représenter un groupe d'utilisateurs dans le but de mieux se mettre dans leur peau."
-            ],
-            "source": {
-                "nom": "Figma community (en anglais)",
-                "description": "La communauté Figma recense de nombreux modèles de personna prêts à l'emploi."
-            }
-          },
-          {
-            "id":17 ,
-            "categorie": "Expérience utilisateur",
-            "sous_categorie": "Décryptage et analyse",
-            "titre": "Analysez l'expérience éxistante",
-            "contenu": [
-              "Matérialisez et analysez l'expéreince éxistante de vos utilisateurs à travers un ou plusieurs parcous utilisateurs qui serviront de référence à toute l'équipe. \n Cela permet de synthétiser les problèmes rencontrés par vos utilisateurs."
-            ],
-            "source": {
-                "nom": "Whimsical (en anglais)",
-                "description": "Whimsical est un outil permettant la conception de parcours utilisateurs."
-            }
-          },
-          {
-            "id":18 ,
-            "categorie": "Expérience utilisateur",
-            "sous_categorie": "Idéalisation et conception",
-            "titre": "Définissez l'expérience cible",
-            "contenu": [
-              "représentez pour votre service numérique et sous la forme de parcours utilisateur cibles l'expérience de vos futurs utilisateurs. \n cela permet de s'assurer que vous résolvez les points de frictions de vos utilisateurs."
-            ],
-            "source": {
-                "nom": "Figjam",
-                "description": "Figjam est un tableau blanc collaboratif en ligne qui permet la conception d'éléments rapides."
-            }
-          },
-          {
-            "id":19 ,
-            "categorie": "Expérience utilisateur",
-            "sous_categorie": "Idéalisation et conception",
-            "titre": "Prototypez vos écrans",
-            "contenu": [
-              "Schématisez vos écrans en définissant les éléments les composants et en les structurants. \n Ces schémas s'appellent des wireframes. Ils doivent rester les plus simples et compréhensibles possible."
-            ],
-            "source": {
-                "nom": "Wireframe.cc (en anglais)",
-                "description": "Wireframe.cc est un outil permettant la conception instantanée et simplifiée de wireframes."
-            }
-          },
-          {
-            "id":20 ,
-            "categorie": "Interface utilisateur",
-            "sous_categorie": "Design visuel",
-            "titre": "Respectez les codes chromatiques",
-            "contenu": [
-              "Évitez que l'information soit uniquement portée par la couleur.",
-              "Faites attention à la sémantique des couleurs. Exemple: Le rouge = danger, le vert = succès.",
-              "Évitez d'accumuler trop de teintes différentes."
-            ],
-            "source": {
-                "nom": "Colors.co (en anglais)",
-                "description": "Colors.co est un site proposant plusieurs outils afin de générer des gammes chromatiques."
-            }
-          },
-          {
-            "id":21 ,
-            "categorie": "Interface utilisateur",
-            "sous_categorie": "Design visuel",
-            "titre": "Respectez les contrastes visuels",
-            "contenu": [
-              "Respecter les normes de contraste mise en place dans le Référentiel Général d'Amélioration de l'Accessibilité (RGAA) permet à chacun de distinguer les éléments des écrans, peu importe ses déficiences ou les conditions d'utilisation du service.\n Il est recommandé de déoasser les normes de contraste lorsque cela est possible"
-            ],
-            "source": {
-            }
-          },
-          {
-            "id":22 ,
-            "categorie": "Interface utilisateur",
-            "sous_categorie": "Design visuel",
-            "titre": "Appliquez les règles typographiques",
-            "contenu": [
-              "N'écrivez pas trop petit.",
-              "Privilégiez les typographies simples.",
-              "N'écrivez pas tout en majuscule.",
-              "Limitez le nombre de typographie utilisée à 2 ou 3.",
-              "N'utilisez pas de polices trop grasses."
-            ],
-            "source": {
-                "nom": "Iconify Design (en anglais)",
-                "description": "Iconify est un sit référançant de nombreuses ressources et bibliothèques d'icônes open sources."
-            }
-          },
-          {
-            "id":23 ,
-            "categorie": "Interface utilisateur",
-            "sous_categorie": "Design visuel",
-            "titre": "Rendez vos pictogrammes inclusifs",
-            "contenu": [
-              "Favorisez la présence d'un élément textuel associé au pictogramme.",
-              "Les pictogrammes ne doivent que rarement être présentés seuls",
-              "Gardez une constance au niveau des tailles",
-              "Utilisez un seul pictogramme pour une même information."
-            ],
-            "source": {
-                "nom": "Iconify Design (en anglais)",
-                "description": "Iconify est un sit référançant de nombreuses ressources et bibliothèques d'icônes open sources."
-            }
-          },
-          {
-            "id":24 ,
-            "categorie": "Interface utilisateur",
-            "sous_categorie": "Design visuel",
-            "titre": "Rendez vos pictogrammes inclusifs",
-            "contenu": [
-              "Favorisez la présence d'un élément textuel associé au pictogramme.",
-              "Les pictogrammes ne doivent que rarement être présentés seuls",
-              "Gardez une constance au niveau des tailles",
-              "Utilisez un seul pictogramme pour une même information."
-            ],
-            "source": {
-                "nom": "Iconify Design (en anglais)",
-                "description": "Iconify est un sit référançant de nombreuses ressources et bibliothèques d'icônes open sources."
-            }
-          },
-          {
-            "id":25 ,
-            "categorie": "Interface utilisateur",
-            "sous_categorie": "Design visuel",
-            "titre": "Soignez vos mises en pages",
-            "contenu": [
-              "Gardez les mêmes tailes de titre, marges, règles d'espacement et colonnes. \n Une structure cohérente s'appuie sur le sens de lecture (européen): de gauche à droite puis de haut en bas."
-            ],
-            "source": {
-                "nom": "Beta.gouv",
-                "description": "Beta.gouv est un exemple de site ayant unr mise en page simple et lisible."
-            }
-          },
-          {
-            "id":26 ,
-            "categorie": "Interface utilisateur",
-            "sous_categorie": "Design visuel",
-            "titre": "Concevez pour un usage intuitif",
-            "contenu": [
-              "Les éléments intéractifs de vos écrans doivent être intuitifs et suggérer leur utilisation et leur fonction: c'est l'affordance. \n Travaillez sur les diffénrents états de ces éléments (survol, clic, sélection...) permet d'éviter la frustration ou les erreurs de manipualtion chez vos utilisateurs."
-            ],
-            "source": {
-            }
-          },
-          {
-            "id":27 ,
-            "categorie": "Interface utilisateur",
-            "sous_categorie": "Design visuel",
-            "titre": "Pensez responsive ",
-            "contenu": [
-              "Prévoyez vos interfaces pour les diffénrents terminaux sur lesquels ils seront utilisés. Cela peut implique de concevoir le service au format mobile, tablette ou encore ordinateur.",
-              "Suivez une logique de points de rupture (breakpoints) pour les différents mises en pages et assurez-vous que les plus petites résolutions d'écrans soit utilisables."
-            ],
-            "source": {
-                "nom": "Système de design de l'état",
-                "description": "Le site du système de design de l'Etat recense de nombreuses bonne pratiques ainsi que des cas concrets"
-            }
-          },
-          {
-            "id":28 ,
-            "categorie": "Interface utilisateur",
-            "sous_categorie": "Interactions",
-            "titre": "Espacez et hiérarchisez ",
-            "contenu": [
-              "Des espaces cohérents et suffisamment importants permettent de hiérarchiser la structure d'un écran tout en évitant les erreurs de manipulation ",
-              "Gardez une logique pour les espacements au niveau d'un service. Il existe plusieurs systèmes de grilles et d'espacements tels que le système de 8. Cela revient à baser la taille des composants ainsi que les éléments de la grille sur des multiples de 8."
-            ],
-            "source": {
-            }
-          },
-          {
-            "id":29 ,
-            "categorie": "Interface utilisateur",
-            "sous_categorie": "Interactions",
-            "titre": "Explicitez vos champs de saisie ",
-            "contenu": [
-              "Les champs de saisie sont des éléments cruciaux de certains écrans et doivent toujours être accompagnés d'une libellé.",
-              "Explicitez à l'utilisateur les attentes en termes de saisie. Il est aussi intéressant de les accompagner d'une phrase descriptivie si nécessaire."
-            ],
-            "source": {
-            }
-          },
-          {
-            "id":30 ,
-            "categorie": "Interface utilisateur",
-            "sous_categorie": "Interactions",
-            "titre": "Structurez vos formulaires ",
-            "contenu": [
-              "Structurez vos formulaires sous la forme d'une seule colonne.",
-              "Donnez un retour direct aux actions de l'utilisateur pour le rassurer et éviter les erreurs de saisie.",
-              "Veillez à ne pas surcharger vos formulaires : découpez les en différentes étapes si le formulaire est trop complexe, ou si un même écran nécessite trop d'interactions."
-            ],
-            "source": {
-            }
-          },
-          {
-            "id":31 ,
-            "categorie": "Développement",
-            "sous_categorie": "Code",
-            "titre": "Mettez une langue par défaut ",
-            "contenu": [
-              "L'attribut HTML Lang est utilisé pour déterminer la langue du texte utilisé pour une page Web. Il faut toujours indiquer la langue par défaut dans cet attribut.",
-              "En effet, le lecteur d'écran doit savoir quelle langue utiliser pour chaque page. Un texte en français (<html lang=\"fr-FR\") sera ainsi lu par une voix française"
-            ],
-            "source": {
-            }
-          },
-          {
-            "id":31 ,
-            "categorie": "Développement",
-            "sous_categorie": "Code",
-            "titre": "Ajoutez un titre de page",
-            "contenu": [
-              "Chaque page web doit avoir un titre de page (attribut HTMl title).",
-              "Un titre de page permet à l'utilisateur de mieux comprendre le contexte de sa navigation.",
-              "C'est également mieux pour le référencement dans les moteurs de recherche."
-            ],
-            "source": {
-            }
-          },
-          {
-            "id":32 ,
-            "categorie": "Développement",
-            "sous_categorie": "Code",
-            "titre": "Développez des scripts accessibles",
-            "contenu": [
-              
-            ],
-            "source": {
-            }
-          }
-    
-]
+{
+  "data": [
+    {
+      "id": 1,
+      "categorie": "Gestion de projet",
+      "sous_categorie": "Cadrage et Planification",
+      "titre": "Mettez l’inclusivité au programme",
+      "contenu": [
+        "Proposez aux sponsors du projet que l’inclusivité soit un objectif concret du projet.",
+        "Mettez l’inclusivité à l’ordre du jour des réunions de suivi.",
+        "Déterminez un indicateur d’inclusivité ou d’accessibilité à suivre régulièrement.",
+        "Pour vous aider, consultez le référentiel général d'amélioration de l'accessibilité (RGAA) ou le site inclusive.microsoft.design (en anglais)."
+      ],
+      "image": false
+    },
+    {
+      "id": 2,
+      "categorie": "Gestion de projet",
+      "sous_categorie": "Cadrage et Planification",
+      "titre": "Menez une veille sur l’inclusivité",
+      "contenu": [
+        "Identifiez des services numériques se présentant comme inclusifs pour vous en inspirer, par exemple les sites de refugies.info et de la SNCF.",
+        "Abonnez-vous à des sources de référence pour rester informé des actualités du sujet, comme le site design.gouv ou le site inclusive.microsoft.design (en anglais).",
+        "Inspirez-vous hors du champ numérique, par exemple avec l’électroménager (Groupe SEB) ou le bâtiment (accessibilité des bâtiments publics)."
+      ],
+      "source": {
+        "nom": "Design.gouv",
+        "description": "Sur design.gouv, trouvez des outils, formations et actualités liées à l’inclusivité numérique."
+      },
+      "image": false
+    },
+    {
+      "id": 3,
+      "categorie": "Gestion de projet",
+      "sous_categorie": "Cadrage et Planification",
+      "titre": "Identifiez vos utilisateurs dès le début",
+      "contenu": [
+        "Identifiez les publics et contextes dont votre projet doit tenir compte, pour proposer un service utilisable par tous.",
+        "Exemples de publics : personnes allophones, éloignées du numérique, jeunes, personnes âgées...",
+        "Exemples de contextes : dans les transports, dans le bruit, dans le noir, en plein soleil..."
+      ],
+      "source": {
+        "nom": "Microsoft Inclusive Design (en anglais)",
+        "description": "Des sources d’inspiration utiles sont proposées par Microsoft pour identifier, dès le début d’un projet, vos différents utilisateurs et contextes d’utilisation de votre futur service.",
+        "lien": "https://tstu.fr/designinclusif"
+      },
+      "image": false
+    },
+    {
+      "id": 4,
+      "categorie": "Gestion de projet",
+      "sous_categorie": "Cadrage et Planification",
+      "titre": "Invitez des utilisateurs à challenger vos idées",
+      "contenu": [
+        "Prévoyez dès le début du projet des phases de challenge de vos idées, puis des maquettes et des fonctionnalités du service pour les publics concernés.",
+        "Vous pouvez aussi inviter des professionnels, experts internes ou externes (utilisateurs, responsables d’associations d’usagers...).",
+        "Exemples de canaux de mobilisation :\n        - Dans le domaine de la santé : France Assos Santé\n        - Dans le domaine public : jeparticipe.grandlyon.com"
+      ],
+      "source": {
+        "nom": "Je participe Grand Lyon",
+        "description": "Je Participe, site web de la Métropole de Lyon, est un exemple de plateforme de participation citoyenne."
+      },
+      "image": false
+    },
+    {
+      "id": 5,
+      "categorie": "Gestion de projet",
+      "sous_categorie": "Equipe projet et partenariats",
+      "titre": "Formez l'équipe sur ce thème",
+      "contenu": [
+        "Proposez des mini-formations à l'inclusivité aux membres de votre équipe",
+        "Diffusez les MOOCs de design.gouv.fr",
+        "Commencez par exemple par le thème du rédactionnel avec le MOOC dédié de la DITP (direction interministérielle de la transformation publique)."
+      ],
+      "source": {
+        "nom": "MOOC de la DITP",
+        "description": "Retrouvez sur le site de la DITP des webinaires dédiés à l'inclusivité et la simplification administrative. Par exemple, les 'jeudis de l'expérience usager'."
+      },
+      "image": false
+    },
+    {
+      "id": 6,
+      "categorie": "Gestion de projet",
+      "sous_categorie": "Equipe projet et partenariats",
+      "titre": "Désignez une personne référente",
+      "contenu": [
+        "Choisissez une personne qui vous semble être la plus pertinente comme référence inclusivité dans votre projet",
+        "Déterminez avec elle ses responsabilités et actions associées, sur la base des solutions retenues par l'équipe lors de cette session de jeu"
+      ],
+      "source": {},
+      "image": false
+    },
+    {
+      "id": 7,
+      "categorie": "Gestion de projet",
+      "sous_categorie": "Equipe projet et partenariats",
+      "titre": "Vérifiez vos cahiers des charges et contrats",
+      "contenu": [
+        "Intégrez à vos cahiers des charges et contrats des prestations externes les exigences d'accessibilité et d'inclusivité pour les partenaires.",
+        "Exigez un taux d'accessibilité minimum via la réalisation de cette session de jeu dans votre cahier des charges.",
+        "Commencez par exemple par le thème du rédactionnel avec le MOOC dédié de la DITP (direction interministérielle de la transformation publique)."
+      ],
+      "source": {},
+      "image": false
+    },
+    {
+      "id": 8,
+      "categorie": "Gestion de projet",
+      "sous_categorie": "Equipe projet et partenariats",
+      "titre": "Intégrez des sachants",
+      "contenu": [
+        "Intégrez à l'équipe de projet des personnes expertes, internes ou externes : des designers, des services, des psychologues sociaux, des salariés, apprentis, stagiaires avec une sensibilité ou spécificité particulière... \n Par exemple, accueillez un stagiaire en webdesign en situation de handicap (surdité...), issu de cursus de formations adaptés."
+      ],
+      "source": {},
+      "image": false
+    },
+    {
+      "id": 9,
+      "categorie": "Gestion de projet",
+      "sous_categorie": "Equipe projet et partenariats",
+      "titre": "Consultez des experts",
+      "contenu": [
+        "Associez au projet des parties prenantes externes, expertes de certains publics cibles et de leurs besoins"
+      ],
+      "source": {
+        "nom": "Association APF de France Handicap",
+        "description": "Sollicitez par exemple des intervenants de l'association APF France Handicap."
+      },
+      "image": false
+    },
+    {
+      "id": 10,
+      "categorie": "Gestion de projet",
+      "sous_categorie": "Evaluation et certification du projet",
+      "titre": "Faites auditer votre service numérique",
+      "contenu": [
+        "Soumettez votre service numérique à un audit RGAA (Référentiel Général d'Amélioration de l'Accessibilité) \n Pour cela, contactez votre référent accessibilité numérique, s'il y en a un dans votre structure. Il pourra réaliser l'audit RGAA ou il fera appel à un prestataire spécialisé avec une expertise RGAA\n A l'issue de l'audit RGAA, vous obtiendrez le taux de conformité de votre service numérique. La liste des non-conformités vous sera fournie, avec les préconisations de corrections."
+      ],
+      "source": {},
+      "image": false
+    },
+    {
+      "id": 11,
+      "categorie": "Gestion de projet",
+      "sous_categorie": "Evaluation et certification du projet",
+      "titre": "Mettez en place les obligations de communication du RGAA",
+      "contenu": [
+        "Mettez en place une page Accessibilité à partir de la déclaration d'accessibilité issue de l'audit.",
+        "Faites un lien vers le schéma pluriannuel de mise en accessibilité.",
+        "Ajoutez la mention obligatoire d'accessibilité sur la page d'accueil (état de conformité)."
+      ],
+      "source": {
+        "nom": "Accessibilité.numérique.gouv",
+        "description": "Vous trouverez sur le site du gouvernement le référentiel général d'amélioration de l'accessibilité (RGAA)."
+      },
+      "image": false
+    },
+    {
+      "id": 12,
+      "categorie": "Gestion de projet",
+      "sous_categorie": "Evaluation et certification du projet",
+      "titre": "Suivez votre progression",
+      "contenu": [
+        "Estimez l'inclusivité de votre projet régulièrement après la réalisation de cette session",
+        "Assurez-vous que les évolutions ultérieures de votre service respectent les bonnes pratiques d'inclusivité."
+      ],
+      "source": {
+        "nom": "Support d'auto-évaluation sur le site Rés'in",
+        "description": "Retrouvez le support d'autoévaluation d'inclusivité numérique sur le site dédié à ce jeu."
+      },
+      "image": false
+    },
+    {
+      "id": 13,
+      "categorie": "Expérience utilisateur",
+      "sous_categorie": "Immersion",
+      "titre": "Identifiez vos différents utilisateurs",
+      "contenu": [
+        "Identifiez vos utilisateurs en prenant en compte leurs différences telles que : handicaps, déficiences, codes socio-culturels, habitudes. \n Utilisez cette connaissance de vos utilisateurs pour concevoir votre service numérique dans une démarche centrée utilisateur."
+      ],
+      "source": {
+        "nom": "Microsoft inclusive design (en anglais)",
+        "description": "Microsoft propose de nombreuses ressources autour du design inclusif."
+      },
+      "image": false
+    },
+    {
+      "id": 14,
+      "categorie": "Expérience utilisateur",
+      "sous_categorie": "Immersion",
+      "titre": "Rencontrez vos utilisateurs",
+      "contenu": [
+        "Rencontrez et questionnez vos utilisateurs pour identifier et prioriser des axes de conception ou d'amélioration de votre service. \n Peu importe l'étape du projet, cela vous permettra de préciser les profils de vos utilisateurs et leurs besoins."
+      ],
+      "source": {
+        "nom": "Design kit (en anglais)",
+        "description": "De nombreuses méthodes pour interviewer et observer les profils de vos utilisateurs et leurs besoins sont disponibles sur le site Design Kit de l'agence IDEO."
+      },
+      "image": false
+    },
+    {
+      "id": 15,
+      "categorie": "Expérience utilisateur",
+      "sous_categorie": "Immersion",
+      "titre": "Observez pour mieux comprendre",
+      "contenu": [
+        "Observez avec attention vos utilisateurs en situation réelle pour mieux comprendre leurs habitudes, pratiques, besoins et problématiques. \n Vous pourrez ainsi réduire les points d'exclusion ou de friction lors de la conception de votre service."
+      ],
+      "source": {
+        "nom": "Design kit (en anglais)",
+        "description": "De nombreuses méthodes pour interviewer et observer les profils de vos utilisateurs et leurs besoins sont disponibles sur le site Design Kit de l'agence IDEO."
+      },
+      "image": false
+    },
+    {
+      "id": 16,
+      "categorie": "Expérience utilisateur",
+      "sous_categorie": "Décryptage et analyse",
+      "titre": "Représentez vos utilisateurs",
+      "contenu": [
+        "Utilisez des outils tels que le persona pour représenter vos utilisateurs : vous pourrez ainsi concevoir autour de leurs objectifs. \n Un persona est un personnage fictif que l'on utilise afin de se représenter un groupe d'utilisateurs dans le but de mieux se mettre dans leur peau."
+      ],
+      "source": {
+        "nom": "Figma community (en anglais)",
+        "description": "La communauté Figma recense de nombreux modèles de persona prêts à l'emploi."
+      },
+      "image": true,
+      "image_comparaison": false
+    },
+    {
+      "id": 17,
+      "categorie": "Expérience utilisateur",
+      "sous_categorie": "Décryptage et analyse",
+      "titre": "Analysez l'expérience existante",
+      "contenu": [
+        "Matérialisez et analysez l'expérience existante de vos utilisateurs à travers un ou plusieurs parcours utilisateurs qui serviront de référence à toute l'équipe. \n Cela permet de synthétiser les problèmes rencontrés par vos utilisateurs."
+      ],
+      "source": {
+        "nom": "Whimsical (en anglais)",
+        "description": "Whimsical est un outil permettant la conception de parcours utilisateurs."
+      },
+      "image": true,
+      "image_comparaison": false
+    },
+    {
+      "id": 18,
+      "categorie": "Expérience utilisateur",
+      "sous_categorie": "Idéation et conception",
+      "titre": "Définissez l'expérience cible",
+      "contenu": [
+        "Représentez pour votre service numérique et sous la forme de parcours utilisateur cibles l'expérience de vos futurs utilisateurs. \n Cela permet de s'assurer que vous résolvez les points de frictions de vos utilisateurs."
+      ],
+      "source": {
+        "nom": "Figjam",
+        "description": "Figjam est un tableau blanc collaboratif en ligne qui permet la conception d'éléments rapides."
+      },
+      "image": true,
+      "image_comparaison": false
+    },
+    {
+      "id": 19,
+      "categorie": "Expérience utilisateur",
+      "sous_categorie": "Idéation et conception",
+      "titre": "Prototypez vos écrans",
+      "contenu": [
+        "Schématisez vos écrans en définissant les éléments les composant et en les structurant. \n Ces schémas s'appellent des wireframes. Ils doivent rester les plus simples et compréhensibles possible."
+      ],
+      "source": {
+        "nom": "Wireframe.cc (en anglais)",
+        "description": "Wireframe.cc est un outil permettant la conception instantanée et simplifiée de wireframes."
+      },
+      "image": true,
+      "image_comparaison": true
+    },
+    {
+      "id": 20,
+      "categorie": "Interface utilisateur",
+      "sous_categorie": "Design visuel",
+      "titre": "Respectez les codes chromatiques",
+      "contenu": [
+        "Évitez que l'information soit uniquement portée par la couleur.",
+        "Faites attention à la sémantique des couleurs. Exemple : Le rouge = danger, le vert = succès.",
+        "Évitez d'accumuler trop de teintes différentes."
+      ],
+      "source": {
+        "nom": "Colors.co (en anglais)",
+        "description": "Colors.co est un site proposant plusieurs outils afin de générer des gammes chromatiques."
+      },
+      "image": true,
+      "image_comparaison": true
+    },
+    {
+      "id": 21,
+      "categorie": "Interface utilisateur",
+      "sous_categorie": "Design visuel",
+      "titre": "Respectez les contrastes visuels",
+      "contenu": [
+        "Respecter les normes de contraste mises en place dans le Référentiel Général d'Amélioration de l'Accessibilité (RGAA) permet à chacun de distinguer les éléments des écrans, peu importe ses déficiences ou les conditions d'utilisation du service.\n Il est recommandé de dépasser les normes de contraste lorsque cela est possible"
+      ],
+      "source": {},
+      "image": true,
+      "image_comparaison": true
+    },
+    {
+      "id": 22,
+      "categorie": "Interface utilisateur",
+      "sous_categorie": "Design visuel",
+      "titre": "Appliquez les règles typographiques",
+      "contenu": [
+        "N'écrivez pas trop petit.",
+        "Privilégiez les typographies simples.",
+        "N'écrivez pas tout en majuscule.",
+        "Limitez le nombre de typographies utilisées à 2 ou 3.",
+        "N'utilisez pas de polices trop grasses."
+      ],
+      "source": {
+        "nom": "Iconify Design (en anglais)",
+        "description": "Iconify est un site référençant de nombreuses ressources et bibliothèques d'icônes open sources."
+      },
+      "image": true,
+      "image_comparaison": true
+    },
+    {
+      "id": 23,
+      "categorie": "Interface utilisateur",
+      "sous_categorie": "Design visuel",
+      "titre": "Rendez vos pictogrammes inclusifs",
+      "contenu": [
+        "Favorisez la présence d'un élément textuel associé au pictogramme.",
+        "Les pictogrammes ne doivent que rarement être présentés seuls",
+        "Gardez une constance au niveau des tailles",
+        "Utilisez un seul pictogramme pour une même information."
+      ],
+      "source": {
+        "nom": "Iconify Design (en anglais)",
+        "description": "Iconify est un site référençant de nombreuses ressources et bibliothèques d'icônes open sources."
+      },
+      "image": true,
+      "image_comparaison": true
+    },
+    {
+      "id": 24,
+      "categorie": "Interface utilisateur",
+      "sous_categorie": "Design visuel",
+      "titre": "Rendez vos pictogrammes inclusifs",
+      "contenu": [
+        "Favorisez la présence d'un élément textuel associé au pictogramme.",
+        "Les pictogrammes ne doivent que rarement être présentés seuls",
+        "Gardez une constance au niveau des tailles",
+        "Utilisez un seul pictogramme pour une même information."
+      ],
+      "source": {
+        "nom": "Iconify Design (en anglais)",
+        "description": "Iconify est un site référençant de nombreuses ressources et bibliothèques d'icônes open sources."
+      },
+      "image": true,
+      "image_comparaison": true
+    },
+    {
+      "id": 25,
+      "categorie": "Interface utilisateur",
+      "sous_categorie": "Design visuel",
+      "titre": "Représentez la diversité",
+      "contenu": [
+        "Gardez les mêmes tailles de titre, marges, règles d'espacement et colonnes. \n Une structure cohérente s'appuie sur le sens de lecture (européen): de gauche à droite puis de haut en bas."
+      ],
+      "source": {
+        "nom": "Beta.gouv",
+        "description": "Beta.gouv est un exemple de site ayant une mise en page simple et lisible."
+      },
+      "image": true,
+      "image_comparaison": true
+    },
+    {
+      "id": 26,
+      "categorie": "Interface utilisateur",
+      "sous_categorie": "Design visuel",
+      "titre": "Soignez vos mises en pages",
+      "contenu": [
+        "Les éléments interactifs de vos écrans doivent être intuitifs et suggérer leur utilisation et leur fonction: c'est l'affordance. \n Travaillez sur les différents états de ces éléments (survol, clic, sélection...) permet d'éviter la frustration ou les erreurs de manipulation chez vos utilisateurs."
+      ],
+      "source": {},
+      "image": true,
+      "image_comparaison": true
+    },
+    {
+      "id": 27,
+      "categorie": "Interface utilisateur",
+      "sous_categorie": "Design visuel",
+      "titre": "Rendez vos pictogrammes inclusifs",
+      "contenu": [
+        "Prévoyez vos interfaces pour les différents terminaux sur lesquels ils seront utilisés. Cela peut impliquer de concevoir le service au format mobile, tablette ou encore ordinateur.",
+        "Suivez une logique de points de rupture"
+      ],
+      "source": {
+        "nom": "Système et design de l'état",
+        "description": "Le site de recensement de l'état recense de nombreuses bonnes pratiques ainsi que des cas concrets."
+      },
+      "image": true,
+      "image_comparaison": false
+    },
+    {
+      "id": 28,
+      "categorie": "Interface utilisateur",
+      "sous_categorie": "Design visuel",
+      "titre": "Espacez et hiérarchisez",
+      "contenu": [
+        "Des espaces cohérents et suffisamment importants permettent de hiérarchiser la structure d'un écran tout en évitant les erreurs de manipulation.\n\n Gardez une logique pour les espacements au niveau d'un service. Il existe plusieurs systèmes de grilles et d'espacement tels que le système de 8. Cela revient à baser la taille des composants ainsi que des éléments de la grille sur des multiples de 8"
+      ],
+      "source": {},
+      "image": true,
+      "image_comparaison": true
+    },
+    {
+      "id": 29,
+      "categorie": "Interface utilisateur",
+      "sous_categorie": "Interactions",
+      "titre": "Explicitez vos champs de saisie",
+      "contenu": [
+        "Les champs de saisie sont des éléments essentiels de certains écrans de saisie et doivent toujours être accompagnés d'un libellé \n\nExplicitez à l'utilisateur les attentes en terme de saisie. Il est aussi intéressant de les accompagner d'une phrase descriptive si nécessaire."
+      ],
+      "source": {},
+      "image": true,
+      "image_comparaison": true
+    },
+    {
+      "id": 30,
+      "categorie": "Interface utilisateur",
+      "sous_categorie": "Interactions",
+      "titre": "Structurez vos formulaires",
+      "contenu": [
+        "Structurez vos formulaires sous la forme d'une seule colonne.",
+        "Donnez un retour direct aux actions de l'utilisateur pour le rassurer et éviter les erreurs de saisie.",
+        "Veillez à ne pas surcharger vos formulaires:\n découpez les en différentes étapes si le formulaire est trop complexe, ou si un même écran nécessite trop d'interactions."
+      ],
+      "source": {},
+      "image": true,
+      "image_comparaison": true
+    },
+    {
+      "id": 31,
+      "categorie": "Développement",
+      "sous_categorie": "Code",
+      "titre": "Mettez une langue par défaut",
+      "contenu": [
+        "L'attribut HTML permet de définir la langue du texte utilisée sur la page web. Il faut toujours indiquer la langue par défaut sur cet attribut. \n\n En effet, le lecteur d'écran doit savoir quelle langue utiliser pour chaque page. Un texte en français (<html lang='fr'>) sera ainsi lu par une voix française."
+      ],
+      "source": {},
+      "image": true,
+      "image_comparaison": true
+    },
+    {
+      "id": 32,
+      "categorie": "Développement",
+      "sous_categorie": "Code",
+      "titre": "Ajoutez un titre de page",
+      "contenu": [
+        "Chaque page de web doit avoir un titre de page (attribut HTML title).\n\n Un titre de page permet à l'utilisateur de mieux comprendre le contexte de sa navigation.\n\n C'est également mieux pour le référencement dans les moteurs de recherche."
+      ],
+      "source": {},
+      "image": true,
+      "image_comparaison": false
+    },
+    {
+      "id": 33,
+      "categorie": "Développement",
+      "sous_categorie": "Code",
+      "titre": "Développez des scripts accessibles",
+      "contenu": [
+        "Les scripts doivent être contrôlables par l'utilisateur, au clavier et par tout dispositif de pointage.\n\n Un script est un ensemble de lignes de commandes inséré dans une page web pour la rendre dynamique et interactive. Exemples : un carrousel, un menu déroulant, une fenêtre modale, une barre de recherche dépliante.\n\n Le langage des scripts le plus connu est le JavaScript."
+      ],
+      "source": {},
+      "image": false,
+      "image_comparaison": false
+    },
+    {
+      "id": 34,
+      "categorie": "Développement",
+      "sous_categorie": "Code",
+      "titre": "Rendez les tableaux accessibles",
+      "contenu": [
+        "La lecture d'une ligne de tableau doit être compréhensible avec les technologies d'assistance. C'est pourquoi chaque cellule doit être associée à ses en-têtes (colonnes et lignes)."
+      ],
+      "source": {},
+      "image": false,
+      "image_comparaison": false
+    },
+    {
+      "id": 35,
+      "categorie": "Développement",
+      "sous_categorie": "Code",
+      "titre": "Contrôlez les éléments multimédias",
+      "contenu": [
+        "L'utilisateur doit pouvoir contrôler le déclenchement de tout son ou toute vidéo.\n\n Ainsi, le player audio ou vidéo utilisé doit avoir des boutons Lecture et Pause."
+      ],
+      "source": {},
+      "image": true,
+      "image_comparaison": true
+    },
+    {
+      "id": 36,
+      "categorie": "Développement",
+      "sous_categorie": "Code",
+      "titre": "Restez lisible",
+      "contenu": [
+        "Le texte doit rester lisible lorsque la taille des caractères est augmentée jusqu'à 200%."
+      ],
+      "source": {},
+      "image": true,
+      "image_comparaison": true
+    },
+    {
+      "id": 37,
+      "categorie": "Développement",
+      "sous_categorie": "Navigation",
+      "titre": "Restez lisible",
+      "contenu": [
+        "Le texte doit rester lisible lorsque la taille des caractères est augmentée jusqu'à 200%."
+      ],
+      "source": {},
+      "image": false,
+      "image_comparaison": false
+    },
+    {
+      "id": 38,
+      "categorie": "Développement",
+      "sous_categorie": "Navigation",
+      "titre": "Laissez le focus visible",
+      "contenu": [
+        "La prise de focus doit être visible pour chaque élément recevant le focus."
+      ],
+      "source": {},
+      "image": true,
+      "image_comparaison": true
+    },
+    {
+      "id": 39,
+      "categorie": "Développement",
+      "sous_categorie": "Navigation",
+      "titre": "Utilisez des titres",
+      "contenu": [
+        "L'information doit être structurée par l'utilisation de titres: H1, H2, H3, etc. Les titres doivent respecter une hiérarchie: le H1 contient des H2 qui contiennent des H3, etc. \n\n Il est plus simple, quand on utilise uniquement un clavier, de naviguer de titre en titre sans devoir lire la totalité de la page: cela équivaut à un sommaire. \n\n C'est également mieux pour le référencement dans les moteurs de recherche."
+      ],
+      "source": {},
+      "image": true,
+      "image_comparaison": true
+    },
+    {
+      "id": 40,
+      "categorie": "Développement",
+      "sous_categorie": "Navigation",
+      "titre": "Structurez vos listes",
+      "contenu": [
+        "Les listes doivent être structurées.\n\n Ainsi, pour les listes non ordonnées, il faut utiliser les balises HTML <ul> et <li>. Pour les listes ordonnées, il faut utiliser les balises HTML <ol> et <li>."
+      ],
+      "source": {},
+      "image": true,
+      "image_comparaison": true
+    },
+    {
+      "id": 41,
+      "categorie": "Développement",
+      "sous_categorie": "Navigation",
+      "titre": "Facilitez la navigation",
+      "contenu": [
+        "Le site ou service numérique doit contenir au moins 2 systèmes de navigation:",
+        "Menu de navigation",
+        "Plan du site",
+        "Moteur de recherche"
+      ],
+      "source": {},
+      "image": false,
+      "image_comparaison": false
+    },
+    {
+      "id": 42,
+      "categorie": "Editorial",
+      "sous_categorie": "Rédaction textuelle",
+      "titre": "Adoptez le langage clair",
+      "contenu": [
+        "Le langage clair vise à rendre l'information plus facile, plus simple et plus rapide à lire",
+        "Utilisez des mots courts",
+        "Rédigez des phrases et des paragraphes courts",
+        "Évitez tout jargon",
+        "Évitez les abréviations et expliquez chaque acronyme ou terme spécifique",
+        "Utilisez la voix active",
+        "Exemple : \"Les documents doivent être envoyés rapidement.\" devient \"Vous devez envoyer ces documents rapidement.\""
+      ],
+      "source": {
+        "nom": "",
+        "description": "La norme ISO 24495-1 publiée en 2023 établit les principes directeurs et les lignes directrices pour concevoir un document, papier ou numérique, qui soit réellement clair, simple et fonctionnel pour le public cible auquel il s'adresse."
+      },
+      "image": false,
+      "image_comparaison": false
+    },
+    {
+      "id": 43,
+      "categorie": "Editorial",
+      "sous_categorie": "Rédaction textuelle",
+      "titre": "Pensez au langage inclusif",
+      "contenu": [
+        "Le langage inclusif désigne différentes règles et pratiques qui cherchent à éviter toute discrimination sexiste par le langage ou l'écriture. \n Plusieurs formulations sont possibles :",
+        "Utilisez des formules englobantes ou des tournures épicènes lorsque c'est possible, c'est-à-dire des noms qui ont la même forme aux deux genres. Exemples : \"adulte\", \"élève\", \"scientifique\", \"personne\", \"public\"",
+        "Écrivez les deux formes à la suite. Exemples : Les directeurs et directrices d'établissement",
+        "Utilisez le point médian. Exemples : étudiant-es, technicien-ne, médiateur-ice. Attention, il est conseillé d'utiliser cette forme avec prudence pour des questions de lisibilité."
+      ],
+      "source": {
+        "nom": "Jeudi de l'expérience usagers: simplifier les documents et le langage administratifs",
+        "description": "Webinaire de la Direction interministérielle de la transformation publique (DITP)."
+      },
+      "image": false,
+      "image_comparaison": false
+    },
+    {
+      "id": 44,
+      "categorie": "Editorial",
+      "sous_categorie": "Rédaction textuelle",
+      "titre": "Ayez des textes en FALC (Facile A lire et A Comprendre)",
+      "contenu": [
+        "Le Facile A Lire et à Comprendre (FALC) est une méthode qui permet de rendre l'information plus simple et plus claire, notamment aux personnes en situation de handicap, dyslexiques, âgées ou encore maîtrisant mal la langue française. \n Le FALC répond à une norme définie par l'association Inclusion Europe. \n Faites rédiger certains contenus en FALC si cela est pertinent pour vos publics cibles. \n Attention: une application stricte du FALC à certains contenus complexes peut être contre-productive."
+      ],
+      "source": {},
+      "image": false,
+      "image_comparaison": false
+    },
+    {
+      "id": 45,
+      "categorie": "Editorial",
+      "sous_categorie": "Contenus",
+      "titre": "Traitez vos images",
+      "contenu": [
+        "Distinguez les images décoratives des images porteuses d'information.",
+        "Renseignez le texte alternatif des images porteuses d'information.",
+        "Cela permet aux personnes déficientes visuelles de pouvoir accéder à tous les contenus visuels utiles."
+      ],
+      "source": {},
+      "image": true,
+      "image_comparaison": false
+    },
+    {
+      "id": 46,
+      "categorie": "Editorial",
+      "sous_categorie": "Contenus",
+      "titre": "Structurez vos contenus",
+      "contenu": [
+        "Gagnez en lisibilité en structurant vos contenus : ",
+        "Une hiérarchie des titres cohérente.",
+        "Des listes pour faciliter le déplacement d'un item à l'autre",
+        "Ne détournez pas les balises à des fins de présentation"
+      ],
+      "source": {},
+      "image": true,
+      "image_comparaison": true
+    },
+    {
+      "id": 47,
+      "categorie": "Editorial",
+      "sous_categorie": "Contenus",
+      "titre": "Construisez des tableaux accessibles",
+      "contenu": [
+        "Un tableau doit être utilisé à bon escient, il doit être compréhensible et précis : ",
+        "Donnez un titre aux tableaux",
+        "Déclarez les en-têtes de colonnes et/ou des lignes",
+        "Une cellule doit pouvoir être associée à sa colonne, à sa ligne."
+      ],
+      "source": {},
+      "image": false,
+      "image_comparaison": false
+    },
+    {
+      "id": 48,
+      "categorie": "Editorial",
+      "sous_categorie": "Contenus",
+      "titre": "Spécifiez les liens",
+      "contenu": [
+        "Les liens doivent être contextualisés.",
+        "Rendez les liens explicites (par leur intitulé, par le titre du lien, par le contexte).",
+        "Prévenez lorsqu'un lien s'ouvre dans une nouvelle fenêtre."
+      ],
+      "source": {},
+      "image": true,
+      "image_comparaison": true
+    },
+    {
+      "id": 49,
+      "categorie": "Editorial",
+      "sous_categorie": "Contenus",
+      "titre": "Informez sur les documents en téléchargement",
+      "contenu": [
+        "Informez sur le poids et le format du document à télécharger.",
+        "Donnez le contexte"
+      ],
+      "source": {},
+      "image": true,
+      "image_comparaison": true
+    },
+    {
+      "id": 50,
+      "categorie": "Editorial",
+      "sous_categorie": "Contenus",
+      "titre": "Proposez du multimédia accessible",
+      "contenu": [
+        "Pour les vidéos : ",
+        "Identifiez les vidéos par un titre ou un texte descriptif",
+        "Ajoutez une transcription textuelle structurée et des sous-titres.",
+        "Ajoutez une audio-description si nécessaire.",
+        "Ajoutez une traduction en Langue des Signes Française incrustée dans la vidéo.",
+        "Pour les audios : ",
+        "Ajoutez une transcription textuelle"
+      ],
+      "source": {},
+      "image": false,
+      "image_comparaison": false
+    },
+    {
+      "id": 51,
+      "categorie": "Editorial",
+      "sous_categorie": "Contenus",
+      "titre": "Soyez accessible sur les réseaux sociaux",
+      "contenu": [
+        "Pour les hashtags, mettez la première lettre de chaque mot en majuscule. Exemple: #OnRecrute",
+        "N'abusez pas des emojis.",
+        "Référez-vous aux cartes solutions dédiées à la rédaction textuelle."
+      ],
+      "source": {},
+      "image": false,
+      "image_comparaison": false
+    },
+    {
+      "id": 52,
+      "categorie": "Editorial",
+      "sous_categorie": "Contenus",
+      "titre": "Créez des documents bureautiques accessibles",
+      "contenu": [
+        "Définissez les propriétés du document : ",
+        "Indiquez la langue.",
+        "Complétez les métadonnées du document (titre, auteur, etc.).",
+        "Faites attention à la navigation.",
+        "L'ordre de tabulation doit être cohérent : les contenus doivent s'enchaîner dans un ordre logique."
+      ],
+      "source": {},
+      "image": false,
+      "image_comparaison": false
+    }
+  ]
 }

@@ -70,7 +70,6 @@ export class AnswerStorageService {
     let place = 0;
     navigation_data.data.forEach(item => {
       if (item.categorie === navigation_data.data[cardNumber].categorie) {
-        console.log(item.numero);
         compteur++;
         if (item.numero === cardNumber) {
           place = compteur;
