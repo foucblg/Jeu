@@ -12,6 +12,7 @@ import { DividerModule } from 'primeng/divider';
   templateUrl: './rules-solutions.component.html',
   styleUrl: './rules-solutions.component.css'
 })
+
 export class RulesSolutionsComponent implements OnInit {
   matchingIds: number[] = [];
   theme_currentNumber = 0;
@@ -31,6 +32,11 @@ export class RulesSolutionsComponent implements OnInit {
     }
   constructor(private router:Router,public awnser_service:AnswerStorageService) {}
     continuer(){
+      this.router.navigate(['./solution'], {
+        queryParams: { numero: this.matchingIds[0]},
+        queryParamsHandling: 'merge', // Merge avec les paramètres existants
+        skipLocationChange: false // Mettre à jour l'URL dans la barre d'adresse
+      })
       this.router.navigate(['./solution'], {
         queryParams: { numero: this.matchingIds[0]},
         queryParamsHandling: 'merge', // Merge avec les paramètres existants
