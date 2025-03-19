@@ -11,7 +11,8 @@
         "Déterminez un indicateur d’inclusivité ou d’accessibilité à suivre régulièrement.",
         "Pour vous aider, consultez le référentiel général d'amélioration de l'accessibilité (RGAA) ou le site inclusive.microsoft.design (en anglais)."
       ],
-      "image": false
+      "image": false,
+        "textcolor": "#ED6F3A"
     },
     {
       "id": 2,
@@ -27,7 +28,8 @@
         "nom": "Design.gouv",
         "description": "Sur design.gouv, trouvez des outils, formations et actualités liées à l’inclusivité numérique."
       },
-      "image": false
+      "image": false,
+        "textcolor": "#ED6F3A"
     },
     {
       "id": 3,
@@ -44,7 +46,8 @@
         "description": "Des sources d’inspiration utiles sont proposées par Microsoft pour identifier, dès le début d’un projet, vos différents utilisateurs et contextes d’utilisation de votre futur service.",
         "lien": "https://tstu.fr/designinclusif"
       },
-      "image": false
+      "image": false,
+        "textcolor": "#ED6F3A"
     },
     {
       "id": 4,
@@ -60,7 +63,8 @@
         "nom": "Je participe Grand Lyon",
         "description": "Je Participe, site web de la Métropole de Lyon, est un exemple de plateforme de participation citoyenne."
       },
-      "image": false
+      "image": false,
+        "textcolor": "#ED6F3A"
     },
     {
       "id": 5,
@@ -76,7 +80,8 @@
         "nom": "MOOC de la DITP",
         "description": "Retrouvez sur le site de la DITP des webinaires dédiés à l'inclusivité et la simplification administrative. Par exemple, les 'jeudis de l'expérience usager'."
       },
-      "image": false
+      "image": false,
+        "textcolor": "#ED6F3A"
     },
     {
       "id": 6,
@@ -88,7 +93,8 @@
         "Déterminez avec elle ses responsabilités et actions associées, sur la base des solutions retenues par l'équipe lors de cette session de jeu"
       ],
       "source": {},
-      "image": false
+      "image": false,
+        "textcolor": "#ED6F3A"
     },
     {
       "id": 7,
@@ -101,7 +107,8 @@
         "Commencez par exemple par le thème du rédactionnel avec le MOOC dédié de la DITP (direction interministérielle de la transformation publique)."
       ],
       "source": {},
-      "image": false
+      "image": false,
+        "textcolor": "#ED6F3A"
     },
     {
       "id": 8,
@@ -112,7 +119,8 @@
         "Intégrez à l'équipe de projet des personnes expertes, internes ou externes : des designers, des services, des psychologues sociaux, des salariés, apprentis, stagiaires avec une sensibilité ou spécificité particulière... \n Par exemple, accueillez un stagiaire en webdesign en situation de handicap (surdité...), issu de cursus de formations adaptés."
       ],
       "source": {},
-      "image": false
+      "image": false,
+        "textcolor": "#ED6F3A"
     },
     {
       "id": 9,
@@ -126,7 +134,8 @@
         "nom": "Association APF de France Handicap",
         "description": "Sollicitez par exemple des intervenants de l'association APF France Handicap."
       },
-      "image": false
+      "image": false,
+        "textcolor": "#ED6F3A"
     },
     {
       "id": 10,
@@ -137,7 +146,8 @@
         "Soumettez votre service numérique à un audit RGAA (Référentiel Général d'Amélioration de l'Accessibilité) \n Pour cela, contactez votre référent accessibilité numérique, s'il y en a un dans votre structure. Il pourra réaliser l'audit RGAA ou il fera appel à un prestataire spécialisé avec une expertise RGAA\n A l'issue de l'audit RGAA, vous obtiendrez le taux de conformité de votre service numérique. La liste des non-conformités vous sera fournie, avec les préconisations de corrections."
       ],
       "source": {},
-      "image": false
+      "image": false,
+        "textcolor": "#ED6F3A"
     },
     {
       "id": 11,
@@ -153,7 +163,8 @@
         "nom": "Accessibilité.numérique.gouv",
         "description": "Vous trouverez sur le site du gouvernement le référentiel général d'amélioration de l'accessibilité (RGAA)."
       },
-      "image": false
+      "image": false,
+        "textcolor": "#ED6F3A"
     },
     {
       "id": 12,
@@ -168,7 +179,8 @@
         "nom": "Support d'auto-évaluation sur le site Rés'in",
         "description": "Retrouvez le support d'autoévaluation d'inclusivité numérique sur le site dédié à ce jeu."
       },
-      "image": false
+      "image": false,
+        "textcolor": "#ED6F3A"
     },
     {
       "id": 13,
@@ -182,7 +194,8 @@
         "nom": "Microsoft inclusive design (en anglais)",
         "description": "Microsoft propose de nombreuses ressources autour du design inclusif."
       },
-      "image": false
+      "image": false,
+        "textcolor": "#24624C"
     },
     {
       "id": 14,
@@ -196,7 +209,8 @@
         "nom": "Design kit (en anglais)",
         "description": "De nombreuses méthodes pour interviewer et observer les profils de vos utilisateurs et leurs besoins sont disponibles sur le site Design Kit de l'agence IDEO."
       },
-      "image": false
+      "image": false,
+        "textcolor": "#24624C"
     },
     {
       "id": 15,
@@ -210,7 +224,8 @@
         "nom": "Design kit (en anglais)",
         "description": "De nombreuses méthodes pour interviewer et observer les profils de vos utilisateurs et leurs besoins sont disponibles sur le site Design Kit de l'agence IDEO."
       },
-      "image": false
+      "image": false,
+        "textcolor": "#24624C"
     },
     {
       "id": 16,
@@ -225,7 +240,8 @@
         "description": "La communauté Figma recense de nombreux modèles de persona prêts à l'emploi."
       },
       "image": true,
-      "image_comparaison": false
+      "image_comparaison": false,
+        "textcolor": "#24624C"
     },
     {
       "id": 17,
@@ -240,7 +256,8 @@
         "description": "Whimsical est un outil permettant la conception de parcours utilisateurs."
       },
       "image": true,
-      "image_comparaison": false
+      "image_comparaison": false,
+        "textcolor": "#24624C"
     },
     {
       "id": 18,
@@ -255,7 +272,8 @@
         "description": "Figjam est un tableau blanc collaboratif en ligne qui permet la conception d'éléments rapides."
       },
       "image": true,
-      "image_comparaison": false
+      "image_comparaison": false,
+        "textcolor": "#24624C"
     },
     {
       "id": 19,
@@ -270,7 +288,8 @@
         "description": "Wireframe.cc est un outil permettant la conception instantanée et simplifiée de wireframes."
       },
       "image": true,
-      "image_comparaison": true
+      "image_comparaison": true,
+        "textcolor": "#24624C"
     },
     {
       "id": 20,
@@ -287,7 +306,8 @@
         "description": "Colors.co est un site proposant plusieurs outils afin de générer des gammes chromatiques."
       },
       "image": true,
-      "image_comparaison": true
+      "image_comparaison": true,
+        "textcolor": "#FBEF7D"
     },
     {
       "id": 21,
@@ -299,7 +319,8 @@
       ],
       "source": {},
       "image": true,
-      "image_comparaison": true
+      "image_comparaison": true,
+        "textcolor": "#FBEF7D"
     },
     {
       "id": 22,
@@ -318,7 +339,8 @@
         "description": "Iconify est un site référençant de nombreuses ressources et bibliothèques d'icônes open sources."
       },
       "image": true,
-      "image_comparaison": true
+      "image_comparaison": true,
+        "textcolor": "#FBEF7D"
     },
     {
       "id": 23,
@@ -336,7 +358,8 @@
         "description": "Iconify est un site référençant de nombreuses ressources et bibliothèques d'icônes open sources."
       },
       "image": true,
-      "image_comparaison": true
+      "image_comparaison": true,
+        "textcolor": "#FBEF7D"
     },
     {
       "id": 24,
@@ -354,7 +377,8 @@
         "description": "Iconify est un site référençant de nombreuses ressources et bibliothèques d'icônes open sources."
       },
       "image": true,
-      "image_comparaison": true
+      "image_comparaison": true,
+        "textcolor": "#FBEF7D"
     },
     {
       "id": 25,
@@ -369,7 +393,8 @@
         "description": "Beta.gouv est un exemple de site ayant une mise en page simple et lisible."
       },
       "image": true,
-      "image_comparaison": true
+      "image_comparaison": true,
+        "textcolor": "#FBEF7D"
     },
     {
       "id": 26,
@@ -381,7 +406,8 @@
       ],
       "source": {},
       "image": true,
-      "image_comparaison": true
+      "image_comparaison": true,
+        "textcolor": "#FBEF7D"
     },
     {
       "id": 27,
@@ -397,7 +423,8 @@
         "description": "Le site de recensement de l'état recense de nombreuses bonnes pratiques ainsi que des cas concrets."
       },
       "image": true,
-      "image_comparaison": false
+      "image_comparaison": false,
+        "textcolor": "#FBEF7D"
     },
     {
       "id": 28,
@@ -409,7 +436,8 @@
       ],
       "source": {},
       "image": true,
-      "image_comparaison": true
+      "image_comparaison": true,
+        "textcolor": "#FBEF7D"
     },
     {
       "id": 29,
@@ -421,7 +449,8 @@
       ],
       "source": {},
       "image": true,
-      "image_comparaison": true
+      "image_comparaison": true,
+        "textcolor": "#FBEF7D"
     },
     {
       "id": 30,
@@ -435,7 +464,8 @@
       ],
       "source": {},
       "image": true,
-      "image_comparaison": true
+      "image_comparaison": true,
+        "textcolor": "#FBEF7D"
     },
     {
       "id": 31,
@@ -447,7 +477,8 @@
       ],
       "source": {},
       "image": true,
-      "image_comparaison": true
+      "image_comparaison": true,
+        "textcolor": "#695897"
     },
     {
       "id": 32,
@@ -459,7 +490,8 @@
       ],
       "source": {},
       "image": true,
-      "image_comparaison": false
+      "image_comparaison": false,
+        "textcolor": "#695897"
     },
     {
       "id": 33,
@@ -471,7 +503,8 @@
       ],
       "source": {},
       "image": false,
-      "image_comparaison": false
+      "image_comparaison": false,
+        "textcolor": "#695897"
     },
     {
       "id": 34,
@@ -483,7 +516,8 @@
       ],
       "source": {},
       "image": false,
-      "image_comparaison": false
+      "image_comparaison": false,
+        "textcolor": "#695897"
     },
     {
       "id": 35,
@@ -495,7 +529,8 @@
       ],
       "source": {},
       "image": true,
-      "image_comparaison": true
+      "image_comparaison": true,
+        "textcolor": "#695897"
     },
     {
       "id": 36,
@@ -507,7 +542,8 @@
       ],
       "source": {},
       "image": true,
-      "image_comparaison": true
+      "image_comparaison": true,
+        "textcolor": "#695897"
     },
     {
       "id": 37,
@@ -519,7 +555,8 @@
       ],
       "source": {},
       "image": false,
-      "image_comparaison": false
+      "image_comparaison": false,
+        "textcolor": "#695897"
     },
     {
       "id": 38,
@@ -531,7 +568,8 @@
       ],
       "source": {},
       "image": true,
-      "image_comparaison": true
+      "image_comparaison": true,
+        "textcolor": "#695897"
     },
     {
       "id": 39,
@@ -543,7 +581,8 @@
       ],
       "source": {},
       "image": true,
-      "image_comparaison": true
+      "image_comparaison": true,
+        "textcolor": "#695897"
     },
     {
       "id": 40,
@@ -555,7 +594,8 @@
       ],
       "source": {},
       "image": true,
-      "image_comparaison": true
+      "image_comparaison": true,
+        "textcolor": "#695897"
     },
     {
       "id": 41,
@@ -570,7 +610,8 @@
       ],
       "source": {},
       "image": false,
-      "image_comparaison": false
+      "image_comparaison": false,
+        "textcolor": "#695897"
     },
     {
       "id": 42,
@@ -591,7 +632,8 @@
         "description": "La norme ISO 24495-1 publiée en 2023 établit les principes directeurs et les lignes directrices pour concevoir un document, papier ou numérique, qui soit réellement clair, simple et fonctionnel pour le public cible auquel il s'adresse."
       },
       "image": false,
-      "image_comparaison": false
+      "image_comparaison": false,
+        "textcolor": "#738CC7"
     },
     {
       "id": 43,
@@ -609,7 +651,8 @@
         "description": "Webinaire de la Direction interministérielle de la transformation publique (DITP)."
       },
       "image": false,
-      "image_comparaison": false
+      "image_comparaison": false,
+        "textcolor": "#738CC7"
     },
     {
       "id": 44,
@@ -621,7 +664,8 @@
       ],
       "source": {},
       "image": false,
-      "image_comparaison": false
+      "image_comparaison": false,
+        "textcolor": "#738CC7"
     },
     {
       "id": 45,
@@ -635,7 +679,8 @@
       ],
       "source": {},
       "image": true,
-      "image_comparaison": false
+      "image_comparaison": false,
+        "textcolor": "#738CC7"
     },
     {
       "id": 46,
@@ -650,7 +695,8 @@
       ],
       "source": {},
       "image": true,
-      "image_comparaison": true
+      "image_comparaison": true,
+        "textcolor": "#738CC7"
     },
     {
       "id": 47,
@@ -665,7 +711,8 @@
       ],
       "source": {},
       "image": false,
-      "image_comparaison": false
+      "image_comparaison": false,
+        "textcolor": "#738CC7"
     },
     {
       "id": 48,
@@ -679,7 +726,8 @@
       ],
       "source": {},
       "image": true,
-      "image_comparaison": true
+      "image_comparaison": true,
+        "textcolor": "#738CC7"
     },
     {
       "id": 49,
@@ -692,7 +740,8 @@
       ],
       "source": {},
       "image": true,
-      "image_comparaison": true
+      "image_comparaison": true,
+        "textcolor": "#738CC7"
     },
     {
       "id": 50,
@@ -710,7 +759,8 @@
       ],
       "source": {},
       "image": false,
-      "image_comparaison": false
+      "image_comparaison": false,
+        "textcolor": "#738CC7"
     },
     {
       "id": 51,
@@ -724,7 +774,8 @@
       ],
       "source": {},
       "image": false,
-      "image_comparaison": false
+      "image_comparaison": false,
+        "textcolor": "#738CC7"
     },
     {
       "id": 52,
@@ -740,7 +791,8 @@
       ],
       "source": {},
       "image": false,
-      "image_comparaison": false
+      "image_comparaison": false,
+        "textcolor": "#738CC7"
     }
   ]
 }

@@ -2,7 +2,7 @@
     @if (Navdata['data'][card_number-1]) { 
         @let card = Navdata['data'][card_number-1];
     <div class="tags">
-        <span class="tag planning">{{ card.sous_categorie }}</span>
+        <span class="tag planning" [style.color]="card.textcolor">{{ card.sous_categorie }}</span>
     </div>
 
     <h2 class="category-title">{{ card.titre }}</h2>
@@ -18,10 +18,7 @@
         @if('/images/solution_' + card.id + '.png'){
         <img class="image" [src]="'/images/solution_' + card.id + '.png'">}
         @if(card.image_comparaison){
-            <div class="comparison-container">
-                <div class="comparison-label bad">Mauvais</div>
-                <div class="comparison-label good">Bien</div>
-            </div>
+            
         }
     
     }
