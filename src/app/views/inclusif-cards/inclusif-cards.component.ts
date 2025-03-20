@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit, OnDestroy, ChangeDetectorRef, SimpleChanges} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavigationButtonComponent } from './navigation-button/navigation-button.component';
 import { ThemeIndicatorComponent } from './theme-indicator/theme-indicator.component';
@@ -37,7 +37,6 @@ export class InclusifCardsComponent implements OnInit, OnDestroy {
     private router: Router,
     private route: ActivatedRoute,
     public answerStorage: AnswerStorageService,
-    private cdRef: ChangeDetectorRef
   ) {}
 
   ngOnInit(): void {
@@ -94,14 +93,9 @@ export class InclusifCardsComponent implements OnInit, OnDestroy {
     this.answerStorage.stopTimer();
   }
 
-  onCardChange(newCardNumber: number): void {
-    this.showCard = false;
-    setTimeout(() => {
-      this.currentNumber = newCardNumber;
-      this.cat = navigation_data.data[newCardNumber]?.categorie ?? '';
-      this.currentAnswer = this.answerStorage.getAnswer(newCardNumber);
-      console.log(this.currentAnswer);
-      this.showCard = true;
-    }, 0);
+  //Mise à jour du bouton suivant si une réponse est sélectionnée
+  onAnswerChange(answer: boolean): void {
+    this.answerStorage.setRepondu(this.currentNumber);
+  
   }
 }
