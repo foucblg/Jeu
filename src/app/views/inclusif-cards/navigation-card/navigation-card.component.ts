@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Input, Output, OnInit, OnDestroy } from '@angular/core';
+import { Component, EventEmitter, Input, Output, OnInit, OnDestroy, SimpleChanges} from '@angular/core';
 import { Router } from '@angular/router';
 import { AnswerStorageService } from '../../../answer-storage.service';
 import { ChangeDetectorRef } from '@angular/core';
@@ -29,7 +29,7 @@ export class NavigationCardComponent implements OnInit, OnDestroy {
   allAnswers: { [key: number]: boolean } = {}; // Contient la réponse de chaque carte
 
   Navdata = navigation_data; //Récupération des données des cartes
-  ngModel = 'Non'; // Valeur par défaut pour les bouton radio, devient "Oui" si oui est coché
+  ngModel = 'Rien'; // Valeur par défaut pour les bouton radio
 
   displayDialog = false; // Booléen pour afficher ou non la boîte de dialogue d'information "i"
   timeExpiredDialog = false; // Booléen pour afficher ou non la boîte de dialogue lorsque le temps est écoulé
@@ -41,8 +41,6 @@ export class NavigationCardComponent implements OnInit, OnDestroy {
   constructor(private router: Router, private answerStorage: AnswerStorageService, private cdRef: ChangeDetectorRef) {}
 
   ngOnInit(): void {
-    // Définir la valeur initiale de ngModel en fonction de card_answer
-    this.ngModel = this.card_answer ? 'Oui' : 'Non';
 
     // S'abonner au temps restant depuis le service
     this.timerSubscription = this.answerStorage.getRemainingTime().subscribe(time => {
@@ -62,6 +60,30 @@ export class NavigationCardComponent implements OnInit, OnDestroy {
     }
     console.log('NavigationCardComponent détruit');
   }
+  
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['card_number']) {
+      const change = changes['card_number'];
+      const previousCardNumber = change.previousValue;
+      if (previousCardNumber !== change.currentValue) {
+        // Appel pour mettre à jour les dropdowns en fonction de la nouvelle carte
+        this.onCardChange(this.card_number);
+      }
+    }
+    
+  }
+
+  onCardChange(newCardNumber: number): void {
+    //Met à jour la réponse dans les radiobuttons lorsqu'il y a un changement de carte
+    this.card_number = newCardNumber;
+    if (this.answerStorage.getEtat(this.card_number)=='est_repondu') {
+    this.ngModel = this.answerStorage.getAnswer(newCardNumber) ? 'Oui' : 'Non';
+    }
+    else {
+      this.ngModel = 'Rien'
+    }
+  }
+  
 
   onAnswer(answer: boolean): void {
     /*
@@ -77,7 +99,11 @@ export class NavigationCardComponent implements OnInit, OnDestroy {
 
     // Mettre à jour les valeurs de ngModel en fonction de la réponse sélectionnée
     this.ngModel = answer ? 'Oui' : 'Non';
+
+    if (this.answerStorage.getEtat(this.card_number) == 'non_visite') {
+      this.answerStorage.setRepondu(this.card_number); // Marque la carte comme répondue
   }
+}
 
   showDialog(): void {
     /*

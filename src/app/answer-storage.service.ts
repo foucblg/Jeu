@@ -11,6 +11,7 @@ Il permet également de démarrer et d'arrêter le compte à rebours. */
 export class AnswerStorageService {
 
   private answers: { [key: number]: boolean } = {}; // Stocke les réponses en utilisant le numéro de la carte comme clé
+  private etat_carte: {[key : number]: string} = {}; // Connait si une carte a déjà été visitée
   private remainingTimeSubject: BehaviorSubject<number> = new BehaviorSubject<number>(2400); // Temps restant initial
   private currentNumberSubject: BehaviorSubject<number> = new BehaviorSubject<number>(0); // Numéro actuel initial
   private catSubject: BehaviorSubject<string> = new BehaviorSubject<string>(navigation_data.data[0]?.categorie ?? ''); // Catégorie initiale
@@ -21,12 +22,26 @@ export class AnswerStorageService {
     // Initialise les réponses pour chaque carte à false
     navigation_data.data.forEach((item, index) => {
       this.answers[index] = false;
+      this.etat_carte[index] = 'non_repondu';
     });
   }
 
   // Enregistre la réponse
   setAnswer(cardNumber: number, answer: boolean): void {
     this.answers[cardNumber] = answer;
+  }
+
+  // Récupère la réponse d'une carte
+  getAnswer(cardNumber: number): boolean {
+    return this.answers[cardNumber];
+  }
+
+  setRepondu(cardNumber: number): void {
+    this.etat_carte[cardNumber] = 'est_repondu'; // Marque la carte comme répondue
+  }
+
+  getEtat(cardNumber: number): string {
+    return this.etat_carte[cardNumber]; // Récupère si la carte a déjà été visitée
   }
 
   setCategories(): string[] {
@@ -55,10 +70,7 @@ export class AnswerStorageService {
     return this.categories;
   }
 
-  // Récupère la réponse d'une carte
-  getAnswer(cardNumber: number): boolean {
-    return this.answers[cardNumber];
-  }
+
 
   getPercentage(cardNumber: number): number {
     /* Fonction permettant de calculer le pourcentage de progression pour une catégorie donnée.

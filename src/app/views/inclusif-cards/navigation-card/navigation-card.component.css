@@ -31,29 +31,6 @@
   padding-left: 10px;
 }
 
-.info-button {
-  margin-left: 10px;
-  margin-right: 20px;
-  width: 32px;
-  height: 32px;
-  margin-bottom: 18px;
-  transform: scale(0.75)
-}
-
-::ng-deep .p-button.p-button-info {
-  background-color: #333333;
-  border-color:#333333; 
-}
-
-::ng-deep .p-button.p-button-info:hover{
-  background-color: #4c4d53;
-  border-color:#4c4d53 ; 
-}
-
-::ng-deep .p-button.p-button-info:active{
-  background-color: #696969;
-  border-color:#696969 ; 
-}
 
 .card-image {
   display: block;
@@ -65,7 +42,7 @@
 /* Question Text Styling */
 .question-text {
   font-size: 24px;
-  color: #0b4c31;
+  color: #333333;
   text-align: left;
   overflow: hidden;
   word-wrap: break-word;
@@ -137,6 +114,21 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px 0px;
 }
 
+.nothing {
+  display: flex;
+  align-content: center;
+  width: 600px;
+  height: 40px;
+  border: 1px solid #696969;
+  border-radius: 8px;
+  padding: 4px;
+  margin: 0 auto;
+  align-items: center;
+  word-wrap: break-word;
+  color: #333333;
+  margin-bottom: 16px;
+}
+
 .not-clickable .radio {
   pointer-events: none;
   --p-radiobutton-icon-checked-color: #333333 !important;
@@ -184,7 +176,8 @@
   border-radius: 10px;
   padding: 5px 10px;
   color: #333333; 
-  white-space:nowrap
+  white-space:nowrap;
+  margin-right: 10px;
 }
 
 .red-timer {

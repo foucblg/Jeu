@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, SimpleChanges } from '@angular/core';
 import { Router } from '@angular/router';
 import { navigation_data } from '../../../app.component';
 import { AnswerStorageService } from '../../../answer-storage.service';
@@ -19,6 +19,7 @@ export class NavigationButtonComponent {
   @Input() currentNumber: number = 0;
   @Input() cat!: string;
   @Input() currentAnswer!: boolean;
+  @Input() disabled:boolean = false;
 
   @Output() cardChange = new EventEmitter<number>();
   @Output() catChange = new EventEmitter<string>();
@@ -32,8 +33,7 @@ export class NavigationButtonComponent {
       this.cat = cat;
     });
   }
-
-
+  
  
   changecard()
    /*

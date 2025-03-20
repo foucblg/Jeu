@@ -9,8 +9,7 @@
         <h3 class="question-title" [style.color]="card.textcolor">{{ card.nom }}</h3>
         <!-- Affiche le temps restant dans un rectangle arrondi -->
         <span class="remaining-time rounded-rectangle" [ngClass] = "{'red-timer': remainingTime <=0}">{{formatTime(remainingTime)}}</span>
-        <!-- Bouton d'information -->
-        <p-button class="info-button" icon="pi pi-info" [rounded]="true" severity="info" (click)="showDialog()"></p-button>
+        
       </div>
     
       <!-- Affiche l'image de la carte -->
@@ -25,7 +24,7 @@
       </div>
 
       <!-- Bouton radio pour la réponse "Oui" -->
-      <label [ngClass]="{'radioButton': true, 'not-clickable': ngModel === 'Oui', 'clickable': ngModel !== 'Oui'}">
+      <label [ngClass]="{'radioButton': true, 'not-clickable': ngModel === 'Oui', 'clickable': ngModel !== 'Oui', 'nothing': ngModel !== 'Rien'}">
         <p-radiobutton class="radio"
           type="radio"
           name="OuiNon"
@@ -37,7 +36,7 @@
       </label>
 
       <!-- Bouton radio pour la réponse "Non" -->
-      <label [ngClass]="{'radioButton': true, 'not-clickable': ngModel === 'Non', 'clickable': ngModel !== 'Non'}">
+      <label [ngClass]="{'radioButton': true, 'not-clickable': ngModel === 'Non', 'clickable': ngModel !== 'Non', 'nothing': ngModel !== 'Rien' }">
         <p-radiobutton class="radio"
           type="radio"
           name="OuiNon"
