@@ -19,7 +19,7 @@ body {
   border: none; /* Supprime la bordure supérieure */
   position: static; /* Réinitialise la position */
   text-align: left;
-  align-items: center;
+  align-items: center; 
   width: 600px;
   height: 500px;
   
@@ -28,8 +28,11 @@ body {
 
 .tags {
   display: flex;
+  flex-direction: row;
   gap: 10px;
   margin-bottom: 15px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .tag {
@@ -192,4 +195,26 @@ button {
   margin-left: 125px;
   color: green;
   background-color: rgba(0, 255, 0, 0.1);
+}
+
+.rounded-rectangle {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #333333; 
+  white-space:nowrap;
+  justify-content: space-between;
+}
+
+.contenu{
+  line-height: 30px;
+}
+.espace{
+  margin-top: 20px;
+}
+.rounded-rectangle2 {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 5px 10px;
+  white-space:nowrap
 }

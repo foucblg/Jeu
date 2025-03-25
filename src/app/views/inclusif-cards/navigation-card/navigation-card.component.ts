@@ -25,7 +25,7 @@ export class NavigationCardComponent implements OnInit, OnDestroy {
   @Input() card_number!: number; // Numéro de la carte
   @Input() card_answer!: boolean; // Réponse de la carte
   @Output() answerChange = new EventEmitter<boolean>();
-
+ 
   allAnswers: { [key: number]: boolean } = {}; // Contient la réponse de chaque carte
 
   Navdata = navigation_data; //Récupération des données des cartes

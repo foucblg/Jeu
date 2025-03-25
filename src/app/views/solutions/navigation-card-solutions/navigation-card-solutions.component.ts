@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output, OnInit, SimpleChanges, OnChanges } from '@angular/core';
+import { Component, EventEmitter, Input, Output, OnInit, SimpleChanges, OnChanges, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { DropdownModule } from 'primeng/dropdown';
@@ -6,7 +6,8 @@ import { UserService } from '../../../shared/user-service';
 import { navigation_data_solutions } from '../../../app.component';
 import { Task } from '../../../shared/user-service';
 import { CommonModule } from '@angular/common';
-
+import { AnswerStorageService } from '../../../answer-storage.service';
+import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-navigation-card-solutions',
   standalone: true,
@@ -14,7 +15,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './navigation-card-solutions.component.html',
   styleUrls: ['./navigation-card-solutions.component.css'],
 })
-export class NavigationCardSolutionsComponent implements OnInit, OnChanges {
+export class NavigationCardSolutionsComponent implements OnInit, OnChanges, OnDestroy {
   @Input() card_number!: number; 
   @Output() answer = new EventEmitter<string>();
   previousCardNumber: number | null = null;
@@ -22,9 +23,13 @@ export class NavigationCardSolutionsComponent implements OnInit, OnChanges {
   Navdata = navigation_data_solutions;
   options: { label: string, value: string }[] = [];
   dropdowns: { selectedOption: string }[] = [{ selectedOption: '' }];
+  timeExpiredDialog = false; // Booléen pour afficher ou non la boîte de dialogue lorsque le temps est écoulé
   
+  
+    remainingTime: number = 0; // Temps restant
+    private timerSubscription: Subscription | undefined = undefined;
 
-  constructor(private router: Router, public service: UserService) {}
+  constructor(private router: Router, public service: UserService, private answerStorage: AnswerStorageService) {}
 
   ngOnInit(): void {
     // Charger les utilisateurs dans les options du dropdown
@@ -32,6 +37,20 @@ export class NavigationCardSolutionsComponent implements OnInit, OnChanges {
       label: user.name,   // User's name as label
       value: user.email   // User's email as value
     }));
+    this.timerSubscription = this.answerStorage.getRemainingTime().subscribe(time => {
+      this.remainingTime = time;
+      if (this.remainingTime === 0) {
+        this.showTimeExpiredDialog();
+      }
+    });
+    // S'abonner au temps restant depuis le service
+    this.timerSubscription = this.answerStorage.getRemainingTime().subscribe(time => {
+      this.remainingTime = time;
+    });
+
+
+    // Démarrer le compte à rebours
+    this.answerStorage.startTimer();
   }
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -43,6 +62,13 @@ export class NavigationCardSolutionsComponent implements OnInit, OnChanges {
         this.updateDropdownsForNewCard();
       }
     }
+  }
+  ngOnDestroy(): void {
+    // Éviter les fuites de mémoire
+    if (this.timerSubscription) {
+      this.timerSubscription.unsubscribe();
+    }
+    console.log('NavigationCardComponent détruit');
   }
 
   updateDropdownsForNewCard(): void {
@@ -97,6 +123,13 @@ export class NavigationCardSolutionsComponent implements OnInit, OnChanges {
       }
     } else {
     }
+  }
+  showTimeExpiredDialog(): void {
+    /*
+    Fonction activée lorsque le temps est écoulé.
+    Affiche la boîte de dialogue de temps écoulé.
+    */
+    this.timeExpiredDialog = true;
   }
 
   addDropdown(): void {
@@ -158,5 +191,23 @@ export class NavigationCardSolutionsComponent implements OnInit, OnChanges {
   hasRemainingOptions(): boolean {
     const selectedOptions = this.dropdowns.map(dropdown => dropdown.selectedOption);
     return this.options.some(option => !selectedOptions.includes(option.value));
+  }
+  hideTimeExpiredDialog(): void {
+    /* Fonction activée lorsqu'on clique sur le bouton "Fermer" de la boîte de dialogue de temps écoulé.
+    Cache la boîte de dialogue de temps écoulé.
+    */
+    this.timeExpiredDialog = false;
+  }
+  formatTime(seconds: number): string {
+    /*
+    Fonction pour formater le temps restant en minutes et secondes.
+    */
+    const isNegative = seconds < 0;
+    seconds = Math.abs(seconds);
+    
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = seconds % 60;
+    
+    return `${isNegative ? '-' : ''}${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
   }
 }
