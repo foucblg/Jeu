@@ -61,7 +61,7 @@
 }
 
 .ProgressBar-stepLabel {
-  font-size: 12px;
+  font-size: 15px;
   color: #696969;
   width: 100%;
   transition: all .25s ease-out;
@@ -100,7 +100,7 @@
 }
 
 .ProgressBar-stepLabel-now {
-  font-size: 12px;
+  font-size: 15px;
   color: #DA3635;
   width: 100%;
   transition: all .25s ease-out;
@@ -144,7 +144,7 @@
 
 
 .ProgressBar-stepLabel-before {
-  font-size: 12px;
+  font-size: 15px;
   color: #1D8844;
   width: 100%;
   transition: all .25s ease-out;

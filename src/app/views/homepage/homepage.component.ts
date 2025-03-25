@@ -17,7 +17,7 @@ export class HomepageComponent {
   constructor(private router:Router) {}
 
   commencer(){
-    this.router.navigate(['./contexte'])
+    this.router.navigate(['./regles'])
   }
 
 }

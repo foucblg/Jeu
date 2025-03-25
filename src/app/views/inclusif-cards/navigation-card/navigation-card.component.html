@@ -6,7 +6,11 @@
 
       <div class="title-container">
         <!-- Affiche le titre de la question avec la couleur de texte spécifiée -->
-        <h3 class="question-title" [style.color]="card.textcolor">{{ card.nom }}</h3>
+        <h3 class="question-title rounded-border" 
+            [style.color]="card.textcolor" 
+            [style.borderColor]="card.textcolor">
+            {{ card.nom }}
+        </h3>
         <!-- Affiche le temps restant dans un rectangle arrondi -->
         <span class="remaining-time rounded-rectangle" [ngClass] = "{'red-timer': remainingTime <=0}">{{formatTime(remainingTime)}}</span>
         
@@ -44,7 +48,7 @@
           [(ngModel)]="ngModel"
           (click)="onAnswer(false)">
         </p-radiobutton>
-        <p class="choice-text">Non</p>
+        <p class="choice-text">Non (ou ne sait pas)</p>
       </label>
     </div>
   }
