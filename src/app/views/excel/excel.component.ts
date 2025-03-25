@@ -4,6 +4,8 @@ import { ButtonModule } from 'primeng/button';
 import { DividerModule } from 'primeng/divider';
 import * as XLSX from 'xlsx';
 import { CommonModule } from '@angular/common';
+import { UserService } from '../../shared/user-service';
+import { navigation_data_solutions } from "../../app.component";
 
 @Component({
   selector: 'app-excel',
@@ -15,71 +17,31 @@ import { CommonModule } from '@angular/common';
 export class ExcelComponent {
   
   //Ceci est un exemple, à remplacer avec le vrai excel qui sera contenu dans le service j'imagine
-  userList : any = [
+  users : any;
 
-    {
-    
-    "id": 1,
-    
-    "name": "Leanne Graham",
-    
-    "username": "Bret",
-    
-    "email": "Sincere@april.biz"
-    
-    },
-    
-    {
-    
-    "id": 2,
-    
-    "name": "Ervin Howell",
-    
-    "username": "Antonette",
-    
-    "email": "Shanna@melissa.tv"
-    
-    },
-    
-    {
-    
-    "id": 3,
-    
-    "name": "Clementine Bauch",
-    
-    "username": "Samantha",
-    
-    "email": "Nathan@yesenia.net"
-    
-    },
-    
-    {
-    
-    "id": 4,
-    
-    "name": "Patricia Lebsack",
-    
-    "username": "Karianne",
-    
-    "email": "Julianne.OConner@kory.org"
-    
-    },
-    
-    {
-    
-    "id": 5,
-    
-    "name": "Chelsey Dietrich",
-    
-    "username": "Kamren",
-    
-    "email": "Lucio_Hettinger@annie.ca"
-    
-    }
-    
-    ]
 
-  constructor(private router:Router) {}
+
+  constructor(private router:Router, private service:UserService) {}
+  
+  ngOnInit(): void {
+    this.users = this.service.getUsers();
+
+    // Load the answers data
+    const answersData = navigation_data_solutions.data;
+
+    this.users.forEach((user: any) => {
+        if (user.getTask) {
+            const tasks = user.getTask();
+            tasks.forEach((task: any) => {
+                const taskData = answersData.find((data: any) => data.id === task.getId());
+                if (taskData) {
+                    // Replace the task ID with the category name and title
+                    task.id = `${taskData.categorie} - ${taskData.titre}`;
+                }
+            });
+        }
+    });
+  }
 
   continuer(){
     this.router.navigate(['./regles_conclusion'])

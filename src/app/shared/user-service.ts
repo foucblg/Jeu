@@ -19,6 +19,9 @@ class User {
     hasTask(taskId: number): boolean {
         return this.tasks.some(task => task.getId() === taskId);
     }
+    getTask() : Task[]{
+        return this.tasks
+    }
 
 }
 
