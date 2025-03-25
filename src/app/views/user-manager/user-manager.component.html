@@ -8,7 +8,7 @@
         @if (is_editing_user && user == user_to_edit){
           <form [formGroup]="editUserForm">
             <p-floatlabel variant="on">
-              <input class="input margin-3" pInputText formControlName="name" placeholder="Nom du participant">
+              <input class="input margin-3" pInputText formControlName="name" placeholder="Prénom du participant">
             </p-floatlabel>
             <p-floatlabel variant="on">
               <input class="input margin-3" pInputText formControlName="email" placeholder="Adresse email du participant">
@@ -73,8 +73,7 @@
       <p-button
       class = "avance"
       (click)="continuer()"
-      aria-label="Commencer le Jeu"
-      label = "Continuer"
+      label = "Commencer le jeu"
       severity="primary">
       </p-button>
   </div>

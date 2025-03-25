@@ -8,6 +8,16 @@
   margin: auto;
 }
 
+.rounded-border {
+  border: 2px solid; /* La couleur sera définie dynamiquement via Angular */
+  border-radius: 15px; /* Rend la bordure arrondie */
+  padding: 10px; /* Ajoute de l'espace entre le texte et la bordure */
+  display: inline-block; /* S'assure que l'encadré s'adapte au contenu */
+  text-align: center; /* Centre le texte à l'intérieur */
+  white-space: nowrap;
+  margin-left: 10px;
+}
+
 .title-container {
   display: flex;
   align-items: center;
@@ -21,14 +31,12 @@
 .question-title {
   font-size: 16px;
   font-weight: bold;
-  color: #0b4c31;
-  text-align: left;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  text-align: center;
+  overflow: visible; /* Permet à l'encadré de s'adapter au texte */
+  text-overflow: clip; /* Supprime les ellipses si le texte dépasse */
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
   font-family: 'Lato', sans-serif;
-  width: 100%;
-  padding-left: 10px;
+  padding: 3px; /* Supprime tout padding supplémentaire */
 }
 
 

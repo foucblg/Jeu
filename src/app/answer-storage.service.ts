@@ -12,7 +12,7 @@ export class AnswerStorageService {
 
   private answers: { [key: number]: boolean } = {}; // Stocke les réponses en utilisant le numéro de la carte comme clé
   private etat_carte: {[key : number]: string} = {}; // Connait si une carte a déjà été visitée
-  private remainingTimeSubject: BehaviorSubject<number> = new BehaviorSubject<number>(2400); // Temps restant initial
+  private remainingTimeSubject: BehaviorSubject<number> = new BehaviorSubject<number>(1800); // Temps restant initial
   private currentNumberSubject: BehaviorSubject<number> = new BehaviorSubject<number>(0); // Numéro actuel initial
   private catSubject: BehaviorSubject<string> = new BehaviorSubject<string>(navigation_data.data[0]?.categorie ?? ''); // Catégorie initiale
   private continue: boolean = true; // Indicateur pour continuer le compte à rebours

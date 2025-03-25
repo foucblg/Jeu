@@ -59,3 +59,18 @@ p-divider{
   --p-button-primary-active-border-color: #ff5d5c;
   --p-button-primary-hover-border-color: #cd2524;
 }
+
+::ng-deep .p-button.p-button-secondary {
+  background-color: #FFFFFF ;
+  color: #333333;
+  border: 1px solid #333333 !important;
+
+}
+
+::ng-deep .p-button.p-button-secondary:hover {
+  background-color: #e9e9e9 ;
+}
+
+::ng-deep .p-button.p-button-secondary:active {
+  background-color: #f4f4f4 ;
+}

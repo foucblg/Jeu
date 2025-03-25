@@ -12,6 +12,6 @@ import { DividerModule } from 'primeng/divider';
 export class ContexteComponent {
   constructor(private router:Router) {}
   continuer(){
-    this.router.navigate(['./regles'])
+    this.router.navigate(['./enregistrement_utilisateur'])
   }
 }

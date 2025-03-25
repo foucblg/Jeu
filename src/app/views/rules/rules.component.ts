@@ -17,12 +17,7 @@ export class RulesComponent {
 
     constructor(private router:Router) {}
     continuer(){
-      this.router.navigate(['./enregistrement_utilisateur']);
+      this.router.navigate(['./regles_analyse']);
     }
 
-    startQuiz(){
-      
-      this.router.navigate(['./cartes_inclusif']);
-      console.log("Quiz started");
-    }
 }

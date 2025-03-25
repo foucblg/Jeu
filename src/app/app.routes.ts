@@ -13,15 +13,14 @@ import { SolutionsComponent } from './views/solutions/solutions.component';
 
 export const routes: Routes = [
     {path: 'accueil', component: HomepageComponent},
-    {path: 'contexte', component: ContexteComponent},
+    {path: 'deroulement', component: ContexteComponent},
     {path: 'regles_analyse', component: RulesAnalysisComponent},
     {path: 'regles_conclusion', component: RulesConclusionComponent},
     {path: 'regles_repartition', component: RulesRepartitionComponent},
     {path: 'regles_solutions', component: RulesSolutionsComponent},
     {path: 'regles', component: RulesComponent},
     {path: 'enregistrement_utilisateur', component: UserManagerComponent},
-    {path: 'solution', component:SolutionsComponent},
-    {path: 'cartes_inclusif',
+    {path: 'solution', component:SolutionsComponent},    {path: 'cartes_inclusif',
           component: InclusifCardsComponent,
           children: [
             { path: '', redirectTo: 'carte', pathMatch: 'full' }, // Redirection vers carte avec query params
