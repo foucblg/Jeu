@@ -3,7 +3,7 @@
 <div style=" margin: auto; width: 50%;">
     <p-button (click)="exportexcel()">Télécharger l'affection des joueurs</p-button>
    
-    <table id="excel-table">
+    <table id="excel-table" [hidden]="true">
       <tr *ngFor="let item of userList">
         <td>{{item.id}}</td>
         <td>{{item.name}}</td>
