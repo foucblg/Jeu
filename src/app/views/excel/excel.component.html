@@ -6,20 +6,20 @@
         <tr>
           <th>Nom</th>
           <th>Email</th>
-          <th>Tâches</th>
+          <!-- Dynamically add task columns -->
+          <th *ngFor="let taskIndex of maxTaskIndexes">Tâche {{taskIndex + 1}}</th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let user of users">
           <td>{{user.name}}</td>
           <td>{{user.email}}</td>
-          <td>
-            <ul>
-              <li *ngFor="let task of user.getTask()">
-                {{task.id}}
-              </li>
-            </ul>
+          <!-- Dynamically add task data -->
+          <td *ngFor="let task of user.getTask(); let i = index">
+            {{task.id}}
           </td>
+          <!-- Fill empty columns if the user has fewer tasks -->
+          <td *ngFor="let empty of emptyColumns(user.getTask().length)"></td>
         </tr>
       </tbody>
     </table>
