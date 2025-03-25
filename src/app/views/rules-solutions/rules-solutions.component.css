@@ -48,10 +48,12 @@ p-divider{
   width:80%;
 }
 
+/* Commenté car ne fait pas rentrer le nouveau label
 ::ng-deep .avance-button button {
-  width: 150px; /* Force the width */
-  height: 40px; /* Force the height */
+  width: 150px;
+  height: 40px;
 }
+*/
 
 .avance{
   --p-button-primary-active-background: #ff5d5c;

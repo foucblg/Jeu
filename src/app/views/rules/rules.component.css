@@ -72,10 +72,13 @@ p-divider{
   --p-button-primary-hover-background: #e9e9e9;
 }
 
+/* Commenté car ne fait pas rentrer le nouveau label */
+/*
 ::ng-deep .faire-quiz button {
-  width: 150px; /* Force the width */
+  width: 150px; 
 }
 
 ::ng-deep .passer-quiz button {
-  width: 150px; /* Force the width */
+  width: 150px; 
 }
+*/

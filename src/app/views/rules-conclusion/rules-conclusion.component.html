@@ -4,20 +4,60 @@
     
     <p>Vous voilà à la fin de la session.</p>
     <p>Le chef de projet peut maintenant aller sur la fiche liste d'actions, cocher les actions que chaque participant devra mettre en place.</p>
-    <p>Tous les participants peuvent répondre au questionnaire de satisfaction sur le site.</p>
+    <p>Tous les participants peuvent répondre au <a target ="_blank" href="https://services.formulaireextranet.grandlyon.com/dinsi/inclusif-le-jeu-questionnaire-de-satisfaction/">questionnaire de satisfaction</a> sur le site.</p>
+</div>
+
+<div>
+    <table id="excel-table" [hidden]="true">
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Email</th>
+          <!-- Ajoute les colonnes de tâches dynamiquement -->
+          <th *ngFor="let taskIndex of maxTaskIndexes">Tâche {{taskIndex + 1}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{user.name}}</td>
+          <td>{{user.email}}</td>
+          <!-- Ajoute les données des tâches dynamiquement-->
+          <td *ngFor="let task of user.getTask(); let i = index">
+            {{task.id}}
+          </td>
+          <!-- Remplir les colonnes vides si il a moins de tâches que le nombre maxi parmi les utilisateurs -->
+          <td *ngFor="let empty of emptyColumns(user.getTask().length)"></td>
+        </tr>
+      </tbody>
+    </table>
 </div>
 
 <div class="lower-section">
     <p-divider/>
 
-    <!-- Bouton pour démarrer le jeu -->
-    <div class = "avance-button">
-        <p-button
-        class = "avance"
-        (click)="continuer()"
-        aria-label="Commencer le Jeu"
-        label = "Continuer"
-        severity="primary">
-        </p-button>
+    <div style="margin: auto; width: 80%; display: flex; justify-content: center; gap: 20px;">
+        <!-- Bouton pour remplir le questionnaire -->
+        <a target="_blank" href="https://services.formulaireextranet.grandlyon.com/dinsi/inclusif-le-jeu/">
+            <p-button 
+              severity="secondary"
+              label="Remplir le questionnaire de fin de session" >
+            </p-button>
+        </a>
+
+        <!-- Bouton pour obtenir le récap -->
+
+            <p-button 
+              label="Obtenir le récap" 
+              severity="primary" 
+              (click)="exportexcel()">
+            </p-button>
+
+        <!-- Bouton pour aller à la ressourcerie -->
+        <a target ="_blank" href="https://inclusivite-resin.grandlyon.com/ressources/">
+            <p-button 
+              label="Aller à la ressourcerie" 
+              severity="secondary" >
+            </p-button>
+        </a>
     </div>
 </div>

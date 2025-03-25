@@ -49,11 +49,13 @@ p-divider{
   width:80%;
 }
 
-::ng-deep .avance-button button {
-  width: 150px; /* Force the width */
-  height: 40px; /* Force the height */
-}
 
+/* Commenté car nouveau label ne rentre pas
+::ng-deep .avance-button button {
+  width: 150px;
+  height: 40px; 
+}
+*/
 .avance{
   --p-button-primary-active-background: #ff5d5c;
   --p-button-primary-hover-background: #cd2524;
