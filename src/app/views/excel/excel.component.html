@@ -1,12 +1,12 @@
 <div style="margin: auto; width: 50%;">
-    <p-button (click)="exportexcel()">Télécharger l'affection des joueurs</p-button>
+    <p-button (click)="exportexcel()">Télécharger l'affectation des joueurs</p-button>
    
-    <table id="excel-table">
+    <table id="excel-table" [hidden]="true">
       <thead>
         <tr>
           <th>Nom</th>
           <th>Email</th>
-          <!-- Dynamically add task columns -->
+          <!-- Ajoute les colonnes de tâches dynamiquement -->
           <th *ngFor="let taskIndex of maxTaskIndexes">Tâche {{taskIndex + 1}}</th>
         </tr>
       </thead>
@@ -14,11 +14,11 @@
         <tr *ngFor="let user of users">
           <td>{{user.name}}</td>
           <td>{{user.email}}</td>
-          <!-- Dynamically add task data -->
+          <!-- Ajoute les données des tâches dynamiquement-->
           <td *ngFor="let task of user.getTask(); let i = index">
             {{task.id}}
           </td>
-          <!-- Fill empty columns if the user has fewer tasks -->
+          <!-- Remplir les colonnes vides si il a moins de tâches que le nombre maxi parmi les utilisateurs -->
           <td *ngFor="let empty of emptyColumns(user.getTask().length)"></td>
         </tr>
       </tbody>
@@ -28,12 +28,10 @@
 <div class="lower-section">
     <p-divider></p-divider>
 
-    <!-- Bouton pour démarrer le jeu -->
     <div class="avance-button">
         <p-button
         class="avance"
         (click)="continuer()"
-        aria-label="Commencer le Jeu"
         label="Continuer"
         severity="primary">
         </p-button>

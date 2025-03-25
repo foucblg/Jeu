@@ -21,29 +21,31 @@ export class ExcelComponent {
   constructor(private router: Router, private service: UserService) {}
 
   ngOnInit(): void {
+    // Récupération de tous les utilisateurs
     this.users = this.service.getUsers();
 
-    // Load the answers data
+    // Chargement du JSON
     const answersData = navigation_data_solutions.data;
 
+    // Remplacement des IDs des tâches par les noms des catégories et des tâches, pour meilleur affichage dans l'excel
     this.users.forEach((user: any) => {
       if (user.getTask) {
         const tasks = user.getTask();
         tasks.forEach((task: any) => {
           const taskData = answersData.find((data: any) => data.id === task.getId());
           if (taskData) {
-            // Replace the task ID with the category name and title
             task.id = `${taskData.categorie} - ${taskData.titre}`;
           }
         });
       }
     });
 
-    // Calculate the maximum number of tasks
+    // Calcul du nombre maximum de tâches parmi tous les utilisateurs
     const maxTasks = Math.max(...this.users.map((user: any) => user.getTask().length));
     this.maxTaskIndexes = Array.from({ length: maxTasks }, (_, i) => i);
   }
 
+  /* Fonction pour ajouter des colonnes vides pour les utilisateurs qui n'ont pas de tâches */
   emptyColumns(taskCount: number): number[] {
     const maxTasks = this.maxTaskIndexes.length;
     return Array.from({ length: maxTasks - taskCount });
@@ -53,16 +55,15 @@ export class ExcelComponent {
     this.router.navigate(['./regles_conclusion']);
   }
 
+  /* Fonction pour exporter les données au format Excel */
   exportexcel(): void {
-    /* pass here the table id */
     let element = document.getElementById('excel-table');
     const ws: XLSX.WorkSheet = XLSX.utils.table_to_sheet(element);
 
-    /* generate workbook and add the worksheet */
     const wb: XLSX.WorkBook = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb, ws, 'Sheet1');
 
-    /* save to file */
+    // Nom du fichier 
     XLSX.writeFile(wb, 'Resultats_JEU.xlsx');
   }
 }
