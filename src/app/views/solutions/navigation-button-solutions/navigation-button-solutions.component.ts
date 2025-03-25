@@ -85,7 +85,7 @@ export class NavigationButtonSolutionsComponent implements OnInit{
         
       this.updateQueryParams();
     }else if(this.avance && this.indice_reponse==this.matchingIds.length-1){
-      this.router.navigate(['regles_conclusion']) 
+      this.router.navigate(['excel']) 
     }else if (!this.avance && this.indice_reponse > 0 ) {
       this.indice_reponse = this.indice_reponse-1;
       this.currentNumber= this.matchingIds[this.indice_reponse];
