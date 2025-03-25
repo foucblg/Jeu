@@ -119,7 +119,7 @@
   color: #333333;
   margin-bottom: 16px;
   border: 1px solid #da3635 !important;
-  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px 0px; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px 0px;
 }
 
 .nothing {
@@ -166,7 +166,7 @@
 
 .radioButton:hover {
   border: 1px solid #333333;
-  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px 0px; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px 0px;
 }
 
 .choice-text {
