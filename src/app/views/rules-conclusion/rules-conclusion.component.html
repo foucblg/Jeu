@@ -33,31 +33,30 @@
 </div>
 
 <div class="lower-section">
-    <p-divider/>
+  <p-divider/>
 
-    <div style="margin: auto; width: 80%; display: flex; justify-content: center; gap: 20px;">
-        <!-- Bouton pour remplir le questionnaire -->
-        <a target="_blank" href="https://services.formulaireextranet.grandlyon.com/dinsi/inclusif-le-jeu/">
-            <p-button 
-              severity="secondary"
-              label="Remplir le questionnaire de fin de session" >
-            </p-button>
-        </a>
+  <div class = "button-container">
+    <!-- Bouton pour remplir le questionnaire -->
+    <a target="_blank" href="https://services.formulaireextranet.grandlyon.com/dinsi/inclusif-le-jeu/">
+      <p-button 
+        severity="secondary"
+        label="Remplir le questionnaire de fin de session" >
+      </p-button>
+    </a>
 
-        <!-- Bouton pour obtenir le récap -->
+    <!-- Bouton pour obtenir le récap -->
+    <p-button 
+      label="Obtenir le récap" 
+      severity="primary" 
+      (click)="exportexcel()">
+    </p-button>
 
-            <p-button 
-              label="Obtenir le récap" 
-              severity="primary" 
-              (click)="exportexcel()">
-            </p-button>
-
-        <!-- Bouton pour aller à la ressourcerie -->
-        <a target ="_blank" href="https://inclusivite-resin.grandlyon.com/ressources/">
-            <p-button 
-              label="Aller à la ressourcerie" 
-              severity="secondary" >
-            </p-button>
-        </a>
-    </div>
+    <!-- Bouton pour aller à la ressourcerie -->
+    <a target ="_blank" href="https://inclusivite-resin.grandlyon.com/ressources/">
+      <p-button 
+        label="Aller à la ressourcerie" 
+        severity="secondary" >
+      </p-button>
+  </a>
+  </div>
 </div>

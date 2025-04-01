@@ -1,40 +1,38 @@
+<div class ="upper-div-solution">
+  <div class="titre">3. Découverte et sélection des solutions - 40 minutes</div>
+  <!-- Theme Indicator -->
+  <app-theme-indicator [id]="theme_currentNumber"></app-theme-indicator>
+  <!-- Card Number Display -->
+  <div class="card-display">
+    <app-navigation-card-solutions [card_number]="currentNumber"></app-navigation-card-solutions>
+  </div>
+</div>
 
-<div class="titre">3. Découverte et sélection des solutions - 40 minutes</div>
-    <!-- Theme Indicator -->
-    <app-theme-indicator [id]="theme_currentNumber"></app-theme-indicator>
-    <!-- Card Number Display -->
-    <div class="navigation-container">
-    <div class="card-display">
-      <app-navigation-card-solutions [card_number]="currentNumber"></app-navigation-card-solutions>
+<div class="lower-div-solution">
+  <p-divider/>
+
+  <!-- Barre d'action -->
+  <div class="action-bar">
+    <!-- Bouton de retour -->
+    <div class="button-container" id="back-button">
+      <app-navigation-button-solutions  
+      [avance]="false" 
+      (cardChange)="currentNumber = $event"
+      (catChange)="cat = $event"
+      (themeChange)="theme_currentNumber = $event"> 
+      </app-navigation-button-solutions>
     </div>
-    
-
-
-
-      <p-divider class="divider" />
-
-      <!-- Barre d'action -->
-      <div class="action-bar">
-        <!-- Bouton de retour -->
-        <div class="button-container" id="back-button">
-          <app-navigation-button-solutions  
-          [avance]="false" 
-          (cardChange)="currentNumber = $event"
-          (catChange)="cat = $event"
-          (themeChange)="theme_currentNumber = $event"> 
-          </app-navigation-button-solutions>
-        </div>
-      
-        <!-- Bouton suivant -->
-        <div class="button-container" id="next-button">
-          <app-navigation-button-solutions 
-          [avance]="true" 
-          (cardChange)="currentNumber = $event"
-          (catChange)="cat = $event"
-          (themeChange)="theme_currentNumber = $event">
-          </app-navigation-button-solutions>
-        </div>
-      </div>
+  
+    <!-- Bouton suivant -->
+    <div class="button-container" id="next-button">
+      <app-navigation-button-solutions 
+      [avance]="true" 
+      (cardChange)="currentNumber = $event"
+      (catChange)="cat = $event"
+      (themeChange)="theme_currentNumber = $event">
+      </app-navigation-button-solutions>
+    </div>
+</div>
 
 
 
