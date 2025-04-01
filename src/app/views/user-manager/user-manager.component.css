@@ -106,3 +106,8 @@ p-divider{
   --p-button-primary-active-border-color: #ff5d5c;
   --p-button-primary-hover-border-color: #cd2524;
 }
+
+
+p, span {
+  line-height: 25px;
+}

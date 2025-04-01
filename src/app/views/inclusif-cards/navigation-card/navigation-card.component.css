@@ -59,7 +59,6 @@
   margin-bottom: 20px;
   max-width: 100%;
   height: auto;
-  line-height: 1.3em;
   padding: 0 10px;
   font-weight: bold;
   font-family: 'Lato', sans-serif;
@@ -86,7 +85,6 @@
   margin-bottom: 20px;
   max-width: 100%;
   height: auto;
-  line-height: 1.3em;
   padding: 0 10px;
   font-family: 'Lato', sans-serif;
 }
@@ -167,6 +165,7 @@
 .radioButton:hover {
   border: 1px solid #333333;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px 0px;
+  cursor: pointer;
 }
 
 .choice-text {
@@ -190,4 +189,8 @@
 
 .red-timer {
   color: red;
+}
+
+p, span {
+  line-height: 25px;
 }
