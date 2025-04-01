@@ -1,10 +1,9 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import {Router } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
-import { ActionBarComponent } from '../../shared/action-bar/action-bar.component';
 import { navigation_data_solutions } from "../../app.component";
 import { navigation_data } from '../../app.component';
-import { AnswerStorageService } from '../../answer-storage.service';
+import { AnswerStorageService } from '../../shared/services/answer-storage.service';
 import { DividerModule } from 'primeng/divider';
 @Component({
   selector: 'app-rules-solutions',

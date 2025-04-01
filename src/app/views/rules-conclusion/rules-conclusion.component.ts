@@ -4,7 +4,7 @@ import { ButtonModule } from 'primeng/button';
 import { DividerModule } from 'primeng/divider';
 import * as XLSX from 'xlsx';
 import { CommonModule } from '@angular/common';
-import { UserService } from '../../shared/user-service';
+import { UserService } from '../../shared/services/user-service';
 import { navigation_data_solutions } from "../../app.component";
 
 @Component({

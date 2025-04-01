@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { UserService } from '../../shared/user-service';
+import { UserService } from '../../shared/services/user-service';
 import { FormGroup, FormBuilder, Validators, ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { InputTextModule } from 'primeng/inputtext';

@@ -2,7 +2,7 @@ import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { NavigationButtonSolutionsComponent } from "./navigation-button-solutions/navigation-button-solutions.component";
 import { ThemeIndicatorComponent } from '../inclusif-cards/theme-indicator/theme-indicator.component';
 import { ActivatedRoute, Router } from '@angular/router';
-import { AnswerStorageService } from '../../answer-storage.service';
+import { AnswerStorageService } from '../../shared/services/answer-storage.service';
 import { navigation_data_solutions } from "../../app.component";
 import { navigation_data } from '../../app.component';
 import { NavigationCardSolutionsComponent } from "./navigation-card-solutions/navigation-card-solutions.component";

@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { navigation_data_solutions } from '../../../app.component';
 import {ActivatedRoute, Router } from '@angular/router';
-import { AnswerStorageService } from '../../../answer-storage.service';
+import { AnswerStorageService } from '../../../shared/services/answer-storage.service';
 import { navigation_data } from '../../../app.component';
 import { Subscription } from 'rxjs';
 import { ButtonModule } from 'primeng/button';

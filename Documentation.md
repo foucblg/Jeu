@@ -1,14 +1,16 @@
+# Gestion des utilisateurs
+
+La question des utilisateurs est géré par un service qui se charge de stocker les différents utilisateurs présent, afin de leur attribuer des tâches.
+Le service dispose des méthodes suivantes : addUser, getUsers, deleteUser, editUser, getUserByEmail, getUsersWithTask.
+Ce service est donc utilisé à deux reprises, une première fois pour inscrire les utilisateurs à la réunion, et une seconde fois pour leur attribuer des tâches.
+
 # Cartes diagnostic (inclusif-cards)
 
 ## Le stockage des données
 
-Les données des questions de cartes diagnostic sont stockées dans un JSON nommé  navigation_data.json.
-
-Documentation navigation_data.json
-
 Le fichier `navigation_data.json` contient une liste d'objets représentant des questions et des descriptions liées à l'inclusivité dans divers aspects d'un projet numérique. Chaque objet dans le tableau `data` représente une carte de diagnostic avec plusieurs propriétés.
 
-## Structure des objets
+### Structure des objets
 
 Chaque objet dans le tableau `data` a les propriétés suivantes :
 
@@ -20,10 +22,11 @@ Chaque objet dans le tableau `data` a les propriétés suivantes :
 - **imageurl** (type: `string`): L'URL de l'image associée à la carte de diagnostic.
 - **textcolor** (type: `string`): La couleur du texte associée à la carte de diagnostic, spécifiée en code hexadécimal.
 
-## Exemple d'objet
+### Exemple d'objet
 
 Voici un exemple d'un objet dans le tableau `data` :
 
+```json
 {
     "numero": 1,
     "nom": "Cadrage et Planification",
@@ -33,7 +36,7 @@ Voici un exemple d'un objet dans le tableau `data` :
     "imageurl": "images/Cartes_Diagnostic/cadrage-et-planification.png",
     "textcolor": "#ED6F3A"
 }
-
+```
 
 ## Variables
 

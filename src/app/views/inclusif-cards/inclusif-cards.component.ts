@@ -6,7 +6,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { navigation_data } from '../../app.component';
 import { NavigationCardComponent } from "./navigation-card/navigation-card.component";
 import { Subscription } from 'rxjs';
-import { AnswerStorageService } from '../../answer-storage.service';
+import { AnswerStorageService } from '../../shared/services/answer-storage.service';
 import { DividerModule } from 'primeng/divider';
 
 /* Composant permettant de gérer intégralement les cartes diagnostic.

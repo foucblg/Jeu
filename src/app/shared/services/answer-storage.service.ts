@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { navigation_data } from './app.component';
+import { navigation_data } from '../../app.component';
 import { BehaviorSubject } from 'rxjs';
 
 /* Service englobant le component "inclusif-cards" permettant de stocker les réponses des cartes, le temps restant, le numéro actuel et la catégorie actuelle.

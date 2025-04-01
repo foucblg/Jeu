@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output, SimpleChanges } from '@angular/core';
 import { Router } from '@angular/router';
 import { navigation_data } from '../../../app.component';
-import { AnswerStorageService } from '../../../answer-storage.service';
+import { AnswerStorageService } from '../../../shared/services/answer-storage.service';
 import { ChangeDetectorRef } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 

@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnChanges, SimpleChanges, inject } from '@angular/core';
-import { AnswerStorageService } from '../../../answer-storage.service';
+import { AnswerStorageService } from '../../../shared/services/answer-storage.service';
 
 /* Composant permettant de gérer l'indicateur de progression des catégories.
 Il permet d'afficher la progression de l'utilisateur pour chaque catégorie de manière dynamique. */

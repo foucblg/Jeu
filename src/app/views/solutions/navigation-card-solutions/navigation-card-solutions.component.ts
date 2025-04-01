@@ -2,11 +2,11 @@ import { Component, EventEmitter, Input, Output, OnInit, SimpleChanges, OnChange
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { DropdownModule } from 'primeng/dropdown';
-import { UserService } from '../../../shared/user-service';
+import { UserService } from '../../../shared/services/user-service';
 import { navigation_data_solutions } from '../../../app.component';
-import { Task } from '../../../shared/user-service';
+import { Task } from '../../../shared/services/user-service';
 import { CommonModule } from '@angular/common';
-import { AnswerStorageService } from '../../../answer-storage.service';
+import { AnswerStorageService } from '../../../shared/services/answer-storage.service';
 import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-navigation-card-solutions',

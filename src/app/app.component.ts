@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from './shared/header/header.component';
 import { RouterOutlet } from '@angular/router';
-import * as donnees from './assets/navigation_data.json';
-import * as donnees2 from './assets/anwsers_data.json';
+import * as donnees from './shared/assets/navigation_data.json';
+import * as donnees2 from './shared/assets/anwsers_data.json';
 
 
 @Component({
