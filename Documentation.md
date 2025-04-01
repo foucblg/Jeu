@@ -1,3 +1,42 @@
+# Cartes diagnostic (inclusif-cards)
+
+## Le stockage des données
+
+Les données des questions de cartes diagnostic sont stockées dans un JSON nommé  navigation_data.json.
+Voici un exemple : 
+{
+    "numero": 1, //Id de la carte
+    "nom": "Cadrage et Planification",
+    "question": "L'inclusivité de votre service numérique est-il un objectif pour l'équipe ?",
+    "description": "Au même titre que la qualité, le délai de mise en oeuvre ou le coût d'un service numérique, son inclusivité, c'est-à-dire sa capacité à être inclusif et accessible, peut être un objectif majeur intégré aux différentes phases d'un projet.",
+    "categorie": "Gestion de projet",
+    "imageurl": "images/Cartes_Diagnostic/cadrage-et-planification.png",
+    "textcolor": "#ED6F3A"
+}
+Pour plus de détails sur le JSON, consultez navigation_data.md dans ../app/assets
+
+## Variables
+
+Les variables se reportant aux cartes diagnostic sont stockée dans le service "answer-storage.service.ts".
+Il contient : 
+answers: { [key: number]: boolean } => un dictionnaire contenant la réponse à chaque carte
+etat_carte: {[key : number]: string} => un dictionnaire permettant de savoir si une carte a été répondue ou non
+remainingTime et continue, 2 variables utilisées pour la gestion du timer
+currentNumber at catSubject qui donnent l'id de la carte diagnostic affichée actuellement ainsi que sa catégorie.
+
+## Structure des components de inclusif-cards
+
+navigation-button : Ce composant est un bouton qui permet de naviguer entre les cartes diagnostic. Il met à jour currentNumber dans le service et transmet cet mise à jour aux autres composants.
+
+theme-indicator : Ce composant constitue la barre de progression que l'on retrouve en haut de l'écran. Essentiellement du HTML et CSS, il récupère seulement l'id de la carte actuelle et change en fonction de celle-ci.
+
+navigation-card : Ce composant gère chaque carte et ses boutons radio qui sont utilisés pour répondre "Oui" ou "Non" aux cartes. Chaque carte est initialisée avec le ngModel="Rien", qui va changer en fonction de la réponse mise dans la carte. L'affichage est également initialisée avec aucune sélection. La carte est également capable de se rappeler de sa sélection grâce au service qui retient si une carte a été répondue et la réponse que l'utilisateur avait donnée (géré par onCardChange(number)).
+
+inclusif-cards : Composant parent des 3 composants précédent et qui permet leur assemblage. Les variables issues du service y sont transmises.
+
+## Navigation dans les cartes diagnostic (et solution également)
+
+On souhaite éviter de changer de path à chaque changement de carte, on a donc utilisé les queryparams afin de modifier l'url pour qu'il contienne l'id de la carte affiché, en vérifiant à l'initialisation que cet id corresponde au numéro de carte actuel on peut utiliser l'id pour naviguer.
 
 # Cartes Solution
 
@@ -26,7 +65,6 @@ Les données relatives au stockage de données sont stockées dans un JSON nomm�
 ]}
 
 
-
 ## Gestion de l'affichage
 
 Cette partie du site a pour but de présenter des solutions correspondant aux problèmes soulevés lors des réponses données à la première partie, On reçoit une liste de booléens indiquant quelles réponses sont négatives et il suffit alors d'afficher les cartes solutions correspondantes. Pour ce faire, on trie sur les données présentes dans le JSON, l'id des false nous permet d'obtenir les nom correspondant aux cartes où la réponse a été négative. Un autre JSON existe contenant toutes les informations des cartes réponses, notamment un attribut "sous-catégorie" qui correspond au nom dans le JSON des questions, en cherchant les noms qui coïncident on obtiens alors les cartes solutions à afficher
@@ -36,10 +74,6 @@ Cette partie du site a pour but de présenter des solutions correspondant aux pr
 Une fois les cartes solutions affichées, on peut choisir, ou non, d'assigner une ou plusieurs personnes à la tâche par le biais d'un menu déroulant avec une option de recherche dans le cas où de nombreuses personnes seraient inscrites à la séance de jeu.
 
 Pour connaitre les personnes présentes dans la réunion, on importe alors le service "user-service" qui a été utilisé plus tôt afin d'inscrire les membre de la réunion. Dans ce même service, on utilise la classe task dont une itération est associé à chaque user afin d'enregistrer les tâches.
-
-## Navigation dans les cartes solution
-
-On souhaite éviter de changer de path à chaque changement de carte, on a donc utilisé les queryparams afin de modifier l'url pour qu'il contienne l'id de la carte affiché, en vérifiant à l'initialisation que cet id corresponde au numéro de carte actuel on peut utiliser l'id pour naviguer.
 
 ## Indicateur de thème
 
