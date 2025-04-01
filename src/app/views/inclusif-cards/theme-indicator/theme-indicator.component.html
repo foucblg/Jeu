@@ -7,15 +7,15 @@
         <li class="ProgressBar">
           <!-- Icône de progression actuelle -->
           <svg class="ProgressBar-icon-now"><use xlink:href="#checkmark-bold"/></svg>
-          <div class="ProgressBar-span-now">
-            <!-- Affiche le nom de la catégorie actuelle -->
-            <span class="ProgressBar-stepLabel-now">{{categories[$index]}}</span>
-          </div>
           <div class="ProgressBar-wellFill">
             <!-- Barre de progression pour la catégorie actuelle -->
             <div class="ProgressBar-wellFill-now" [style.width.%]="percentage">
               <span class="void"></span>
             </div>
+          </div>
+          <div class="ProgressBar-span-now">
+            <!-- Affiche le nom de la catégorie actuelle -->
+            <span class="ProgressBar-stepLabel-now">{{categories[$index]}}</span>
           </div>
         </li>
       }
@@ -24,12 +24,12 @@
         <li class="ProgressBar">
           <!-- Icône de progression précédente -->
           <svg class="ProgressBar-icon-before"><use xlink:href="#checkmark-bold"/></svg>
+          <div class="ProgressBar-wellFill-before">
+            <span class="void"></span>
+          </div>
           <div class="ProgressBar-span-before">
             <!-- Affiche le nom de la catégorie précédente -->
             <span class="ProgressBar-stepLabel-before">{{categories[$index]}}</span>
-          </div>
-          <div class="ProgressBar-wellFill-before">
-            <span class="void"></span>
           </div>
         </li>
       }
@@ -38,13 +38,13 @@
         <li class="ProgressBar">
           <!-- Icône de progression future -->
           <svg class="ProgressBar-icon"><use xlink:href="#checkmark-bold"/></svg>
+          <div class="ProgressBar-wellFill">
+            <span class="void"></span>
+          </div> 
           <div class="ProgressBar-span">
             <!-- Affiche le nom de la catégorie future -->
             <span class="ProgressBar-stepLabel">{{categories[$index]}}</span>
           </div>
-          <div class="ProgressBar-wellFill">
-            <span class="void"></span>
-          </div> 
         </li>
       }
     }
@@ -52,13 +52,13 @@
     <!-- Dernière étape de la progression -->
     <li class="ProgressBar">
       <svg class="ProgressBar-icon"><use xlink:href="#checkmark-bold"/></svg>
+      <div class="ProgressBar-wellFill-void">
+        <span class="void"></span>
+      </div> 
       <div class="ProgressBar-span">
         <!-- Affiche "Fin" pour indiquer la fin de la progression -->
         <span class="ProgressBar-stepLabel"> Fin </span>
       </div>
-      <div class="ProgressBar-wellFill-void">
-        <span class="void"></span>
-      </div> 
     </li>
   </ol>
 </div>

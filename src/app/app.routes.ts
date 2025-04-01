@@ -4,7 +4,6 @@ import { ContexteComponent } from './views/contexte/contexte.component';
 import { RulesComponent } from './views/rules/rules.component';
 import { RulesAnalysisComponent } from './views/rules-analysis/rules-analysis.component';
 import { RulesConclusionComponent } from './views/rules-conclusion/rules-conclusion.component';
-import { RulesRepartitionComponent } from './views/rules-repartition/rules-repartition.component';
 import { RulesSolutionsComponent } from './views/rules-solutions/rules-solutions.component';
 import { UserManagerComponent } from './views/user-manager/user-manager.component';
 import { InclusifCardsComponent } from './views/inclusif-cards/inclusif-cards.component';
@@ -16,7 +15,6 @@ export const routes: Routes = [
     {path: 'deroulement', component: ContexteComponent},
     {path: 'regles_analyse', component: RulesAnalysisComponent},
     {path: 'regles_conclusion', component: RulesConclusionComponent},
-    {path: 'regles_repartition', component: RulesRepartitionComponent},
     {path: 'regles_solutions', component: RulesSolutionsComponent},
     {path: 'regles', component: RulesComponent},
     {path: 'enregistrement_utilisateur', component: UserManagerComponent},

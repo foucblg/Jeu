@@ -82,3 +82,8 @@ p-divider{
   width: 150px; 
 }
 */
+
+
+p, span {
+  line-height: 25px;
+}

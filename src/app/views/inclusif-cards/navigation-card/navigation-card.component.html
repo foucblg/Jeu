@@ -54,14 +54,6 @@
   }
 </div>
 
-<!-- Dialogue pour afficher les règles du jeu -->
-<p-dialog header="Règles du jeu" [(visible)]="displayDialog" [modal]="true" [closable]="false">
-  <p>Ceci est un exemple</p>
-  <div class="dialog-footer">
-    <p-button label="Ok" icon="pi pi-check" (click)="hideDialog()"></p-button>
-  </div>
-</p-dialog>
-
 <!-- Dialogue pour afficher le message lorsque le temps est écoulé -->
 <p-dialog header="Temps écoulé" [(visible)]="timeExpiredDialog" [modal]="true" [closable]="false">
   <p>Le temps est écoulé, essayez de vous dépêcher pour passer à la suite.</p>

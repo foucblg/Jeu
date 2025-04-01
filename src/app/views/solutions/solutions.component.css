@@ -1,21 +1,40 @@
-/* General Container for the Navigation */
-.navigation-container {
+:host{
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
+  flex-direction: column;
+  text-align: center;
   align-items: center;
-  justify-content: center;
-  gap: 36px; /* Adds space between the sections */
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.upper-div-solution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: auto;
 }
 /* Card Display Area Styling */
 .card-display {
   margin-top: 9px;
-  width: 700px; /* Fixed width */
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
   box-sizing: border-box;
   text-align: center;
+  width: 100%;
+}
+
+app-theme-indicator {
+  margin-bottom: 10px; /* Adds spacing between the first element and the row */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120%;
+  height: auto;
+  padding: 0px;
 }
 
 /* Additional styling for card content */
@@ -28,18 +47,18 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width : 300px;
 }
-/* Wrapper for horizontal elements */
-.horizontal-group {
+
+.lower-div-solution {
   display: flex;
-  flex-direction: row; /* Aligns children in a row */
-  gap: 10px; /* Adds space between the buttons */
-  align-items: center; /* Center elements horizontally */
-  justify-content: center;
-  border-top: 3px solid #E9E9E9;
-  height: 92px;
-  width:1088px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+  width: 100%;
+  position: relative;
+  bottom:0px;
+  margin-top: 25px;
+  height:auto;
 }
 
 /* Theme Indicator Styling */
@@ -59,10 +78,10 @@
   bottom:0px;
 }
 
-
-
-.divider{
-  padding-bottom: 0px;
+p-divider{
+  margin: 0;
+  padding-bottom: 40px;
+  width:80%;
 }
 
 .titre{

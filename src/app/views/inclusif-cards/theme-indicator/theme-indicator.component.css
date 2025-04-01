@@ -7,19 +7,17 @@
   margin-top: 25px;
 }
 
-
 .ProgressBar {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  align-items: top;
   width: 80%;
 }
 
 .ProgressBar li {
-  display: table-cell;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  position: relative;
   width: 100%;
 }
 
@@ -30,7 +28,7 @@
   height: 5px;
   position: relative;
   width: 100%;
-  top: -35px;
+  top: -12px;
   left: 50%;
 }
 
@@ -44,6 +42,7 @@
   z-index: 10;
   position: relative;
   transition: all .25s ease-out;
+  left: 45%;
 }
 
 .ProgressBar-span {
@@ -83,6 +82,7 @@
   z-index: 10;
   position: relative;
   transition: all .25s ease-out;
+  left: 45%;
 }
 
 .ProgressBar-span-now {
@@ -113,7 +113,7 @@
   height: 5px;     
   position: relative;
   width: 100%;
-  top: -35px;
+  top: -12px;
   left: 50%;
 }
 
@@ -126,6 +126,7 @@
   z-index: 10;
   position: relative;
   transition: all .25s ease-out;
+  left: 45%;
 }
 
 .ProgressBar-span-before {

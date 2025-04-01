@@ -47,9 +47,15 @@ p-divider{
   padding-bottom: 40px;
   width:80%;
 }
-
-::ng-deep .avance-button button {
-  width: 150px; /* Force the width */
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  gap: 20px;
+}
+::ng-deep .button-container button {
+  width: 300px; /* Force the width */
   height: 40px; /* Force the height */
 }
 
@@ -73,4 +79,8 @@ p-divider{
 
 ::ng-deep .p-button.p-button-secondary:active {
   background-color: #f4f4f4 ;
+}
+
+p, span {
+  line-height: 25px;
 }
